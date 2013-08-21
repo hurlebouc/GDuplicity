@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B424DB9B17C50AC200ADBFF9 /* Option.m in Sources */ = {isa = PBXBuildFile; fileRef = B424DB9A17C50AC200ADBFF9 /* Option.m */; };
 		B4A2A27717C3C90400262BC3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4A2A27617C3C90400262BC3 /* Cocoa.framework */; };
 		B4A2A28117C3C90400262BC3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B4A2A27F17C3C90400262BC3 /* InfoPlist.strings */; };
 		B4A2A28317C3C90400262BC3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A2A28217C3C90400262BC3 /* main.m */; };
@@ -30,6 +31,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B424DB9917C50AC200ADBFF9 /* Option.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Option.h; sourceTree = "<group>"; };
+		B424DB9A17C50AC200ADBFF9 /* Option.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Option.m; sourceTree = "<group>"; };
+		B424DB9C17C5191900ADBFF9 /* GDuplicity.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = GDuplicity.entitlements; sourceTree = "<group>"; };
 		B4A2A27317C3C90400262BC3 /* GDuplicity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GDuplicity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4A2A27617C3C90400262BC3 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		B4A2A27917C3C90400262BC3 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -114,6 +118,9 @@
 		B4A2A27C17C3C90400262BC3 /* GDuplicity */ = {
 			isa = PBXGroup;
 			children = (
+				B424DB9C17C5191900ADBFF9 /* GDuplicity.entitlements */,
+				B424DB9917C50AC200ADBFF9 /* Option.h */,
+				B424DB9A17C50AC200ADBFF9 /* Option.m */,
 				B4A2A28817C3C90400262BC3 /* AppDelegate.h */,
 				B4A2A28917C3C90400262BC3 /* AppDelegate.m */,
 				B4A2A28B17C3C90400262BC3 /* MainMenu.xib */,
@@ -263,6 +270,7 @@
 			files = (
 				B4A2A28317C3C90400262BC3 /* main.m in Sources */,
 				B4A2A28A17C3C90400262BC3 /* AppDelegate.m in Sources */,
+				B424DB9B17C50AC200ADBFF9 /* Option.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,11 +390,18 @@
 		B4A2A2A517C3C90500262BC3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = GDuplicity/GDuplicity.entitlements;
+				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GDuplicity/GDuplicity-Prefix.pch";
+				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = YES;
+				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				GCC_WARN_MULTIPLE_DEFINITION_TYPES_FOR_SELECTOR = YES;
 				INFOPLIST_FILE = "GDuplicity/GDuplicity-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				RUN_CLANG_STATIC_ANALYZER = YES;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -394,11 +409,18 @@
 		B4A2A2A617C3C90500262BC3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = GDuplicity/GDuplicity.entitlements;
+				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GDuplicity/GDuplicity-Prefix.pch";
+				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = YES;
+				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				GCC_WARN_MULTIPLE_DEFINITION_TYPES_FOR_SELECTOR = YES;
 				INFOPLIST_FILE = "GDuplicity/GDuplicity-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				RUN_CLANG_STATIC_ANALYZER = YES;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -452,6 +474,7 @@
 				B4A2A2A617C3C90500262BC3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B4A2A2A717C3C90500262BC3 /* Build configuration list for PBXNativeTarget "GDuplicityTests" */ = {
 			isa = XCConfigurationList;
@@ -460,6 +483,7 @@
 				B4A2A2A917C3C90500262BC3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

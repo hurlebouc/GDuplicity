@@ -1,5 +1,5 @@
 //
-//  Option.h
+//  Archive_dir.h
 //  GDuplicity
 //
 //  Created by Hubert on 22/08/13.
@@ -7,9 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Option.h"
 
-@protocol Option <NSObject>
-
--(NSString*)getCLIOption;
+@interface Archive_dir : NSObject <Option>{
+    id<Option> other;
+    NSString* value;
+}
 
 @end

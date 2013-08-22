@@ -1,18 +1,19 @@
 //
-//  Allow_source_mismatch.m
+//  Archive_dir.m
 //  GDuplicity
 //
 //  Created by Hubert on 22/08/13.
 //  Copyright (c) 2013 Hubert. All rights reserved.
 //
 
-#import "Allow_source_mismatch.h"
+#import "Archive_dir.h"
 
-@implementation Allow_source_mismatch
+@implementation Archive_dir
 
 -(NSString*)getCLIOption{
     NSString* inter = [other getCLIOption];
-    return [inter stringByAppendingString:@" --allow-source-mismatch"];
+    NSString* opt = [@" --archive-dir " stringByAppendingString:value];
+    return [inter stringByAppendingString:opt];
 }
 
 @end

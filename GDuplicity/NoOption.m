@@ -1,15 +1,17 @@
 //
-//  Option.h
+//  NoOption.m
 //  GDuplicity
 //
 //  Created by Hubert on 22/08/13.
 //  Copyright (c) 2013 Hubert. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "NoOption.h"
 
-@protocol Option <NSObject>
+@implementation NoOption
 
--(NSString*)getCLIOption;
+-(NSString*)getCLIOption{
+    return @"";
+}
 
 @end

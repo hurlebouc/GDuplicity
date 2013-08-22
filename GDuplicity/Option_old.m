@@ -6,13 +6,12 @@
 //  Copyright (c) 2013 Hubert. All rights reserved.
 //
 
-#import "Option.h"
+#import "Option_old.h"
 
-@implementation Option
+@implementation Option_old
 
--(void) test {
-    self->allow_source_mismatch = "e";
-    self->asynchronous_upload = true;
+- (NSString*)getCLIOptions {
+    
 }
 
 @end

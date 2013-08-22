@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B424DB9B17C50AC200ADBFF9 /* Option.m in Sources */ = {isa = PBXBuildFile; fileRef = B424DB9A17C50AC200ADBFF9 /* Option.m */; };
+		B405A36D17C66197002D516C /* Allow_source_mismatch.m in Sources */ = {isa = PBXBuildFile; fileRef = B405A36C17C66197002D516C /* Allow_source_mismatch.m */; };
+		B424DB9B17C50AC200ADBFF9 /* Option_old.m in Sources */ = {isa = PBXBuildFile; fileRef = B424DB9A17C50AC200ADBFF9 /* Option_old.m */; };
 		B4A2A27717C3C90400262BC3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4A2A27617C3C90400262BC3 /* Cocoa.framework */; };
 		B4A2A28117C3C90400262BC3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B4A2A27F17C3C90400262BC3 /* InfoPlist.strings */; };
 		B4A2A28317C3C90400262BC3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A2A28217C3C90400262BC3 /* main.m */; };
@@ -31,8 +32,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B424DB9917C50AC200ADBFF9 /* Option.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Option.h; sourceTree = "<group>"; };
-		B424DB9A17C50AC200ADBFF9 /* Option.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Option.m; sourceTree = "<group>"; };
+		B405A36A17C660C6002D516C /* Option.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Option.h; sourceTree = "<group>"; };
+		B405A36B17C66197002D516C /* Allow_source_mismatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Allow_source_mismatch.h; sourceTree = "<group>"; };
+		B405A36C17C66197002D516C /* Allow_source_mismatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Allow_source_mismatch.m; sourceTree = "<group>"; };
+		B424DB9917C50AC200ADBFF9 /* Option_old.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Option_old.h; sourceTree = "<group>"; };
+		B424DB9A17C50AC200ADBFF9 /* Option_old.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Option_old.m; sourceTree = "<group>"; };
 		B424DB9C17C5191900ADBFF9 /* GDuplicity.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = GDuplicity.entitlements; sourceTree = "<group>"; };
 		B4A2A27317C3C90400262BC3 /* GDuplicity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GDuplicity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4A2A27617C3C90400262BC3 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
@@ -76,11 +80,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B405A36E17C662E9002D516C /* Options */ = {
+			isa = PBXGroup;
+			children = (
+				B405A36B17C66197002D516C /* Allow_source_mismatch.h */,
+			);
+			name = Options;
+			sourceTree = "<group>";
+		};
 		B423261E17C61D1A00A7944B /* headers */ = {
 			isa = PBXGroup;
 			children = (
+				B405A36E17C662E9002D516C /* Options */,
 				B4A2A28817C3C90400262BC3 /* AppDelegate.h */,
-				B424DB9917C50AC200ADBFF9 /* Option.h */,
+				B424DB9917C50AC200ADBFF9 /* Option_old.h */,
 			);
 			name = headers;
 			sourceTree = "<group>";
@@ -129,7 +142,9 @@
 			children = (
 				B424DB9C17C5191900ADBFF9 /* GDuplicity.entitlements */,
 				B423261E17C61D1A00A7944B /* headers */,
-				B424DB9A17C50AC200ADBFF9 /* Option.m */,
+				B424DB9A17C50AC200ADBFF9 /* Option_old.m */,
+				B405A36A17C660C6002D516C /* Option.h */,
+				B405A36C17C66197002D516C /* Allow_source_mismatch.m */,
 				B4A2A28917C3C90400262BC3 /* AppDelegate.m */,
 				B4A2A28B17C3C90400262BC3 /* MainMenu.xib */,
 				B4A2A27D17C3C90400262BC3 /* Supporting Files */,
@@ -278,7 +293,8 @@
 			files = (
 				B4A2A28317C3C90400262BC3 /* main.m in Sources */,
 				B4A2A28A17C3C90400262BC3 /* AppDelegate.m in Sources */,
-				B424DB9B17C50AC200ADBFF9 /* Option.m in Sources */,
+				B424DB9B17C50AC200ADBFF9 /* Option_old.m in Sources */,
+				B405A36D17C66197002D516C /* Allow_source_mismatch.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

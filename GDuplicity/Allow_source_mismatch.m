@@ -1,15 +1,13 @@
 //
-//  Option.h
+//  Allow_source_mismatch.m
 //  GDuplicity
 //
 //  Created by Hubert on 22/08/13.
 //  Copyright (c) 2013 Hubert. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "Allow_source_mismatch.h"
 
-@protocol Option <NSObject>
-
--(NSString*)getCLIOption;
+@implementation Allow_source_mismatch
 
 @end

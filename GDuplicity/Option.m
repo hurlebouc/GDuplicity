@@ -12,6 +12,7 @@
 
 -(void) test {
     self->allow_source_mismatch = "e";
+    self->asynchronous_upload = true;
 }
 
 @end

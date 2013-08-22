@@ -76,6 +76,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B423261E17C61D1A00A7944B /* headers */ = {
+			isa = PBXGroup;
+			children = (
+				B4A2A28817C3C90400262BC3 /* AppDelegate.h */,
+				B424DB9917C50AC200ADBFF9 /* Option.h */,
+			);
+			name = headers;
+			sourceTree = "<group>";
+		};
 		B4A2A26A17C3C90400262BC3 = {
 			isa = PBXGroup;
 			children = (
@@ -119,9 +128,8 @@
 			isa = PBXGroup;
 			children = (
 				B424DB9C17C5191900ADBFF9 /* GDuplicity.entitlements */,
-				B424DB9917C50AC200ADBFF9 /* Option.h */,
+				B423261E17C61D1A00A7944B /* headers */,
 				B424DB9A17C50AC200ADBFF9 /* Option.m */,
-				B4A2A28817C3C90400262BC3 /* AppDelegate.h */,
 				B4A2A28917C3C90400262BC3 /* AppDelegate.m */,
 				B4A2A28B17C3C90400262BC3 /* MainMenu.xib */,
 				B4A2A27D17C3C90400262BC3 /* Supporting Files */,

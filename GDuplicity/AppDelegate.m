@@ -15,4 +15,13 @@
     // Insert code here to initialize your application
 }
 
+- (IBAction)appuyerBouton:(id)sender {
+    system("say caca");
+    [self->_chamsp setStringValue:@"caca"];
+}
+
+- (IBAction)lireChamps:(id)sender {
+    NSString* val = [self->_chamsp stringValue];
+    system([@" " UTF8String]);
+}
 @end

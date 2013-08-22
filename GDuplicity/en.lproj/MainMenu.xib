@@ -2202,6 +2202,46 @@
 					</object>
 					<int key="connectionID">532</int>
 				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">bouton</string>
+						<reference key="source" ref="976324537"/>
+						<reference key="destination" ref="267432172"/>
+					</object>
+					<int key="connectionID">548</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">chamsp</string>
+						<reference key="source" ref="976324537"/>
+						<reference key="destination" ref="167250931"/>
+					</object>
+					<int key="connectionID">549</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">appuyerBouton:</string>
+						<reference key="source" ref="976324537"/>
+						<reference key="destination" ref="267432172"/>
+					</object>
+					<int key="connectionID">550</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">lireChamps:</string>
+						<reference key="source" ref="976324537"/>
+						<reference key="destination" ref="703453366"/>
+					</object>
+					<int key="connectionID">558</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">caca</string>
+						<reference key="source" ref="976324537"/>
+						<reference key="destination" ref="703453366"/>
+					</object>
+					<int key="connectionID">563</int>
+				</object>
 			</array>
 			<object class="IBMutableOrderedSet" key="objectRecords">
 				<array key="orderedObjects">

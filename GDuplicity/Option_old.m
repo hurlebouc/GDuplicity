@@ -10,8 +10,4 @@
 
 @implementation Option_old
 
-- (NSString*)getCLIOptions {
-    
-}
-
 @end

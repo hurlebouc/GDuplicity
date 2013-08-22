@@ -1,19 +1,20 @@
 //
-//  BooleanOption.m
+//  StringOption.m
 //  GDuplicity
 //
 //  Created by Hubert on 22/08/13.
 //  Copyright (c) 2013 Hubert. All rights reserved.
 //
 
-#import "BooleanOption.h"
+#import "StringOption.h"
 
-@implementation BooleanOption
+@implementation StringOption
 
-- (BooleanOption*) initWithName:(NSString *)name andOptions:(id<Option>)opt{
+-(StringOption*) initWithName:(NSString*)name Value:(NSInteger)value Option:(id<Option>)opt {
     self = [super init];
     if (self) {
         self->_name = name;
+        self->_value = value;
         self->_others = opt;
     }
     return self;
@@ -22,6 +23,7 @@
 - (NSString*) getCLIOption{
     NSString* intermed = [_others getCLIOption];
     NSString* opt = [@" --" stringByAppendingString:_name];
+    opt = [opt stringByAppendingFormat:@" %ld", _value];
     return [intermed stringByAppendingString:opt];
 }
 

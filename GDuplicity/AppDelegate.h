@@ -8,15 +8,7 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface AppDelegate : NSObject <NSApplicationDelegate>{
-    
-}
+@interface AppDelegate : NSObject <NSApplicationDelegate>
 
 @property (assign) IBOutlet NSWindow *window;
-@property (weak) IBOutlet NSButton *bouton;
-@property (weak) IBOutlet NSTextField *chamsp;
-- (IBAction)appuyerBouton:(id)sender;
-- (IBAction)lireChamps:(id)sender;
-
-@property (weak) IBOutlet NSButton *caca;
 @end

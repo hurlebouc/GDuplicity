@@ -75,6 +75,4 @@
     NSInteger   volsize;
 }
 
-- (NSString*)getCLIOptions;
-
 @end

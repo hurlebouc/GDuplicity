@@ -6,9 +6,9 @@
 //  Copyright (c) 2013 Hubert. All rights reserved.
 //
 
-#import "Option_old.h"
+#import "Option.h"
 
-@implementation Option_old
+@implementation Option
 
 - (NSString*)getCLIOptions {
     

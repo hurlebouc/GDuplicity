@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8150973A17C78C6500313177 /* prefs.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8150973C17C78C6500313177 /* prefs.xib */; };
+		8150974217C798D900313177 /* GDuplicity.iconset in Resources */ = {isa = PBXBuildFile; fileRef = 8150974117C798D900313177 /* GDuplicity.iconset */; };
 		B405A37217C663A6002D516C /* NoOption.m in Sources */ = {isa = PBXBuildFile; fileRef = B405A37117C663A6002D516C /* NoOption.m */; };
 		B424DB9B17C50AC200ADBFF9 /* Option_old.m in Sources */ = {isa = PBXBuildFile; fileRef = B424DB9A17C50AC200ADBFF9 /* Option_old.m */; };
 		B473066E17C6A22500156985 /* BooleanOption.m in Sources */ = {isa = PBXBuildFile; fileRef = B473066D17C6A22500156985 /* BooleanOption.m */; };
@@ -47,6 +49,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8150973B17C78C6500313177 /* fr */ = {isa = PBXFileReference; lastKnownFileType = file; name = fr; path = fr.lproj/prefs.xib; sourceTree = "<group>"; };
+		8150974117C798D900313177 /* GDuplicity.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; path = GDuplicity.iconset; sourceTree = "<group>"; };
 		81B0331F17C74F210085BD77 /* fr */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = fr; path = fr.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		81B0332117C74F210085BD77 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = fr; path = fr.lproj/Credits.rtf; sourceTree = "<group>"; };
 		B405A36A17C660C6002D516C /* Option.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Option.h; sourceTree = "<group>"; };
@@ -152,6 +156,7 @@
 			children = (
 				B4C26EAD17C78B1D0028C54E /* librsync.xcodeproj */,
 				B4C26E9717C7873C0028C54E /* Duplicity.xcodeproj */,
+				8150974117C798D900313177 /* GDuplicity.iconset */,
 				B4A2A27C17C3C90400262BC3 /* GDuplicity */,
 				B4A2A29917C3C90500262BC3 /* GDuplicityTests */,
 				B4A2A27517C3C90400262BC3 /* Frameworks */,
@@ -195,6 +200,7 @@
 				B423261E17C61D1A00A7944B /* headers */,
 				B405A36F17C6635E002D516C /* sources */,
 				B4A2A28B17C3C90400262BC3 /* MainMenu.xib */,
+				8150973C17C78C6500313177 /* prefs.xib */,
 				B4A2A27D17C3C90400262BC3 /* Supporting Files */,
 			);
 			path = GDuplicity;
@@ -361,6 +367,8 @@
 			files = (
 				B4A2A28717C3C90400262BC3 /* Credits.rtf in Resources */,
 				B4A2A28D17C3C90400262BC3 /* MainMenu.xib in Resources */,
+				8150973A17C78C6500313177 /* prefs.xib in Resources */,
+				8150974217C798D900313177 /* GDuplicity.iconset in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,6 +431,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		8150973C17C78C6500313177 /* prefs.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8150973B17C78C6500313177 /* fr */,
+			);
+			name = prefs.xib;
+			sourceTree = "<group>";
+		};
 		B4A2A28517C3C90400262BC3 /* Credits.rtf */ = {
 			isa = PBXVariantGroup;
 			children = (

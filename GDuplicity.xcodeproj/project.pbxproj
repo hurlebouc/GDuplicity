@@ -20,8 +20,8 @@
 		B4A2A29617C3C90500262BC3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4A2A27617C3C90400262BC3 /* Cocoa.framework */; };
 		B4A2A29E17C3C90500262BC3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B4A2A29C17C3C90500262BC3 /* InfoPlist.strings */; };
 		B4A2A2A117C3C90500262BC3 /* GDuplicityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A2A2A017C3C90500262BC3 /* GDuplicityTests.m */; };
-		B4B8441417C6AE9B008F27B6 /* StringOption.m in Sources */ = {isa = PBXBuildFile; fileRef = B4B8441317C6AE9B008F27B6 /* StringOption.m */; };
-		B4B8441717C6AEAB008F27B6 /* IntegerOption.m in Sources */ = {isa = PBXBuildFile; fileRef = B4B8441617C6AEAB008F27B6 /* IntegerOption.m */; };
+		B4B8441417C6AE9B008F27B6 /* IntegerOption.m in Sources */ = {isa = PBXBuildFile; fileRef = B4B8441317C6AE9B008F27B6 /* IntegerOption.m */; };
+		B4B8441717C6AEAB008F27B6 /* StringOption.m in Sources */ = {isa = PBXBuildFile; fileRef = B4B8441617C6AEAB008F27B6 /* StringOption.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,10 +62,10 @@
 		B4A2A29D17C3C90500262BC3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B4A2A29F17C3C90500262BC3 /* GDuplicityTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GDuplicityTests.h; sourceTree = "<group>"; };
 		B4A2A2A017C3C90500262BC3 /* GDuplicityTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GDuplicityTests.m; sourceTree = "<group>"; };
-		B4B8441217C6AE9B008F27B6 /* StringOption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringOption.h; sourceTree = "<group>"; };
-		B4B8441317C6AE9B008F27B6 /* StringOption.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringOption.m; sourceTree = "<group>"; };
-		B4B8441517C6AEAB008F27B6 /* IntegerOption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntegerOption.h; sourceTree = "<group>"; };
-		B4B8441617C6AEAB008F27B6 /* IntegerOption.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntegerOption.m; sourceTree = "<group>"; };
+		B4B8441217C6AE9B008F27B6 /* IntegerOption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntegerOption.h; sourceTree = "<group>"; };
+		B4B8441317C6AE9B008F27B6 /* IntegerOption.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntegerOption.m; sourceTree = "<group>"; };
+		B4B8441517C6AEAB008F27B6 /* StringOption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringOption.h; sourceTree = "<group>"; };
+		B4B8441617C6AEAB008F27B6 /* StringOption.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringOption.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,8 +92,8 @@
 		B405A36E17C662E9002D516C /* Options */ = {
 			isa = PBXGroup;
 			children = (
-				B4B8441517C6AEAB008F27B6 /* IntegerOption.h */,
-				B4B8441217C6AE9B008F27B6 /* StringOption.h */,
+				B4B8441517C6AEAB008F27B6 /* StringOption.h */,
+				B4B8441217C6AE9B008F27B6 /* IntegerOption.h */,
 				B473066C17C6A22500156985 /* BooleanOption.h */,
 				B405A37017C663A6002D516C /* NoOption.h */,
 			);
@@ -115,8 +115,8 @@
 			children = (
 				B405A37117C663A6002D516C /* NoOption.m */,
 				B473066D17C6A22500156985 /* BooleanOption.m */,
-				B4B8441317C6AE9B008F27B6 /* StringOption.m */,
-				B4B8441617C6AEAB008F27B6 /* IntegerOption.m */,
+				B4B8441317C6AE9B008F27B6 /* IntegerOption.m */,
+				B4B8441617C6AEAB008F27B6 /* StringOption.m */,
 			);
 			name = Option;
 			sourceTree = "<group>";
@@ -328,8 +328,8 @@
 				B424DB9B17C50AC200ADBFF9 /* Option_old.m in Sources */,
 				B405A37217C663A6002D516C /* NoOption.m in Sources */,
 				B473066E17C6A22500156985 /* BooleanOption.m in Sources */,
-				B4B8441417C6AE9B008F27B6 /* StringOption.m in Sources */,
-				B4B8441717C6AEAB008F27B6 /* IntegerOption.m in Sources */,
+				B4B8441417C6AE9B008F27B6 /* IntegerOption.m in Sources */,
+				B4B8441717C6AEAB008F27B6 /* StringOption.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

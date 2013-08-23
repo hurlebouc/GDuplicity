@@ -1,5 +1,5 @@
 //
-//  StringOption.h
+//  IntegerOption.h
 //  GDuplicity
 //
 //  Created by Hubert on 22/08/13.
@@ -12,9 +12,9 @@
 @interface StringOption : NSObject<Option>
 
 @property id<Option> others;
-@property NSInteger value;
+@property NSString* value;
 @property NSString* name;
 
--(StringOption*) initWithName:(NSString*) name Value:(NSInteger) value Option:(id<Option>) opt;
+-(StringOption*) initWithName:(NSString*) name Value:(NSString*) value Option:(id<Option>) opt;
 
 @end

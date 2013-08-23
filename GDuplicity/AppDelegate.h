@@ -8,6 +8,7 @@
 
 #import <Cocoa/Cocoa.h>
 #import "Option.h"
+#import "Action.h"
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 

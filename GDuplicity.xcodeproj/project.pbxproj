@@ -30,6 +30,20 @@
 			remoteGlobalIDString = B4A2A27217C3C90400262BC3;
 			remoteInfo = GDuplicity;
 		};
+		B4C26E9B17C7873D0028C54E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B4C26E9717C7873C0028C54E /* Duplicity.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B4C26E8B17C7873C0028C54E;
+			remoteInfo = Duplicity;
+		};
+		B4C26EB117C78B1E0028C54E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B4C26EAD17C78B1D0028C54E /* librsync.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B4C26EA617C78B1D0028C54E;
+			remoteInfo = librsync;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +76,9 @@
 		B4B8441317C6AE9B008F27B6 /* IntegerOption.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntegerOption.m; sourceTree = "<group>"; };
 		B4B8441517C6AEAB008F27B6 /* StringOption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringOption.h; sourceTree = "<group>"; };
 		B4B8441617C6AEAB008F27B6 /* StringOption.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringOption.m; sourceTree = "<group>"; };
+		B4C26E8117C76D820028C54E /* Action.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Action.h; sourceTree = "<group>"; };
+		B4C26E9717C7873C0028C54E /* Duplicity.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Duplicity.xcodeproj; path = Duplicity/Duplicity.xcodeproj; sourceTree = "<group>"; };
+		B4C26EAD17C78B1D0028C54E /* librsync.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = librsync.xcodeproj; path = librsync/librsync.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +105,7 @@
 		B405A36E17C662E9002D516C /* Options */ = {
 			isa = PBXGroup;
 			children = (
+				B405A36A17C660C6002D516C /* Option.h */,
 				B4B8441517C6AEAB008F27B6 /* StringOption.h */,
 				B4B8441217C6AE9B008F27B6 /* IntegerOption.h */,
 				B473066C17C6A22500156985 /* BooleanOption.h */,
@@ -99,6 +117,7 @@
 		B405A36F17C6635E002D516C /* sources */ = {
 			isa = PBXGroup;
 			children = (
+				B4C26E8017C76D6E0028C54E /* Actions */,
 				B405A37317C663B6002D516C /* Option */,
 				B424DB9A17C50AC200ADBFF9 /* Option_old.m */,
 				B4A2A28917C3C90400262BC3 /* AppDelegate.m */,
@@ -120,7 +139,7 @@
 		B423261E17C61D1A00A7944B /* headers */ = {
 			isa = PBXGroup;
 			children = (
-				B405A36A17C660C6002D516C /* Option.h */,
+				B4C26E7F17C76D660028C54E /* Actions */,
 				B405A36E17C662E9002D516C /* Options */,
 				B4A2A28817C3C90400262BC3 /* AppDelegate.h */,
 				B424DB9917C50AC200ADBFF9 /* Option_old.h */,
@@ -131,6 +150,8 @@
 		B4A2A26A17C3C90400262BC3 = {
 			isa = PBXGroup;
 			children = (
+				B4C26EAD17C78B1D0028C54E /* librsync.xcodeproj */,
+				B4C26E9717C7873C0028C54E /* Duplicity.xcodeproj */,
 				B4A2A27C17C3C90400262BC3 /* GDuplicity */,
 				B4A2A29917C3C90500262BC3 /* GDuplicityTests */,
 				B4A2A27517C3C90400262BC3 /* Frameworks */,
@@ -208,6 +229,37 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		B4C26E7F17C76D660028C54E /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				B4C26E8117C76D820028C54E /* Action.h */,
+			);
+			name = Actions;
+			sourceTree = "<group>";
+		};
+		B4C26E8017C76D6E0028C54E /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Actions;
+			sourceTree = "<group>";
+		};
+		B4C26E9817C7873C0028C54E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B4C26E9C17C7873D0028C54E /* Duplicity */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B4C26EAE17C78B1D0028C54E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B4C26EB217C78B1E0028C54E /* liblibrsync.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -267,6 +319,16 @@
 			mainGroup = B4A2A26A17C3C90400262BC3;
 			productRefGroup = B4A2A27417C3C90400262BC3 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = B4C26E9817C7873C0028C54E /* Products */;
+					ProjectRef = B4C26E9717C7873C0028C54E /* Duplicity.xcodeproj */;
+				},
+				{
+					ProductGroup = B4C26EAE17C78B1D0028C54E /* Products */;
+					ProjectRef = B4C26EAD17C78B1D0028C54E /* librsync.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				B4A2A27217C3C90400262BC3 /* GDuplicity */,
@@ -274,6 +336,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		B4C26E9C17C7873D0028C54E /* Duplicity */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = Duplicity;
+			remoteRef = B4C26E9B17C7873D0028C54E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B4C26EB217C78B1E0028C54E /* liblibrsync.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = liblibrsync.a;
+			remoteRef = B4C26EB117C78B1E0028C54E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		B4A2A27117C3C90400262BC3 /* Resources */ = {

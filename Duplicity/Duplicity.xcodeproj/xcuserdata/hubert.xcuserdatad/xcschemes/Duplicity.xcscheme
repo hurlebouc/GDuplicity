@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B4C26EA517C78B1D0028C54E"
-               BuildableName = "librsync.a"
-               BlueprintName = "librsync"
-               ReferencedContainer = "container:librsync.xcodeproj">
+               BlueprintIdentifier = "B4C26E8A17C7873C0028C54E"
+               BuildableName = "Duplicity"
+               BlueprintName = "Duplicity"
+               ReferencedContainer = "container:Duplicity.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -29,6 +29,15 @@
       buildConfiguration = "Debug">
       <Testables>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "B4C26E8A17C7873C0028C54E"
+            BuildableName = "Duplicity"
+            BlueprintName = "Duplicity"
+            ReferencedContainer = "container:Duplicity.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </TestAction>
    <LaunchAction
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
@@ -39,6 +48,15 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
+      <BuildableProductRunnable>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "B4C26E8A17C7873C0028C54E"
+            BuildableName = "Duplicity"
+            BlueprintName = "Duplicity"
+            ReferencedContainer = "container:Duplicity.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -48,6 +66,15 @@
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
+      <BuildableProductRunnable>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "B4C26E8A17C7873C0028C54E"
+            BuildableName = "Duplicity"
+            BlueprintName = "Duplicity"
+            ReferencedContainer = "container:Duplicity.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

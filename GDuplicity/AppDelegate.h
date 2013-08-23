@@ -14,6 +14,28 @@
 
 @property (assign) IBOutlet NSWindow *window;
 
+// Backup
+
+@property (weak) IBOutlet NSTextFieldCell *backupSourceField;
+@property (weak) IBOutlet NSTextFieldCell *backupTargetField;
+@property (weak) IBOutlet NSButtonCell *forceFullCheck;
+@property (weak) IBOutlet NSButtonCell *cryptCheck;
+@property (weak) IBOutlet NSSecureTextFieldCell *pwdField;
+@property (weak) IBOutlet NSCollectionView *excludeCollection;
+- (IBAction)launchBackup:(id)sender;
+
+// Restore
+
+@property (weak) IBOutlet NSTextFieldCell *restoreSourceField;
+@property (weak) IBOutlet NSTextFieldCell *restoreTargetField;
+@property (weak) IBOutlet NSButtonCell *launchRestore;
+
+// Output
+@property (weak) IBOutlet NSButtonCell *simuCheck;
+@property (weak) IBOutlet NSProgressIndicator *progressBar;
+
+// Auxiliary functions
+
 -(id<Option>) getOptions;
 
 @end

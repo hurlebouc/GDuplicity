@@ -75,6 +75,7 @@
 		B4C2708E17C78F750028C54E /* version.c in Sources */ = {isa = PBXBuildFile; fileRef = B4C2704917C78F750028C54E /* version.c */; };
 		B4C2708F17C78F750028C54E /* whole.c in Sources */ = {isa = PBXBuildFile; fileRef = B4C2704A17C78F750028C54E /* whole.c */; };
 		B4C2709017C78F750028C54E /* whole.h in Headers */ = {isa = PBXBuildFile; fileRef = B4C2704B17C78F750028C54E /* whole.h */; };
+		B4DD4C1C17C7A2D1007E7922 /* libpython2.7.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B4DD4C1B17C7A2D0007E7922 /* libpython2.7.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -262,6 +263,7 @@
 		B4C2704917C78F750028C54E /* version.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = version.c; sourceTree = "<group>"; };
 		B4C2704A17C78F750028C54E /* whole.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = whole.c; sourceTree = "<group>"; };
 		B4C2704B17C78F750028C54E /* whole.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = whole.h; sourceTree = "<group>"; };
+		B4DD4C1B17C7A2D0007E7922 /* libpython2.7.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpython2.7.dylib; path = usr/lib/libpython2.7.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -269,6 +271,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4DD4C1C17C7A2D1007E7922 /* libpython2.7.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +281,7 @@
 		B4C26E9D17C78B1D0028C54E = {
 			isa = PBXGroup;
 			children = (
+				B4DD4C1B17C7A2D0007E7922 /* libpython2.7.dylib */,
 				B4C26F8717C78F750028C54E /* librsync-0.9.7 */,
 				B4C26EA717C78B1D0028C54E /* Products */,
 			);
@@ -812,6 +816,7 @@
 				B4C26EAC17C78B1D0028C54E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

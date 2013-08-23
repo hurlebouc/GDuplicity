@@ -11,14 +11,12 @@
 		B424DB9B17C50AC200ADBFF9 /* Option_old.m in Sources */ = {isa = PBXBuildFile; fileRef = B424DB9A17C50AC200ADBFF9 /* Option_old.m */; };
 		B473066E17C6A22500156985 /* BooleanOption.m in Sources */ = {isa = PBXBuildFile; fileRef = B473066D17C6A22500156985 /* BooleanOption.m */; };
 		B4A2A27717C3C90400262BC3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4A2A27617C3C90400262BC3 /* Cocoa.framework */; };
-		B4A2A28117C3C90400262BC3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B4A2A27F17C3C90400262BC3 /* InfoPlist.strings */; };
 		B4A2A28317C3C90400262BC3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A2A28217C3C90400262BC3 /* main.m */; };
 		B4A2A28717C3C90400262BC3 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = B4A2A28517C3C90400262BC3 /* Credits.rtf */; };
 		B4A2A28A17C3C90400262BC3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A2A28917C3C90400262BC3 /* AppDelegate.m */; };
 		B4A2A28D17C3C90400262BC3 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4A2A28B17C3C90400262BC3 /* MainMenu.xib */; };
 		B4A2A29517C3C90500262BC3 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4A2A29417C3C90500262BC3 /* SenTestingKit.framework */; };
 		B4A2A29617C3C90500262BC3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4A2A27617C3C90400262BC3 /* Cocoa.framework */; };
-		B4A2A29E17C3C90500262BC3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B4A2A29C17C3C90500262BC3 /* InfoPlist.strings */; };
 		B4A2A2A117C3C90500262BC3 /* GDuplicityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A2A2A017C3C90500262BC3 /* GDuplicityTests.m */; };
 		B4B8441417C6AE9B008F27B6 /* IntegerOption.m in Sources */ = {isa = PBXBuildFile; fileRef = B4B8441317C6AE9B008F27B6 /* IntegerOption.m */; };
 		B4B8441717C6AEAB008F27B6 /* StringOption.m in Sources */ = {isa = PBXBuildFile; fileRef = B4B8441617C6AEAB008F27B6 /* StringOption.m */; };
@@ -35,6 +33,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		81B0331F17C74F210085BD77 /* fr */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = fr; path = fr.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		81B0332117C74F210085BD77 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = fr; path = fr.lproj/Credits.rtf; sourceTree = "<group>"; };
 		B405A36A17C660C6002D516C /* Option.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Option.h; sourceTree = "<group>"; };
 		B405A37017C663A6002D516C /* NoOption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoOption.h; sourceTree = "<group>"; };
 		B405A37117C663A6002D516C /* NoOption.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoOption.m; sourceTree = "<group>"; };
@@ -49,17 +49,13 @@
 		B4A2A27A17C3C90400262BC3 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		B4A2A27B17C3C90400262BC3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B4A2A27E17C3C90400262BC3 /* GDuplicity-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GDuplicity-Info.plist"; sourceTree = "<group>"; };
-		B4A2A28017C3C90400262BC3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B4A2A28217C3C90400262BC3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B4A2A28417C3C90400262BC3 /* GDuplicity-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GDuplicity-Prefix.pch"; sourceTree = "<group>"; };
-		B4A2A28617C3C90400262BC3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		B4A2A28817C3C90400262BC3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B4A2A28917C3C90400262BC3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B4A2A28C17C3C90400262BC3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		B4A2A29317C3C90500262BC3 /* GDuplicityTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GDuplicityTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4A2A29417C3C90500262BC3 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		B4A2A29B17C3C90500262BC3 /* GDuplicityTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GDuplicityTests-Info.plist"; sourceTree = "<group>"; };
-		B4A2A29D17C3C90500262BC3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B4A2A29F17C3C90500262BC3 /* GDuplicityTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GDuplicityTests.h; sourceTree = "<group>"; };
 		B4A2A2A017C3C90500262BC3 /* GDuplicityTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GDuplicityTests.m; sourceTree = "<group>"; };
 		B4B8441217C6AE9B008F27B6 /* IntegerOption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntegerOption.h; sourceTree = "<group>"; };
@@ -187,7 +183,6 @@
 			isa = PBXGroup;
 			children = (
 				B4A2A27E17C3C90400262BC3 /* GDuplicity-Info.plist */,
-				B4A2A27F17C3C90400262BC3 /* InfoPlist.strings */,
 				B4A2A28217C3C90400262BC3 /* main.m */,
 				B4A2A28417C3C90400262BC3 /* GDuplicity-Prefix.pch */,
 				B4A2A28517C3C90400262BC3 /* Credits.rtf */,
@@ -209,7 +204,6 @@
 			isa = PBXGroup;
 			children = (
 				B4A2A29B17C3C90500262BC3 /* GDuplicityTests-Info.plist */,
-				B4A2A29C17C3C90500262BC3 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -286,7 +280,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4A2A28117C3C90400262BC3 /* InfoPlist.strings in Resources */,
 				B4A2A28717C3C90400262BC3 /* Credits.rtf in Resources */,
 				B4A2A28D17C3C90400262BC3 /* MainMenu.xib in Resources */,
 			);
@@ -296,7 +289,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4A2A29E17C3C90500262BC3 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,18 +344,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B4A2A27F17C3C90400262BC3 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B4A2A28017C3C90400262BC3 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
 		B4A2A28517C3C90400262BC3 /* Credits.rtf */ = {
 			isa = PBXVariantGroup;
 			children = (
-				B4A2A28617C3C90400262BC3 /* en */,
+				81B0332117C74F210085BD77 /* fr */,
 			);
 			name = Credits.rtf;
 			sourceTree = "<group>";
@@ -371,17 +355,9 @@
 		B4A2A28B17C3C90400262BC3 /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				B4A2A28C17C3C90400262BC3 /* en */,
+				81B0331F17C74F210085BD77 /* fr */,
 			);
 			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
-		B4A2A29C17C3C90500262BC3 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B4A2A29D17C3C90500262BC3 /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

@@ -7,8 +7,12 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "Option.h"
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
 @property (assign) IBOutlet NSWindow *window;
+
+-(id<Option>) getOptions;
+
 @end

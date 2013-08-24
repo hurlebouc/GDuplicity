@@ -42,21 +42,18 @@
 - (IBAction)launchBackup:(id)sender {
     id<Option> opt = [self getGeneralOptionsFrom:[[NoOption alloc] init]];
     opt = [self getBackupOptionsFrom:opt];
-    
+    NSString* optCLI = [opt getCLIOption];
+    system([optCLI UTF8String]);
 }
 
 - (IBAction)selectSource:(id)sender {
-    // Create the File Open Dialog class.
-    NSOpenPanel* openDlg = [NSOpenPanel openPanel];
-    
+    NSOpenPanel* openDlg = [NSOpenPanel openPanel];    
     [openDlg setCanChooseFiles:NO];
     [openDlg setCanChooseDirectories:YES];
     [openDlg setAllowsMultipleSelection:NO];
     
     [openDlg runModal];
     
-//    // Display the dialog. If the OK button was pressed,
-//    // process the files.
 //    if ( [openDlg runModalForDirectory:nil file:nil] == NSOKButton )
 //    {
 //        // Get an array containing the full filenames of all

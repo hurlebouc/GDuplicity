@@ -83,6 +83,7 @@
 		B4C26E8117C76D820028C54E /* Action.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Action.h; sourceTree = "<group>"; };
 		B4C26E9717C7873C0028C54E /* Duplicity.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Duplicity.xcodeproj; path = Duplicity/Duplicity.xcodeproj; sourceTree = "<group>"; };
 		B4C26EAD17C78B1D0028C54E /* librsync.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = librsync.xcodeproj; path = librsync/librsync.xcodeproj; sourceTree = "<group>"; };
+		B4DF4D5F17C8DC99009644B9 /* ActionAux.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ActionAux.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,7 +144,7 @@
 		B423261E17C61D1A00A7944B /* headers */ = {
 			isa = PBXGroup;
 			children = (
-				B4DF4D5B17C8B6B8009644B9 /* Action_aux */,
+				B4DF4D5E17C8DB4A009644B9 /* Path */,
 				B4C26E7F17C76D660028C54E /* Actions */,
 				B405A36E17C662E9002D516C /* Options */,
 				B4A2A28817C3C90400262BC3 /* AppDelegate.h */,
@@ -239,6 +240,7 @@
 		B4C26E7F17C76D660028C54E /* Actions */ = {
 			isa = PBXGroup;
 			children = (
+				B4DF4D5B17C8B6B8009644B9 /* Action_aux */,
 				B4C26E8117C76D820028C54E /* Action.h */,
 			);
 			name = Actions;
@@ -270,8 +272,16 @@
 		B4DF4D5B17C8B6B8009644B9 /* Action_aux */ = {
 			isa = PBXGroup;
 			children = (
+				B4DF4D5F17C8DC99009644B9 /* ActionAux.h */,
 			);
 			name = Action_aux;
+			sourceTree = "<group>";
+		};
+		B4DF4D5E17C8DB4A009644B9 /* Path */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Path;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -37,10 +37,4 @@
 @property (weak) IBOutlet NSButtonCell *simuCheck;
 @property (weak) IBOutlet NSProgressIndicator *progressBar;
 
-// Auxiliary functions
-
-- (id<Option>) getGeneralOptionsFrom: (id<Option>) opt;
-- (id<Option>) getBackupOptionsFrom: (id<Option>) opt;
-- (id<Option>) getRestoreOptionsFrom: (id<Option>) opt;
-
 @end

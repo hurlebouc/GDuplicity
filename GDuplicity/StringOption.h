@@ -15,6 +15,6 @@
 @property NSString* value;
 @property NSString* name;
 
--(StringOption*) initWithName:(NSString*) name Value:(NSString*) value Option:(id<Option>) opt;
+- (StringOption*) initWithName:(NSString*) name Value:(NSString*) value Option:(id<Option>) opt;
 
 @end

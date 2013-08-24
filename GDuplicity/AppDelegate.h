@@ -29,6 +29,7 @@
 @property (weak) IBOutlet NSTextFieldCell *restoreSourceField;
 @property (weak) IBOutlet NSTextFieldCell *restoreTargetField;
 @property (weak) IBOutlet NSButtonCell *launchRestore;
+- (IBAction)launchRestore:(id)sender;
 
 // Output
 @property (weak) IBOutlet NSButtonCell *simuCheck;
@@ -36,6 +37,8 @@
 
 // Auxiliary functions
 
--(id<Option>) getOptions;
+-(id<Option>) getGeneralOptions;
+-(id<Option>) getBackupOptions;
+-(id<Option>) getRestoreOptions;
 
 @end

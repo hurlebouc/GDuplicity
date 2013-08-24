@@ -18,12 +18,33 @@
     // Insert code here to initialize your application
 }
 
-- (id<Option>) getOptions{
+- (id<Option>) getGeneralOptions{
     id<Option> res = [[NoOption alloc] init];
-    // Add options
+    if ([_simuCheck intValue]) {
+        res = [[BooleanOption alloc] initWithName:@"dry-run" andOptions:res];
+    }
+    return res;
+}
+
+-(id<Option>) getBackupOptions{
+    id<Option> res = [[NoOption alloc] init];
+    if (![_cryptCheck intValue]) {
+        res = [[BooleanOption alloc] initWithName:@"no-encryption" andOptions:res];
+    }
+    return res;
+}
+
+-(id<Option>) getRestoreOptions{
+    id<Option> res = [[NoOption alloc] init];
+    if (![_cryptCheck intValue]) {
+        res = [[BooleanOption alloc] initWithName:@"no-encryption" andOptions:res];
+    }
     return res;
 }
 
 - (IBAction)launchBackup:(id)sender {
+    [self getGeneralOptions];
+}
+- (IBAction)launchRestore:(id)sender {
 }
 @end

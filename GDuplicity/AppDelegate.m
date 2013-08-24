@@ -18,32 +18,57 @@
     // Insert code here to initialize your application
 }
 
-- (id<Option>) getGeneralOptions{
-    id<Option> res = [[NoOption alloc] init];
+- (id<Option>) getGeneralOptionsFrom: (id<Option>) opt{
+    id<Option> res = opt;
     if ([_simuCheck intValue]) {
         res = [[BooleanOption alloc] initWithName:@"dry-run" andOptions:res];
     }
     return res;
 }
 
--(id<Option>) getBackupOptions{
-    id<Option> res = [[NoOption alloc] init];
+- (id<Option>) getBackupOptionsFrom: (id<Option>) opt{
+    id<Option> res = opt;
     if (![_cryptCheck intValue]) {
         res = [[BooleanOption alloc] initWithName:@"no-encryption" andOptions:res];
     }
     return res;
 }
 
--(id<Option>) getRestoreOptions{
-    id<Option> res = [[NoOption alloc] init];
-    if (![_cryptCheck intValue]) {
-        res = [[BooleanOption alloc] initWithName:@"no-encryption" andOptions:res];
-    }
+- (id<Option>) getRestoreOptionsFrom: (id<Option>) opt{
+    id<Option> res = opt;
     return res;
 }
 
 - (IBAction)launchBackup:(id)sender {
-    [self getGeneralOptions];
+    id<Option> opt = [self getGeneralOptionsFrom:[[NoOption alloc] init]];
+    opt = [self getBackupOptionsFrom:opt];
+    
+}
+
+- (IBAction)selectSource:(id)sender {
+    // Create the File Open Dialog class.
+    NSOpenPanel* openDlg = [NSOpenPanel openPanel];
+    
+    [openDlg setCanChooseFiles:NO];
+    [openDlg setCanChooseDirectories:YES];
+    [openDlg setAllowsMultipleSelection:NO];
+    
+    [openDlg runModal];
+    
+//    // Display the dialog. If the OK button was pressed,
+//    // process the files.
+//    if ( [openDlg runModalForDirectory:nil file:nil] == NSOKButton )
+//    {
+//        // Get an array containing the full filenames of all
+//        // files and directories selected.
+//        NSArray* files = [openDlg filenames];
+//        
+//        // Loop through all the files and process them.
+//        for( i = 0; i < [files count]; i++ )
+//        {
+//            NSString* fileName = [files objectAtIndex:i];
+//        }
+//    }
 }
 - (IBAction)launchRestore:(id)sender {
 }

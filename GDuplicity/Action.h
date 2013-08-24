@@ -11,6 +11,6 @@
 
 @protocol Action <NSObject>
 
-- (id<Action>) initWithOptions: (id<Option>) options;
+- (NSString*) getCLIAction;
 
 @end

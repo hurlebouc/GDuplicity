@@ -15,14 +15,16 @@
 @property (assign) IBOutlet NSWindow *window;
 
 // Backup
-
+// -- Options
+@property (weak) IBOutlet NSButtonCell *cryptCheck;
+// -- Parameters
 @property (weak) IBOutlet NSTextFieldCell *backupSourceField;
 @property (weak) IBOutlet NSTextFieldCell *backupTargetField;
 @property (weak) IBOutlet NSButtonCell *forceFullCheck;
-@property (weak) IBOutlet NSButtonCell *cryptCheck;
 @property (weak) IBOutlet NSSecureTextFieldCell *pwdField;
 @property (weak) IBOutlet NSCollectionView *excludeCollection;
 - (IBAction)launchBackup:(id)sender;
+- (IBAction)selectSource:(id)sender;
 
 // Restore
 
@@ -37,8 +39,8 @@
 
 // Auxiliary functions
 
--(id<Option>) getGeneralOptions;
--(id<Option>) getBackupOptions;
--(id<Option>) getRestoreOptions;
+- (id<Option>) getGeneralOptionsFrom: (id<Option>) opt;
+- (id<Option>) getBackupOptionsFrom: (id<Option>) opt;
+- (id<Option>) getRestoreOptionsFrom: (id<Option>) opt;
 
 @end

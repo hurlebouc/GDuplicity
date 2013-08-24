@@ -49,7 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8150973B17C78C6500313177 /* fr */ = {isa = PBXFileReference; lastKnownFileType = file; name = fr; path = fr.lproj/prefs.xib; sourceTree = "<group>"; };
+		8150973B17C78C6500313177 /* fr */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = fr; path = fr.lproj/prefs.xib; sourceTree = "<group>"; };
 		8150974117C798D900313177 /* GDuplicity.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; path = GDuplicity.iconset; sourceTree = "<group>"; };
 		81B0331F17C74F210085BD77 /* fr */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = fr; path = fr.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		81B0332117C74F210085BD77 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = fr; path = fr.lproj/Credits.rtf; sourceTree = "<group>"; };
@@ -143,6 +143,7 @@
 		B423261E17C61D1A00A7944B /* headers */ = {
 			isa = PBXGroup;
 			children = (
+				B4DF4D5B17C8B6B8009644B9 /* Action_aux */,
 				B4C26E7F17C76D660028C54E /* Actions */,
 				B405A36E17C662E9002D516C /* Options */,
 				B4A2A28817C3C90400262BC3 /* AppDelegate.h */,
@@ -261,9 +262,16 @@
 		B4C26EAE17C78B1D0028C54E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B4C26EB217C78B1E0028C54E /* liblibrsync.a */,
+				B4C26EB217C78B1E0028C54E /* librsync.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		B4DF4D5B17C8B6B8009644B9 /* Action_aux */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Action_aux;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -351,10 +359,10 @@
 			remoteRef = B4C26E9B17C7873D0028C54E /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		B4C26EB217C78B1E0028C54E /* liblibrsync.a */ = {
+		B4C26EB217C78B1E0028C54E /* librsync.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
-			path = liblibrsync.a;
+			path = librsync.a;
 			remoteRef = B4C26EB117C78B1E0028C54E /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};

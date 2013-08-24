@@ -1,5 +1,5 @@
 //
-//  ActionAux.h
+//  Path.h
 //  GDuplicity
 //
 //  Created by Hubert on 24/08/13.
@@ -8,8 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol ActionAux <NSObject>
+@protocol Path <NSObject>
 
-- (NSString*) getCLIAux;
+- (NSString*) getCLIPath;
 
 @end

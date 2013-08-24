@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 #import "Option.h"
+#import "ActionAux.h"
+#import "Path.h"
 
 @protocol Action <NSObject>
 

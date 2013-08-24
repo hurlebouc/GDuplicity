@@ -22,6 +22,7 @@
 		B4A2A2A117C3C90500262BC3 /* GDuplicityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A2A2A017C3C90500262BC3 /* GDuplicityTests.m */; };
 		B4B8441417C6AE9B008F27B6 /* IntegerOption.m in Sources */ = {isa = PBXBuildFile; fileRef = B4B8441317C6AE9B008F27B6 /* IntegerOption.m */; };
 		B4B8441717C6AEAB008F27B6 /* StringOption.m in Sources */ = {isa = PBXBuildFile; fileRef = B4B8441617C6AEAB008F27B6 /* StringOption.m */; };
+		B4DF4D6317C8DDE9009644B9 /* BackupAction.m in Sources */ = {isa = PBXBuildFile; fileRef = B4DF4D6217C8DDE9009644B9 /* BackupAction.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +85,9 @@
 		B4C26E9717C7873C0028C54E /* Duplicity.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Duplicity.xcodeproj; path = Duplicity/Duplicity.xcodeproj; sourceTree = "<group>"; };
 		B4C26EAD17C78B1D0028C54E /* librsync.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = librsync.xcodeproj; path = librsync/librsync.xcodeproj; sourceTree = "<group>"; };
 		B4DF4D5F17C8DC99009644B9 /* ActionAux.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ActionAux.h; sourceTree = "<group>"; };
+		B4DF4D6017C8DD78009644B9 /* Path.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Path.h; sourceTree = "<group>"; };
+		B4DF4D6117C8DDE9009644B9 /* BackupAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackupAction.h; sourceTree = "<group>"; };
+		B4DF4D6217C8DDE9009644B9 /* BackupAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackupAction.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -240,8 +244,9 @@
 		B4C26E7F17C76D660028C54E /* Actions */ = {
 			isa = PBXGroup;
 			children = (
-				B4DF4D5B17C8B6B8009644B9 /* Action_aux */,
+				B4DF4D6117C8DDE9009644B9 /* BackupAction.h */,
 				B4C26E8117C76D820028C54E /* Action.h */,
+				B4DF4D5B17C8B6B8009644B9 /* Action_aux */,
 			);
 			name = Actions;
 			sourceTree = "<group>";
@@ -249,6 +254,7 @@
 		B4C26E8017C76D6E0028C54E /* Actions */ = {
 			isa = PBXGroup;
 			children = (
+				B4DF4D6217C8DDE9009644B9 /* BackupAction.m */,
 			);
 			name = Actions;
 			sourceTree = "<group>";
@@ -280,6 +286,7 @@
 		B4DF4D5E17C8DB4A009644B9 /* Path */ = {
 			isa = PBXGroup;
 			children = (
+				B4DF4D6017C8DD78009644B9 /* Path.h */,
 			);
 			name = Path;
 			sourceTree = "<group>";
@@ -427,6 +434,7 @@
 				B473066E17C6A22500156985 /* BooleanOption.m in Sources */,
 				B4B8441417C6AE9B008F27B6 /* IntegerOption.m in Sources */,
 				B4B8441717C6AEAB008F27B6 /* StringOption.m in Sources */,
+				B4DF4D6317C8DDE9009644B9 /* BackupAction.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

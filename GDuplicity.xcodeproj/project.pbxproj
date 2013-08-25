@@ -336,8 +336,9 @@
 		B4A2A26B17C3C90400262BC3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = cdi;
 				LastUpgradeCheck = 0460;
-				ORGANIZATIONNAME = Hubert;
+				ORGANIZATIONNAME = "Codéin";
 			};
 			buildConfigurationList = B4A2A26E17C3C90400262BC3 /* Build configuration list for PBXProject "GDuplicity" */;
 			compatibilityVersion = "Xcode 3.2";

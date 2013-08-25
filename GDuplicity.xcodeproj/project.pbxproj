@@ -140,12 +140,12 @@
 		B405A36F17C6635E002D516C /* sources */ = {
 			isa = PBXGroup;
 			children = (
+				B4D0A64917C9E38C00F843DF /* Path.m */,
+				B4D0A64C17C9E3C000F843DF /* URL.m */,
 				B4C26E8017C76D6E0028C54E /* Actions */,
 				B405A37317C663B6002D516C /* Option */,
 				B424DB9A17C50AC200ADBFF9 /* Option_old.m */,
 				B4A2A28917C3C90400262BC3 /* AppDelegate.m */,
-				B4D0A64917C9E38C00F843DF /* Path.m */,
-				B4D0A64C17C9E3C000F843DF /* URL.m */,
 			);
 			name = sources;
 			sourceTree = "<group>";

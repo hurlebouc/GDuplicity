@@ -10,6 +10,9 @@
 
 @interface URL : NSObject
 
+@property NSString* url;
+
 - (NSString*) getCLIURL;
+- (URL*) initWithString: (NSString*) url;
 
 @end

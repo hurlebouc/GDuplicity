@@ -10,4 +10,16 @@
 
 @implementation Path
 
+- (NSString*) getCLIPath {
+    return _path;
+}
+
+- (Path*) initWithPath: (NSString*) path {
+    self = [super init];
+    if (self) {
+        _path = path;
+    }
+    return self;
+}
+
 @end

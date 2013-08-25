@@ -10,5 +10,16 @@
 
 @implementation URL
 
+- (NSString*) getCLIURL{
+    return _url;
+}
+
+- (URL*) initWithString: (NSString*) url {
+    self = [super init];
+    if (self) {
+        _url = url;
+    }
+    return self;
+}
 
 @end

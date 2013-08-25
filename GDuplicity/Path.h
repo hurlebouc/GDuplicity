@@ -10,6 +10,9 @@
 
 @interface Path : NSObject
 
+@property NSString* path;
+
 - (NSString*) getCLIPath;
+- (Path*) initWithPath: (NSString*) path;
 
 @end

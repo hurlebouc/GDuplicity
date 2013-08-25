@@ -1490,7 +1490,6 @@ A</bytes>
 							<string key="NSFrame">{{13, 88}, {504, 449}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
 							<reference key="NSWindow"/>
-							<reference key="NSNextKeyView" ref="485706110"/>
 							<string key="NSReuseIdentifierKey">_NS:9</string>
 							<array class="NSMutableArray" key="NSTabViewItems">
 								<object class="NSTabViewItem" id="984072919">
@@ -1878,7 +1877,6 @@ A</bytes>
 												<string key="NSFrame">{{355, 10}, {118, 32}}</string>
 												<reference key="NSSuperview" ref="485706110"/>
 												<reference key="NSWindow"/>
-												<reference key="NSNextKeyView"/>
 												<string key="NSReuseIdentifierKey">_NS:9</string>
 												<bool key="NSEnabled">YES</bool>
 												<object class="NSButtonCell" key="NSCell" id="478777869">
@@ -3013,6 +3011,14 @@ A</bytes>
 						<reference key="destination" ref="1064744814"/>
 					</object>
 					<int key="connectionID">1864</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">enablePwd:</string>
+						<reference key="source" ref="976324537"/>
+						<reference key="destination" ref="734770722"/>
+					</object>
+					<int key="connectionID">1865</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBOutletConnection" key="connection">
@@ -6391,7 +6397,7 @@ A</bytes>
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">1864</int>
+			<int key="maxID">1865</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -6399,11 +6405,16 @@ A</bytes>
 					<string key="className">AppDelegate</string>
 					<string key="superclassName">NSObject</string>
 					<dictionary class="NSMutableDictionary" key="actions">
+						<string key="enablePwd:">id</string>
 						<string key="launchBackup:">id</string>
 						<string key="launchRestore:">id</string>
 						<string key="selectSource:">id</string>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="actionInfosByName">
+						<object class="IBActionInfo" key="enablePwd:">
+							<string key="name">enablePwd:</string>
+							<string key="candidateClassName">id</string>
+						</object>
 						<object class="IBActionInfo" key="launchBackup:">
 							<string key="name">launchBackup:</string>
 							<string key="candidateClassName">id</string>

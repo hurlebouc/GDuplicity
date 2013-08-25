@@ -25,6 +25,7 @@
 @property (weak) IBOutlet NSCollectionView *excludeCollection;
 - (IBAction)launchBackup:(id)sender;
 - (IBAction)selectSource:(id)sender;
+- (IBAction)enablePwd:(id)sender;
 
 // Restore
 

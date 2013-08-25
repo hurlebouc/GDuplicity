@@ -58,6 +58,14 @@
         [_backupSourceField setStringValue:[fileName relativePath]];
     }
 }
+
+- (IBAction)enablePwd:(id)sender {
+    if ([_cryptCheck intValue]) {
+        [_pwdField setEnabled:YES];
+    } else {
+        [_pwdField setEnabled:NO];
+    }
+}
 - (IBAction)launchRestore:(id)sender {
 }
 @end

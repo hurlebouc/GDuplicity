@@ -84,6 +84,14 @@
         [_pwdField setEnabled:NO];
     }
 }
+
+- (IBAction)enableLocal:(id)sender {
+    if ([_localCheck intValue]) {
+        [_backupTargetButton setEnabled:YES];
+    } else {
+        [_backupTargetButton setEnabled:NO];
+    }
+}
 - (IBAction)launchRestore:(id)sender {
 }
 @end

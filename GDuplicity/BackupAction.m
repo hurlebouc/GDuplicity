@@ -11,7 +11,7 @@
 @implementation BackupAction
 
 - (NSString*) getCLIAction{
-    NSString* res = @"duplicity";
+    NSString* res = @" ";
     res = [res stringByAppendingString:[_aux getCLIAux]];
     res = [res stringByAppendingString:[_opt getCLIOption]];
     res = [res stringByAppendingString:[_src getCLIPath]];

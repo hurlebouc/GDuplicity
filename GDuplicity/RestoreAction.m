@@ -11,7 +11,7 @@
 @implementation RestoreAction
 
 - (NSString*) getCLIAction{
-    NSString* res = @"duplicity restore";
+    NSString* res = @"restore";
     res = [res stringByAppendingString:[_opt getCLIOption]];
     res = [res stringByAppendingString:[_src getCLIURL]];
     res = [res stringByAppendingString:[_tgt getCLIPath]];

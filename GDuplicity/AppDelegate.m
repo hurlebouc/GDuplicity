@@ -62,9 +62,13 @@
                       Option: opt
                       Path: path
                       URL: url];
-    NSString* actCLI = [act getCLIAction];
-    NSLog(@"%@", actCLI);
-    system([actCLI UTF8String]);
+    NSString* actCLI = [@"/opt/local/bin/duplicity" stringByAppendingString:[act getCLIAction]];
+    actCLI = [@"ulimit -n 1024;" stringByAppendingString:actCLI];
+//    actCLI = [actCLI stringByAppendingString:@" 2> /Users/hubert/Desktop/error.txt"];
+    int n = system([actCLI UTF8String]);
+    NSLog(@"%@\ncaca : %d", actCLI, n);
+    NSString* message = [@"retour : " stringByAppendingString:[NSString stringWithFormat:@"%d", n]];
+    NSRunAlertPanel(@"Fin", message, @"bachi", @"", @"");
 }
 
 - (IBAction)backupSelectSource:(id)sender {

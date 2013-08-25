@@ -55,6 +55,7 @@
     if ( [openDlg runModal] == NSOKButton ) {
         NSArray* files = [openDlg URLs];
         NSURL* fileName = [files objectAtIndex:0];
+        [_backupSourceField setStringValue:[fileName relativePath]];
     }
 }
 - (IBAction)launchRestore:(id)sender {

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8150973A17C78C6500313177 /* prefs.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8150973C17C78C6500313177 /* prefs.xib */; };
 		8150974217C798D900313177 /* GDuplicity.iconset in Resources */ = {isa = PBXBuildFile; fileRef = 8150974117C798D900313177 /* GDuplicity.iconset */; };
+		81A3A53417C9EA7C009C0D74 /* RestoreAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 81A3A53317C9EA7C009C0D74 /* RestoreAction.m */; };
 		B405A37217C663A6002D516C /* NoOption.m in Sources */ = {isa = PBXBuildFile; fileRef = B405A37117C663A6002D516C /* NoOption.m */; };
 		B424DB9B17C50AC200ADBFF9 /* Option_old.m in Sources */ = {isa = PBXBuildFile; fileRef = B424DB9A17C50AC200ADBFF9 /* Option_old.m */; };
 		B473066E17C6A22500156985 /* BooleanOption.m in Sources */ = {isa = PBXBuildFile; fileRef = B473066D17C6A22500156985 /* BooleanOption.m */; };
@@ -57,6 +58,8 @@
 /* Begin PBXFileReference section */
 		8150973B17C78C6500313177 /* fr */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = fr; path = fr.lproj/prefs.xib; sourceTree = "<group>"; };
 		8150974117C798D900313177 /* GDuplicity.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; path = GDuplicity.iconset; sourceTree = "<group>"; };
+		81A3A53217C9EA7C009C0D74 /* RestoreAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestoreAction.h; sourceTree = "<group>"; };
+		81A3A53317C9EA7C009C0D74 /* RestoreAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestoreAction.m; sourceTree = "<group>"; };
 		81B0331F17C74F210085BD77 /* fr */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = fr; path = fr.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		81B0332117C74F210085BD77 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = fr; path = fr.lproj/Credits.rtf; sourceTree = "<group>"; };
 		B405A36A17C660C6002D516C /* Option.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Option.h; sourceTree = "<group>"; };
@@ -261,6 +264,7 @@
 		B4C26E7F17C76D660028C54E /* Actions */ = {
 			isa = PBXGroup;
 			children = (
+				81A3A53217C9EA7C009C0D74 /* RestoreAction.h */,
 				B4C26E8117C76D820028C54E /* Action.h */,
 				B4DF4D6117C8DDE9009644B9 /* BackupAction.h */,
 				B4DF4D5B17C8B6B8009644B9 /* ActionAux */,
@@ -272,6 +276,7 @@
 			isa = PBXGroup;
 			children = (
 				B4DF4D6217C8DDE9009644B9 /* BackupAction.m */,
+				81A3A53317C9EA7C009C0D74 /* RestoreAction.m */,
 				B4D0A64E17C9E87E00F843DF /* ActionAux */,
 			);
 			name = Actions;
@@ -461,6 +466,7 @@
 				B4DF4D6317C8DDE9009644B9 /* BackupAction.m in Sources */,
 				B4D0A64A17C9E38C00F843DF /* Path.m in Sources */,
 				B4D0A64D17C9E3C000F843DF /* URL.m in Sources */,
+				81A3A53417C9EA7C009C0D74 /* RestoreAction.m in Sources */,
 				B4D0A65117C9E9B700F843DF /* FullAux.m in Sources */,
 				B4D0A65417C9ED7100F843DF /* IncrAux.m in Sources */,
 				B4D0A65717C9EE0E00F843DF /* NoAux.m in Sources */,

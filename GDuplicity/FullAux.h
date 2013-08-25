@@ -1,5 +1,5 @@
 //
-//  URL.h
+//  FullAux.h
 //  GDuplicity
 //
 //  Created by Hubert on 25/08/13.
@@ -7,12 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ActionAux.h"
 
-@interface URL : NSObject
-
-@property NSString* url;
-
-- (NSString*) getCLIURL;
-- (URL*) initWithString: (NSString*) url;
+@interface FullAux : NSObject <ActionAux>
 
 @end

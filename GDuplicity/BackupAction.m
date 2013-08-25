@@ -22,8 +22,7 @@
 - (BackupAction*) initWithAux: (id<ActionAux>) aux
                        Option: (id<Option>) opt
                          Path: (Path*) src
-                          URL: (URL*) tgt;
-{
+                          URL: (URL*) tgt {
     self = [super init];
     if (self) {
         _aux = aux;

@@ -14,7 +14,7 @@
     return _path;
 }
 
-- (Path*) initWithPath: (NSString*) path {
+- (Path*) initWithString: (NSString*) path {
     self = [super init];
     if (self) {
         _path = path;

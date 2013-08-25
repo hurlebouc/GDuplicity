@@ -13,6 +13,6 @@
 @property NSString* path;
 
 - (NSString*) getCLIPath;
-- (Path*) initWithPath: (NSString*) path;
+- (Path*) initWithString: (NSString*) path;
 
 @end

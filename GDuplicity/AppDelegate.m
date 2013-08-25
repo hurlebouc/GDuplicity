@@ -11,6 +11,11 @@
 #import "BooleanOption.h"
 #import "StringOption.h"
 #import "IntegerOption.h"
+#import "FullAux.h"
+#import "IncrAux.h"
+#import "NoAux.h"
+#import "BackupAction.h"
+#import "RestoreAction.h"
 
 @implementation AppDelegate
 
@@ -42,8 +47,21 @@
 - (IBAction)launchBackup:(id)sender {
     id<Option> opt = [self getGeneralOptionsFrom:[[NoOption alloc] init]];
     opt = [self getBackupOptionsFrom:opt];
-    NSString* optCLI = [opt getCLIOption];
-    system([optCLI UTF8String]);
+    id<ActionAux> aux;
+    if ([_forceFullCheck intValue]) {
+        aux = [[FullAux alloc] init];
+    } else {
+        aux = [[NoAux alloc] init];
+    }
+    Path* path = [[Path alloc] initWithString:[_backupSourceField stringValue]];
+    URL* url = [[URL alloc] initWithString:[_backupTargetField stringValue]];
+    id<Action> act = [[BackupAction alloc]
+                      initWithAux:aux
+                      Option: opt
+                      Path: path
+                      URL: url];
+    NSString* actCLI = [act getCLIAction];
+    system([actCLI UTF8String]);
 }
 
 - (IBAction)selectSource:(id)sender {

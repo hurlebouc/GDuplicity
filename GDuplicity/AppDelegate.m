@@ -53,14 +53,17 @@
     } else {
         aux = [[NoAux alloc] init];
     }
-    Path* path = [[Path alloc] initWithString:[_backupSourceField stringValue]];
-    URL* url = [[URL alloc] initWithString:[_backupTargetField stringValue]];
+    NSString* src = [@" " stringByAppendingString:[_backupSourceField stringValue]];
+    NSString* tgt = [@" " stringByAppendingString:[_backupTargetField stringValue]];
+    Path* path = [[Path alloc] initWithString:src];
+    URL* url = [[URL alloc] initWithString:tgt];
     id<Action> act = [[BackupAction alloc]
                       initWithAux:aux
                       Option: opt
                       Path: path
                       URL: url];
     NSString* actCLI = [act getCLIAction];
+    NSLog(@"%@", actCLI);
     system([actCLI UTF8String]);
 }
 
@@ -78,7 +81,18 @@
 }
 
 - (IBAction)backupSelectTarget:(id)sender {
+    NSOpenPanel* openDlg = [NSOpenPanel openPanel];
+    [openDlg setCanChooseFiles:NO];
+    [openDlg setCanChooseDirectories:YES];
+    [openDlg setAllowsMultipleSelection:NO];
     
+    if ( [openDlg runModal] == NSOKButton ) {
+        NSArray* files = [openDlg URLs];
+        NSURL* fileName = [files objectAtIndex:0];
+        NSString* tgt = [fileName absoluteString];
+        tgt = [tgt stringByReplacingOccurrencesOfString:@"file://localhost" withString:@"file://"];
+        [_backupTargetField setStringValue:tgt];
+    }
 }
 
 // Enablings

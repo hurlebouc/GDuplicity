@@ -1,5 +1,5 @@
 //
-//  Path.h
+//  URL.h
 //  GDuplicity
 //
 //  Created by Hubert on 25/08/13.
@@ -8,8 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Path : NSObject
+@interface URL : NSObject
 
-- (NSString*) getCLIPath;
+- (NSString*) getCLIURL;
 
 @end

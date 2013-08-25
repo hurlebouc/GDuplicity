@@ -1,15 +1,13 @@
 //
-//  Path.h
+//  Path.m
 //  GDuplicity
 //
 //  Created by Hubert on 25/08/13.
 //  Copyright (c) 2013 Codéin. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "Path.h"
 
-@interface Path : NSObject
-
-- (NSString*) getCLIPath;
+@implementation Path
 
 @end

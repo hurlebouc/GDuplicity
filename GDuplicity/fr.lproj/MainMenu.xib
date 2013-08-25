@@ -1549,7 +1549,6 @@ A</bytes>
 																<string key="NSFrame">{{361, 8}, {97, 32}}</string>
 																<reference key="NSSuperview" ref="227501789"/>
 																<reference key="NSWindow"/>
-																<reference key="NSNextKeyView" ref="657048295"/>
 																<string key="NSReuseIdentifierKey">_NS:9</string>
 																<bool key="NSEnabled">YES</bool>
 																<object class="NSButtonCell" key="NSCell" id="1064744814">
@@ -1579,7 +1578,6 @@ A</bytes>
 												<string key="NSFrame">{{6, 341}, {472, 62}}</string>
 												<reference key="NSSuperview" ref="485706110"/>
 												<reference key="NSWindow"/>
-												<reference key="NSNextKeyView" ref="227501789"/>
 												<string key="NSReuseIdentifierKey">_NS:9</string>
 												<string key="NSOffsets">{0, 0}</string>
 												<object class="NSTextFieldCell" key="NSTitleCell">
@@ -1641,7 +1639,6 @@ A</bytes>
 																<string key="NSFrame">{{361, 8}, {97, 32}}</string>
 																<reference key="NSSuperview" ref="532641317"/>
 																<reference key="NSWindow"/>
-																<reference key="NSNextKeyView" ref="261286825"/>
 																<string key="NSReuseIdentifierKey">_NS:9</string>
 																<bool key="NSEnabled">YES</bool>
 																<object class="NSButtonCell" key="NSCell" id="444105339">
@@ -1671,7 +1668,6 @@ A</bytes>
 												<string key="NSFrame">{{6, 275}, {472, 62}}</string>
 												<reference key="NSSuperview" ref="485706110"/>
 												<reference key="NSWindow"/>
-												<reference key="NSNextKeyView" ref="532641317"/>
 												<string key="NSReuseIdentifierKey">_NS:9</string>
 												<string key="NSOffsets">{0, 0}</string>
 												<object class="NSTextFieldCell" key="NSTitleCell">
@@ -1699,7 +1695,6 @@ A</bytes>
 												<string key="NSFrame">{{15, 255}, {228, 18}}</string>
 												<reference key="NSSuperview" ref="485706110"/>
 												<reference key="NSWindow"/>
-												<reference key="NSNextKeyView" ref="1008788203"/>
 												<string key="NSReuseIdentifierKey">_NS:9</string>
 												<bool key="NSEnabled">YES</bool>
 												<object class="NSButtonCell" key="NSCell" id="141669047">
@@ -1727,7 +1722,6 @@ A</bytes>
 												<string key="NSFrame">{{15, 231}, {161, 18}}</string>
 												<reference key="NSSuperview" ref="485706110"/>
 												<reference key="NSWindow"/>
-												<reference key="NSNextKeyView" ref="113769139"/>
 												<string key="NSReuseIdentifierKey">_NS:9</string>
 												<bool key="NSEnabled">YES</bool>
 												<object class="NSButtonCell" key="NSCell" id="734770722">
@@ -1884,7 +1878,7 @@ A</bytes>
 												<string key="NSFrame">{{355, 10}, {118, 32}}</string>
 												<reference key="NSSuperview" ref="485706110"/>
 												<reference key="NSWindow"/>
-												<reference key="NSNextKeyView" ref="360192703"/>
+												<reference key="NSNextKeyView"/>
 												<string key="NSReuseIdentifierKey">_NS:9</string>
 												<bool key="NSEnabled">YES</bool>
 												<object class="NSButtonCell" key="NSCell" id="478777869">
@@ -2049,7 +2043,6 @@ A</bytes>
 													<int key="NSCellFlags2">0</int>
 													<string key="NSContents">Répertoire à restaurer</string>
 													<reference key="NSSupport" ref="26"/>
-													<reference key="NSControlView"/>
 													<reference key="NSBackgroundColor" ref="169278483"/>
 													<object class="NSColor" key="NSTextColor">
 														<int key="NSColorSpace">3</int>
@@ -2133,7 +2126,6 @@ A</bytes>
 													<int key="NSCellFlags2">0</int>
 													<string key="NSContents">Emplacement de la sauvegarde</string>
 													<reference key="NSSupport" ref="26"/>
-													<reference key="NSControlView"/>
 													<reference key="NSBackgroundColor" ref="169278483"/>
 													<object class="NSColor" key="NSTextColor">
 														<int key="NSColorSpace">3</int>

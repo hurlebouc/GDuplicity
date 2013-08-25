@@ -13,7 +13,12 @@
 
 @property id<ActionAux> aux;
 @property id<Option> opt;
-@property id<Path> src;
-@property id<Path> tgt;
+@property Path* src;
+@property URL* tgt;
+
+- (BackupAction*) initWithAux: (id<ActionAux>) aux
+                       Option: (id<Option>) opt
+                         Path: (Path*) src
+                          URL: (URL*) tgt;
 
 @end

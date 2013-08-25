@@ -26,7 +26,8 @@
 @property (weak) IBOutlet NSButtonCell *localCheck;
 @property (weak) IBOutlet NSButtonCell *backupTargetButton;
 - (IBAction)launchBackup:(id)sender;
-- (IBAction)selectSource:(id)sender;
+- (IBAction)backupSelectSource:(id)sender;
+- (IBAction)backupSelectTarget:(id)sender;
 - (IBAction)enablePwd:(id)sender;
 - (IBAction)enableLocal:(id)sender;
 

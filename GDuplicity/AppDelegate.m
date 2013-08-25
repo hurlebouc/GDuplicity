@@ -64,7 +64,7 @@
     system([actCLI UTF8String]);
 }
 
-- (IBAction)selectSource:(id)sender {
+- (IBAction)backupSelectSource:(id)sender {
     NSOpenPanel* openDlg = [NSOpenPanel openPanel];    
     [openDlg setCanChooseFiles:YES];
     [openDlg setCanChooseDirectories:YES];
@@ -76,6 +76,12 @@
         [_backupSourceField setStringValue:[fileName relativePath]];
     }
 }
+
+- (IBAction)backupSelectTarget:(id)sender {
+    
+}
+
+// Enablings
 
 - (IBAction)enablePwd:(id)sender {
     if ([_cryptCheck intValue]) {

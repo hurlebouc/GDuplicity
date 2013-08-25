@@ -48,24 +48,14 @@
 
 - (IBAction)selectSource:(id)sender {
     NSOpenPanel* openDlg = [NSOpenPanel openPanel];    
-    [openDlg setCanChooseFiles:NO];
+    [openDlg setCanChooseFiles:YES];
     [openDlg setCanChooseDirectories:YES];
     [openDlg setAllowsMultipleSelection:NO];
-    
-    [openDlg runModal];
-    
-//    if ( [openDlg runModalForDirectory:nil file:nil] == NSOKButton )
-//    {
-//        // Get an array containing the full filenames of all
-//        // files and directories selected.
-//        NSArray* files = [openDlg filenames];
-//        
-//        // Loop through all the files and process them.
-//        for( i = 0; i < [files count]; i++ )
-//        {
-//            NSString* fileName = [files objectAtIndex:i];
-//        }
-//    }
+        
+    if ( [openDlg runModal] == NSOKButton ) {
+        NSArray* files = [openDlg URLs];
+        NSURL* fileName = [files objectAtIndex:0];
+    }
 }
 - (IBAction)launchRestore:(id)sender {
 }

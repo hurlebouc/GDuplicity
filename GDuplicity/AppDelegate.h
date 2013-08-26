@@ -23,7 +23,7 @@
 @property (weak) IBOutlet NSButtonCell *forceFullCheck;
 @property (weak) IBOutlet NSSecureTextFieldCell *pwdField;
 @property (weak) IBOutlet NSCollectionView *excludeCollection;
-@property (weak) IBOutlet NSButtonCell *localCheck;
+@property (weak) IBOutlet NSButtonCell *backupLocalCheck;
 @property (weak) IBOutlet NSButtonCell *backupTargetButton;
 - (IBAction)launchBackup:(id)sender;
 - (IBAction)backupSelectSource:(id)sender;

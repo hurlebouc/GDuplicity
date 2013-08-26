@@ -116,7 +116,7 @@
 }
 
 - (IBAction)enableLocal:(id)sender {
-    if ([_localCheck intValue]) {
+    if ([_backupLocalCheck intValue]) {
         [_backupTargetButton setEnabled:YES];
     } else {
         [_backupTargetButton setEnabled:NO];

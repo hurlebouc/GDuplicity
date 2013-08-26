@@ -28,15 +28,20 @@
 - (IBAction)launchBackup:(id)sender;
 - (IBAction)backupSelectSource:(id)sender;
 - (IBAction)backupSelectTarget:(id)sender;
-- (IBAction)enablePwd:(id)sender;
-- (IBAction)enableLocal:(id)sender;
+- (IBAction)backupEnablePwd:(id)sender;
+- (IBAction)backupEnableLocal:(id)sender;
 
 // Restore
 
 @property (weak) IBOutlet NSTextFieldCell *restoreSourceField;
 @property (weak) IBOutlet NSTextFieldCell *restoreTargetField;
 @property (weak) IBOutlet NSButtonCell *launchRestore;
+@property (weak) IBOutlet NSButtonCell *restoreLocalCheck;
+@property (weak) IBOutlet NSButtonCell *restoreSourceButton;
 - (IBAction)launchRestore:(id)sender;
+- (IBAction)restoreSelectSource:(id)sender;
+- (IBAction)restoreSelectTarget:(id)sender;
+- (IBAction)restoreEnableLocal:(id)sender;
 
 // Output
 @property (weak) IBOutlet NSButtonCell *simuCheck;

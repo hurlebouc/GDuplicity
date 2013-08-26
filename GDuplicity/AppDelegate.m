@@ -44,6 +44,8 @@
     return res;
 }
 
+// Backup
+
 - (IBAction)launchBackup:(id)sender {
     id<Option> opt = [self getGeneralOptionsFrom:[[NoOption alloc] init]];
     opt = [self getBackupOptionsFrom:opt];
@@ -105,9 +107,66 @@
     }
 }
 
+// Restore
+
+- (IBAction)launchRestore:(id)sender {
+    id<Option> opt = [self getGeneralOptionsFrom:[[NoOption alloc] init]];
+    opt = [self getRestoreOptionsFrom:opt];
+    NSString* src = [@" " stringByAppendingString:[_restoreSourceField stringValue]];
+    NSString* tgt = [@" " stringByAppendingString:[_restoreTargetField stringValue]];
+    URL* url = [[URL alloc] initWithString:src];
+    Path* path = [[Path alloc] initWithString:tgt];
+    id<Action> act = [[RestoreAction alloc]
+                      initWithOpt:opt
+                      URL:url
+                      Path:path];
+    NSString* actCLI = [@"/opt/local/bin/duplicity" stringByAppendingString:[act getCLIAction]];
+    actCLI = [@"ulimit -n 1024;" stringByAppendingString:actCLI];
+    system([actCLI UTF8String]);
+    NSRunAlertPanel(@"Fin", @"Normalement y a pas eu de merde.", @"OK", @"", @"");
+}
+
+- (IBAction)restoreSelectSource:(id)sender {
+    NSOpenPanel* openDlg = [NSOpenPanel openPanel];
+    [openDlg setCanChooseFiles:NO];
+    [openDlg setCanChooseDirectories:YES];
+    [openDlg setAllowsMultipleSelection:NO];
+    
+    if ( [openDlg runModal] == NSOKButton ) {
+        NSArray* files = [openDlg URLs];
+        NSURL* fileName = [files objectAtIndex:0];
+        NSString* tgt = [fileName absoluteString];
+        tgt = [tgt stringByReplacingOccurrencesOfString:@"file://localhost" withString:@"file://"];
+        [_restoreSourceField setStringValue:tgt];
+    }
+}
+
+- (IBAction)restoreSelectTarget:(id)sender {
+    NSOpenPanel* openDlg = [NSOpenPanel openPanel];
+    [openDlg setCanChooseFiles:YES];
+    [openDlg setCanChooseDirectories:YES];
+    [openDlg setAllowsMultipleSelection:NO];
+    
+    if ( [openDlg runModal] == NSOKButton ) {
+        NSArray* files = [openDlg URLs];
+        NSURL* fileName = [files objectAtIndex:0];
+        [_backupTargetField setStringValue:[fileName relativePath]];
+    }
+}
+
+- (IBAction)restoreEnableLocal:(id)sender {
+    if ([_restoreLocalCheck intValue]) {
+        [_restoreSourceButton setEnabled:YES];
+    } else {
+        [_restoreSourceButton setEnabled:NO];
+    }
+}
+
+
+
 // Enablings
 
-- (IBAction)enablePwd:(id)sender {
+- (IBAction)backupEnablePwd:(id)sender {
     if ([_cryptCheck intValue]) {
         [_pwdField setEnabled:YES];
     } else {
@@ -115,13 +174,12 @@
     }
 }
 
-- (IBAction)enableLocal:(id)sender {
+- (IBAction)backupEnableLocal:(id)sender {
     if ([_backupLocalCheck intValue]) {
         [_backupTargetButton setEnabled:YES];
     } else {
         [_backupTargetButton setEnabled:NO];
     }
 }
-- (IBAction)launchRestore:(id)sender {
-}
+
 @end

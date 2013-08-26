@@ -3073,14 +3073,6 @@ A</bytes>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBActionConnection" key="connection">
-						<string key="label">restoreSelectSource:</string>
-						<reference key="source" ref="976324537"/>
-						<reference key="destination" ref="686704347"/>
-					</object>
-					<int key="connectionID">1964</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBActionConnection" key="connection">
 						<string key="label">restoreSelectTarget:</string>
 						<reference key="source" ref="976324537"/>
 						<reference key="destination" ref="731105759"/>
@@ -3105,11 +3097,43 @@ A</bytes>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBOutletConnection" key="connection">
-						<string key="label">restoreEnableLocal</string>
+						<string key="label">restoreLocalCheck</string>
 						<reference key="source" ref="976324537"/>
 						<reference key="destination" ref="828968947"/>
 					</object>
-					<int key="connectionID">1968</int>
+					<int key="connectionID">1969</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">restoreSourceButton</string>
+						<reference key="source" ref="976324537"/>
+						<reference key="destination" ref="686704347"/>
+					</object>
+					<int key="connectionID">1970</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">restoreEnableLocal</string>
+						<reference key="source" ref="976324537"/>
+						<reference key="destination" ref="118788144"/>
+					</object>
+					<int key="connectionID">1971</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">restoreSelectSource:</string>
+						<reference key="source" ref="976324537"/>
+						<reference key="destination" ref="686704347"/>
+					</object>
+					<int key="connectionID">1973</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">restoreEnableLocal:</string>
+						<reference key="source" ref="976324537"/>
+						<reference key="destination" ref="828968947"/>
+					</object>
+					<int key="connectionID">1974</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBOutletConnection" key="connection">
@@ -6614,7 +6638,7 @@ A</bytes>
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">1968</int>
+			<int key="maxID">1974</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes"/>
 		<int key="IBDocument.localizationMode">0</int>

@@ -154,6 +154,16 @@
     }
 }
 
+- (IBAction)restoreEnableLocal:(id)sender {
+    if ([_restoreLocalCheck intValue]) {
+        [_restoreSourceButton setEnabled:YES];
+    } else {
+        [_restoreSourceButton setEnabled:NO];
+    }
+}
+
+
+
 // Enablings
 
 - (IBAction)backupEnablePwd:(id)sender {
@@ -171,4 +181,5 @@
         [_backupTargetButton setEnabled:NO];
     }
 }
+
 @end

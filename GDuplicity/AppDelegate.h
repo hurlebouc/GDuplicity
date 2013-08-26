@@ -36,10 +36,12 @@
 @property (weak) IBOutlet NSTextFieldCell *restoreSourceField;
 @property (weak) IBOutlet NSTextFieldCell *restoreTargetField;
 @property (weak) IBOutlet NSButtonCell *launchRestore;
-@property (weak) IBOutlet NSButtonCell *restoreEnableLocal;
+@property (weak) IBOutlet NSButtonCell *restoreLocalCheck;
+@property (weak) IBOutlet NSButtonCell *restoreSourceButton;
 - (IBAction)launchRestore:(id)sender;
 - (IBAction)restoreSelectSource:(id)sender;
 - (IBAction)restoreSelectTarget:(id)sender;
+- (IBAction)restoreEnableLocal:(id)sender;
 
 // Output
 @property (weak) IBOutlet NSButtonCell *simuCheck;

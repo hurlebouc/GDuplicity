@@ -64,13 +64,13 @@
                       URL: url];
     NSString* actCLI = [@"/opt/local/bin/duplicity" stringByAppendingString:[act getCLIAction]];
     actCLI = [@"ulimit -n 1024;" stringByAppendingString:actCLI];
-    actCLI = [actCLI stringByAppendingString:@" 2> /Users/hubert/Desktop/error.txt"];
+    actCLI = [actCLI stringByAppendingString:@" 2> ~/Desktop/error.txt"];
     if ([_cryptCheck intValue]) {
         NSString* pwd = [_pwdField stringValue];
         NSString* export = [NSString stringWithFormat:@"export PASSPHRASE=%@;", pwd];
         actCLI = [export stringByAppendingString:actCLI];
     }
-    system("echo $PATH > /Users/hubert/Desktop/path.txt");
+    system("echo $PATH > ~/Desktop/path.txt");
     int n = system([actCLI UTF8String]);
     NSLog(@"%@\ncaca : %d", actCLI, n);
     NSString* message = [@"retour : " stringByAppendingString:[NSString stringWithFormat:@"%d", n]];

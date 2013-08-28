@@ -34,7 +34,7 @@ const char *gettext( const char *msgid );
 
 #ifdef ENABLE_NLS
 #ifndef __riscos__
-#include <libintl.h>
+#include "libintl.h"
 #else
 #include "libgettext.h"
 #endif /* __riscos__ */

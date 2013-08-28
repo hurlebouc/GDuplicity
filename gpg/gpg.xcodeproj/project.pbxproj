@@ -245,11 +245,16 @@
 		B46F25FC17CE591300E5D66E /* tlv.c in Sources */ = {isa = PBXBuildFile; fileRef = B46F25BF17CE591300E5D66E /* tlv.c */; };
 		B46F25FD17CE591300E5D66E /* trustdb.c in Sources */ = {isa = PBXBuildFile; fileRef = B46F25C117CE591300E5D66E /* trustdb.c */; };
 		B46F25FE17CE591300E5D66E /* verify.c in Sources */ = {isa = PBXBuildFile; fileRef = B46F25C317CE591300E5D66E /* verify.c */; };
-		B46F260717CE5E4600E5D66E /* libbz2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B46F21A117CE4F2800E5D66E /* libbz2.a */; };
 		B46F260817CE5E4600E5D66E /* libcipher.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B4625EDA17CB98F0001121EC /* libcipher.a */; };
 		B46F260917CE5E4600E5D66E /* libintl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B46F20D017CE41E500E5D66E /* libintl.a */; };
 		B46F260A17CE5E4600E5D66E /* libmpi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B46F21E117CE520F00E5D66E /* libmpi.a */; };
 		B46F260B17CE5E4600E5D66E /* libutil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B46F24A717CE55E000E5D66E /* libutil.a */; };
+		B46F261217CE957D00E5D66E /* libresolv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B46F261017CE955100E5D66E /* libresolv.dylib */; };
+		B46F261317CE958F00E5D66E /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B46F260C17CE94B900E5D66E /* libiconv.dylib */; };
+		B46F261517CE95C400E5D66E /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B46F261417CE95C400E5D66E /* libz.dylib */; };
+		B46F261917CE960600E5D66E /* libbz2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B46F261617CE95E700E5D66E /* libbz2.dylib */; };
+		B46F261E17CE96D700E5D66E /* libc.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B46F261D17CE96D600E5D66E /* libc.dylib */; };
+		B46F262017CE971300E5D66E /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B46F261F17CE971300E5D66E /* CoreFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -267,13 +272,6 @@
 			remoteGlobalIDString = B4625ED917CB98F0001121EC;
 			remoteInfo = cipher;
 		};
-		B46F260117CE595F00E5D66E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B4AB1CE717CB6080001FC1A1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B46F21A017CE4F2800E5D66E;
-			remoteInfo = bz2;
-		};
 		B46F260317CE596600E5D66E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B4AB1CE717CB6080001FC1A1 /* Project object */;
@@ -287,6 +285,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = B46F24A617CE55E000E5D66E;
 			remoteInfo = util;
+		};
+		B46F261B17CE96B400E5D66E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B4AB1CE717CB6080001FC1A1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B46F20CF17CE41E500E5D66E;
+			remoteInfo = intl;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -659,6 +664,13 @@
 		B46F25C117CE591300E5D66E /* trustdb.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = trustdb.c; sourceTree = "<group>"; };
 		B46F25C217CE591300E5D66E /* trustdb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = trustdb.h; sourceTree = "<group>"; };
 		B46F25C317CE591300E5D66E /* verify.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = verify.c; sourceTree = "<group>"; };
+		B46F260C17CE94B900E5D66E /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
+		B46F260E17CE950C00E5D66E /* libusb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libusb.a; path = ../../../../../../opt/local/lib/libusb.a; sourceTree = "<group>"; };
+		B46F261017CE955100E5D66E /* libresolv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libresolv.dylib; path = usr/lib/libresolv.dylib; sourceTree = SDKROOT; };
+		B46F261417CE95C400E5D66E /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		B46F261617CE95E700E5D66E /* libbz2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libbz2.dylib; path = usr/lib/libbz2.dylib; sourceTree = SDKROOT; };
+		B46F261D17CE96D600E5D66E /* libc.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libc.dylib; path = usr/lib/libc.dylib; sourceTree = SDKROOT; };
+		B46F261F17CE971300E5D66E /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		B48551BC17CBAED300A9067E /* config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = config.h; path = ../config.h; sourceTree = "<group>"; };
 		B4AB278717CB96EB001FC1A1 /* algorithms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = algorithms.h; sourceTree = "<group>"; };
 		B4AB278817CB96EB001FC1A1 /* bithelp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bithelp.h; sourceTree = "<group>"; };
@@ -948,7 +960,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B46F260717CE5E4600E5D66E /* libbz2.a in Frameworks */,
+				B46F262017CE971300E5D66E /* CoreFoundation.framework in Frameworks */,
+				B46F261E17CE96D700E5D66E /* libc.dylib in Frameworks */,
+				B46F261917CE960600E5D66E /* libbz2.dylib in Frameworks */,
+				B46F261517CE95C400E5D66E /* libz.dylib in Frameworks */,
+				B46F261317CE958F00E5D66E /* libiconv.dylib in Frameworks */,
+				B46F261217CE957D00E5D66E /* libresolv.dylib in Frameworks */,
 				B46F260817CE5E4600E5D66E /* libcipher.a in Frameworks */,
 				B46F260917CE5E4600E5D66E /* libintl.a in Frameworks */,
 				B46F260A17CE5E4600E5D66E /* libmpi.a in Frameworks */,
@@ -1407,6 +1424,13 @@
 		B4AB1CE617CB6080001FC1A1 = {
 			isa = PBXGroup;
 			children = (
+				B46F261F17CE971300E5D66E /* CoreFoundation.framework */,
+				B46F261D17CE96D600E5D66E /* libc.dylib */,
+				B46F261617CE95E700E5D66E /* libbz2.dylib */,
+				B46F261417CE95C400E5D66E /* libz.dylib */,
+				B46F261017CE955100E5D66E /* libresolv.dylib */,
+				B46F260E17CE950C00E5D66E /* libusb.a */,
+				B46F260C17CE94B900E5D66E /* libiconv.dylib */,
 				B4AB273D17CB96EA001FC1A1 /* gnupg-1.4.14 */,
 				B46F252E17CE58C400E5D66E /* gpg */,
 				B4AB1CF017CB6080001FC1A1 /* Products */,
@@ -2002,8 +2026,8 @@
 			);
 			dependencies = (
 				B46F260017CE595900E5D66E /* PBXTargetDependency */,
-				B46F260217CE595F00E5D66E /* PBXTargetDependency */,
 				B46F260617CE596A00E5D66E /* PBXTargetDependency */,
+				B46F261C17CE96B400E5D66E /* PBXTargetDependency */,
 				B46F260417CE596600E5D66E /* PBXTargetDependency */,
 			);
 			name = gpg;
@@ -2295,11 +2319,6 @@
 			target = B4625ED917CB98F0001121EC /* cipher */;
 			targetProxy = B46F25FF17CE595900E5D66E /* PBXContainerItemProxy */;
 		};
-		B46F260217CE595F00E5D66E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B46F21A017CE4F2800E5D66E /* bz2 */;
-			targetProxy = B46F260117CE595F00E5D66E /* PBXContainerItemProxy */;
-		};
 		B46F260417CE596600E5D66E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = B46F21E017CE520F00E5D66E /* mpi */;
@@ -2310,12 +2329,18 @@
 			target = B46F24A617CE55E000E5D66E /* util */;
 			targetProxy = B46F260517CE596A00E5D66E /* PBXContainerItemProxy */;
 		};
+		B46F261C17CE96B400E5D66E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B46F20CF17CE41E500E5D66E /* intl */;
+			targetProxy = B46F261B17CE96B400E5D66E /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		B4625EDB17CB98F0001121EC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				EXECUTABLE_PREFIX = lib;
 				OTHER_CFLAGS = "-DGNUPG_LIBDIR=\"\\\"/usr/local/lib/gnupg\\\"\"";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2325,6 +2350,7 @@
 		B4625EDC17CB98F0001121EC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				EXECUTABLE_PREFIX = lib;
 				OTHER_CFLAGS = "-DGNUPG_LIBDIR=\"\\\"/usr/local/lib/gnupg\\\"\"";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2334,6 +2360,7 @@
 		B46F20D217CE41E500E5D66E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				EXECUTABLE_PREFIX = lib;
 				GCC_LINK_WITH_DYNAMIC_LIBRARIES = YES;
 				OTHER_CFLAGS = (
@@ -2352,11 +2379,7 @@
 					"-DDEPENDS_ON_LIBICONV=1",
 					"-DHAVE_CONFIG_H",
 					"-I.",
-					"-I.",
 					"-I..",
-					"-g",
-					"-O2",
-					"-Wall",
 					"-Wno-pointer-sign",
 					"-fvisibility=hidden",
 				);
@@ -2367,6 +2390,7 @@
 		B46F20D317CE41E500E5D66E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				EXECUTABLE_PREFIX = lib;
 				GCC_LINK_WITH_DYNAMIC_LIBRARIES = YES;
 				OTHER_CFLAGS = (
@@ -2385,11 +2409,7 @@
 					"-DDEPENDS_ON_LIBICONV=1",
 					"-DHAVE_CONFIG_H",
 					"-I.",
-					"-I.",
 					"-I..",
-					"-g",
-					"-O2",
-					"-Wall",
 					"-Wno-pointer-sign",
 					"-fvisibility=hidden",
 				);
@@ -2400,6 +2420,7 @@
 		B46F21A317CE4F2900E5D66E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				EXECUTABLE_PREFIX = lib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -2408,6 +2429,7 @@
 		B46F21A417CE4F2900E5D66E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				EXECUTABLE_PREFIX = lib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -2416,6 +2438,7 @@
 		B46F21E317CE521000E5D66E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				EXECUTABLE_PREFIX = lib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -2424,6 +2447,7 @@
 		B46F21E417CE521000E5D66E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				EXECUTABLE_PREFIX = lib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -2432,6 +2456,7 @@
 		B46F24A917CE55E000E5D66E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				EXECUTABLE_PREFIX = lib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -2440,6 +2465,7 @@
 		B46F24AA17CE55E000E5D66E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				EXECUTABLE_PREFIX = lib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -2549,6 +2575,7 @@
 				B46F20D317CE41E500E5D66E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B46F21A217CE4F2900E5D66E /* Build configuration list for PBXNativeTarget "bz2" */ = {
 			isa = XCConfigurationList;
@@ -2557,6 +2584,7 @@
 				B46F21A417CE4F2900E5D66E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B46F21E217CE521000E5D66E /* Build configuration list for PBXNativeTarget "mpi" */ = {
 			isa = XCConfigurationList;
@@ -2565,6 +2593,7 @@
 				B46F21E417CE521000E5D66E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B46F24A817CE55E000E5D66E /* Build configuration list for PBXNativeTarget "util" */ = {
 			isa = XCConfigurationList;
@@ -2573,6 +2602,7 @@
 				B46F24AA17CE55E000E5D66E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B46F253317CE58C500E5D66E /* Build configuration list for PBXNativeTarget "gpg" */ = {
 			isa = XCConfigurationList;
@@ -2581,6 +2611,7 @@
 				B46F253517CE58C500E5D66E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B4AB1CEA17CB6080001FC1A1 /* Build configuration list for PBXProject "gpg" */ = {
 			isa = XCConfigurationList;

@@ -32,6 +32,34 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		B46F21D517CE51F800E5D66E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B4AB1CFB17CB6080001FC1A1 /* gpg.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B4625EDA17CB98F0001121EC;
+			remoteInfo = cipher;
+		};
+		B46F21D717CE51F800E5D66E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B4AB1CFB17CB6080001FC1A1 /* gpg.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B46F20D017CE41E500E5D66E;
+			remoteInfo = intl;
+		};
+		B46F21D917CE51F800E5D66E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B4AB1CFB17CB6080001FC1A1 /* gpg.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B46F21A117CE4F2800E5D66E;
+			remoteInfo = bz2;
+		};
+		B46F249E17CE55C100E5D66E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B4AB1CFB17CB6080001FC1A1 /* gpg.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B46F21E117CE520F00E5D66E;
+			remoteInfo = mpi;
+		};
 		B4A2A29717C3C90500262BC3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B4A2A26B17C3C90400262BC3 /* Project object */;
@@ -272,6 +300,10 @@
 			isa = PBXGroup;
 			children = (
 				B4AB1D0117CB6081001FC1A1 /* gpg */,
+				B46F21D617CE51F800E5D66E /* libcipher.a */,
+				B46F21D817CE51F800E5D66E /* libintl.a */,
+				B46F21DA17CE51F800E5D66E /* libbz2.a */,
+				B46F249F17CE55C100E5D66E /* libmpi.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -417,6 +449,34 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		B46F21D617CE51F800E5D66E /* libcipher.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libcipher.a;
+			remoteRef = B46F21D517CE51F800E5D66E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B46F21D817CE51F800E5D66E /* libintl.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libintl.a;
+			remoteRef = B46F21D717CE51F800E5D66E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B46F21DA17CE51F800E5D66E /* libbz2.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libbz2.a;
+			remoteRef = B46F21D917CE51F800E5D66E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B46F249F17CE55C100E5D66E /* libmpi.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libmpi.a;
+			remoteRef = B46F249E17CE55C100E5D66E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		B4AB1D0117CB6081001FC1A1 /* gpg */ = {
 			isa = PBXReferenceProxy;
 			fileType = "compiled.mach-o.executable";

@@ -27,7 +27,6 @@
 		B4625EFC17CB993A001121EC /* rndegd.c in Sources */ = {isa = PBXBuildFile; fileRef = B4AB27A317CB96EB001FC1A1 /* rndegd.c */; };
 		B4625EFD17CB993A001121EC /* rndlinux.c in Sources */ = {isa = PBXBuildFile; fileRef = B4AB27A417CB96EB001FC1A1 /* rndlinux.c */; };
 		B4625EFE17CB993A001121EC /* rndunix.c in Sources */ = {isa = PBXBuildFile; fileRef = B4AB27A517CB96EB001FC1A1 /* rndunix.c */; };
-		B4625EFF17CB993A001121EC /* rndw32.c in Sources */ = {isa = PBXBuildFile; fileRef = B4AB27A617CB96EB001FC1A1 /* rndw32.c */; };
 		B4625F0017CB993A001121EC /* rsa.c in Sources */ = {isa = PBXBuildFile; fileRef = B4AB27A717CB96EB001FC1A1 /* rsa.c */; };
 		B4625F0217CB993A001121EC /* sha1.c in Sources */ = {isa = PBXBuildFile; fileRef = B4AB27A917CB96EB001FC1A1 /* sha1.c */; };
 		B4625F0317CB993A001121EC /* sha256.c in Sources */ = {isa = PBXBuildFile; fileRef = B4AB27AA17CB96EB001FC1A1 /* sha256.c */; };
@@ -118,7 +117,6 @@
 		B4AB2A2317CB96EC001FC1A1 /* rndegd.c in Sources */ = {isa = PBXBuildFile; fileRef = B4AB27A317CB96EB001FC1A1 /* rndegd.c */; };
 		B4AB2A2417CB96EC001FC1A1 /* rndlinux.c in Sources */ = {isa = PBXBuildFile; fileRef = B4AB27A417CB96EB001FC1A1 /* rndlinux.c */; };
 		B4AB2A2517CB96EC001FC1A1 /* rndunix.c in Sources */ = {isa = PBXBuildFile; fileRef = B4AB27A517CB96EB001FC1A1 /* rndunix.c */; };
-		B4AB2A2617CB96EC001FC1A1 /* rndw32.c in Sources */ = {isa = PBXBuildFile; fileRef = B4AB27A617CB96EB001FC1A1 /* rndw32.c */; };
 		B4AB2A2717CB96EC001FC1A1 /* rsa.c in Sources */ = {isa = PBXBuildFile; fileRef = B4AB27A717CB96EB001FC1A1 /* rsa.c */; };
 		B4AB2A2817CB96EC001FC1A1 /* sha1.c in Sources */ = {isa = PBXBuildFile; fileRef = B4AB27A917CB96EB001FC1A1 /* sha1.c */; };
 		B4AB2A2917CB96EC001FC1A1 /* sha256.c in Sources */ = {isa = PBXBuildFile; fileRef = B4AB27AA17CB96EB001FC1A1 /* sha256.c */; };
@@ -540,7 +538,6 @@
 		B4AB27A317CB96EB001FC1A1 /* rndegd.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rndegd.c; sourceTree = "<group>"; };
 		B4AB27A417CB96EB001FC1A1 /* rndlinux.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rndlinux.c; sourceTree = "<group>"; };
 		B4AB27A517CB96EB001FC1A1 /* rndunix.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rndunix.c; sourceTree = "<group>"; };
-		B4AB27A617CB96EB001FC1A1 /* rndw32.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rndw32.c; sourceTree = "<group>"; };
 		B4AB27A717CB96EB001FC1A1 /* rsa.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rsa.c; sourceTree = "<group>"; };
 		B4AB27A817CB96EB001FC1A1 /* rsa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rsa.h; sourceTree = "<group>"; };
 		B4AB27A917CB96EB001FC1A1 /* sha1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sha1.c; sourceTree = "<group>"; };
@@ -1225,7 +1222,6 @@
 				B4AB27A317CB96EB001FC1A1 /* rndegd.c */,
 				B4AB27A417CB96EB001FC1A1 /* rndlinux.c */,
 				B4AB27A517CB96EB001FC1A1 /* rndunix.c */,
-				B4AB27A617CB96EB001FC1A1 /* rndw32.c */,
 				B4AB27A717CB96EB001FC1A1 /* rsa.c */,
 				B4AB27A817CB96EB001FC1A1 /* rsa.h */,
 				B4AB27A917CB96EB001FC1A1 /* sha1.c */,
@@ -2170,7 +2166,6 @@
 				B4625EFC17CB993A001121EC /* rndegd.c in Sources */,
 				B4625EFD17CB993A001121EC /* rndlinux.c in Sources */,
 				B4625EFE17CB993A001121EC /* rndunix.c in Sources */,
-				B4625EFF17CB993A001121EC /* rndw32.c in Sources */,
 				B4625F0017CB993A001121EC /* rsa.c in Sources */,
 				B4625F0217CB993A001121EC /* sha1.c in Sources */,
 				B4625F0317CB993A001121EC /* sha256.c in Sources */,
@@ -2252,7 +2247,6 @@
 				B4AB2A2317CB96EC001FC1A1 /* rndegd.c in Sources */,
 				B4AB2A2417CB96EC001FC1A1 /* rndlinux.c in Sources */,
 				B4AB2A2517CB96EC001FC1A1 /* rndunix.c in Sources */,
-				B4AB2A2617CB96EC001FC1A1 /* rndw32.c in Sources */,
 				B4AB2A2717CB96EC001FC1A1 /* rsa.c in Sources */,
 				B4AB2A2817CB96EC001FC1A1 /* sha1.c in Sources */,
 				B4AB2A2917CB96EC001FC1A1 /* sha256.c in Sources */,
@@ -2499,6 +2493,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				EXECUTABLE_PREFIX = lib;
+				OTHER_CFLAGS = "-DGNUPG_LIBDIR=\"\\\"/usr/local/lib/gnupg\\\"\"";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -2507,6 +2502,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				EXECUTABLE_PREFIX = lib;
+				OTHER_CFLAGS = "-DGNUPG_LIBDIR=\"\\\"/usr/local/lib/gnupg\\\"\"";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

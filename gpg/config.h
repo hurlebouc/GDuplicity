@@ -282,7 +282,7 @@
 /* #undef HAVE_LIBRT */
 
 /* Define to 1 if you have a fully functional libusb library. */
-#define HAVE_LIBUSB 1
+/* #undef HAVE_LIBUSB */
 
 /* Define to 1 if you have the <limits.h> header file. */
 #define HAVE_LIMITS_H 1
@@ -505,7 +505,7 @@
 /* #undef HAVE_UNSIGNED_TIME_T */
 
 /* Define to 1 if you have the `usb_get_busses' function. */
-#define HAVE_USB_GET_BUSSES 1
+/* #undef HAVE_USB_GET_BUSSES */
 
 /* Define to 1 if you have the `uselocale' function. */
 #define HAVE_USELOCALE 1

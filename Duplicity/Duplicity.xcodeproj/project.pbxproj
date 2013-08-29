@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		B4C271BA17C791B60028C54E /* _librsyncmodule.c in Sources */ = {isa = PBXBuildFile; fileRef = B4C270E017C791B60028C54E /* _librsyncmodule.c */; };
-		B4DD4C2417C7CAAF007E7922 /* Python.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4DD4C2317C7CAAF007E7922 /* Python.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildRule section */
@@ -187,8 +186,6 @@
 		B4C2718417C791B60028C54E /* zh_CN.po */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zh_CN.po; sourceTree = "<group>"; };
 		B4C2718517C791B60028C54E /* zh_CN.po */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zh_CN.po; sourceTree = "<group>"; };
 		B4C2718917C791B60028C54E /* setup.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = setup.py; sourceTree = "<group>"; };
-		B4DD4C1D17C7A333007E7922 /* libpython2.7.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpython2.7.dylib; path = usr/lib/libpython2.7.dylib; sourceTree = SDKROOT; };
-		B4DD4C2317C7CAAF007E7922 /* Python.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Python.framework; path = System/Library/Frameworks/Python.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,7 +193,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4DD4C2417C7CAAF007E7922 /* Python.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,8 +202,6 @@
 		B4C26E8217C7873C0028C54E = {
 			isa = PBXGroup;
 			children = (
-				B4DD4C2317C7CAAF007E7922 /* Python.framework */,
-				B4DD4C1D17C7A333007E7922 /* libpython2.7.dylib */,
 				B4C2709117C791B60028C54E /* duplicity-0.6.22 */,
 				B4C26E8C17C7873C0028C54E /* Products */,
 			);

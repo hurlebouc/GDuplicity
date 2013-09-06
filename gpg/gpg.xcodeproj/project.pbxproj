@@ -154,7 +154,6 @@
 		B46F251117CE55FF00E5D66E /* iobuf.c in Sources */ = {isa = PBXBuildFile; fileRef = B46F24E617CE55FF00E5D66E /* iobuf.c */; };
 		B46F251217CE55FF00E5D66E /* isascii.c in Sources */ = {isa = PBXBuildFile; fileRef = B46F24E717CE55FF00E5D66E /* isascii.c */; };
 		B46F251317CE55FF00E5D66E /* logger.c in Sources */ = {isa = PBXBuildFile; fileRef = B46F24E817CE55FF00E5D66E /* logger.c */; };
-		B46F251417CE55FF00E5D66E /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = B46F24E917CE55FF00E5D66E /* Makefile */; };
 		B46F251517CE55FF00E5D66E /* membuf.c in Sources */ = {isa = PBXBuildFile; fileRef = B46F24EC17CE55FF00E5D66E /* membuf.c */; };
 		B46F251617CE55FF00E5D66E /* memory.c in Sources */ = {isa = PBXBuildFile; fileRef = B46F24ED17CE55FF00E5D66E /* memory.c */; };
 		B46F251717CE55FF00E5D66E /* memrchr.c in Sources */ = {isa = PBXBuildFile; fileRef = B46F24EE17CE55FF00E5D66E /* memrchr.c */; };
@@ -277,38 +276,58 @@
 		B478F98A17CF3B1F0052A892 /* libutil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B46F24A717CE55E000E5D66E /* libutil.a */; };
 		B478F99117CF3BAA0052A892 /* gpgv.c in Sources */ = {isa = PBXBuildFile; fileRef = B46F258E17CE591200E5D66E /* gpgv.c */; };
 		B478F99217CF3BB90052A892 /* gpg.c in Sources */ = {isa = PBXBuildFile; fileRef = B46F258D17CE591200E5D66E /* gpg.c */; };
+		B4B0450217DA5EDD00AC600D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B044B017DA561200AC600D /* Cocoa.framework */; };
+		B4B0450817DA5EDD00AC600D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B4B0450617DA5EDD00AC600D /* InfoPlist.strings */; };
+		B4B0451017DA5F1200AC600D /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = B48551BC17CBAED300A9067E /* config.h */; };
+		B4B0451117DA5F2A00AC600D /* assuan-defs.h in Headers */ = {isa = PBXBuildFile; fileRef = B46F24D717CE55FF00E5D66E /* assuan-defs.h */; };
+		B4B0451217DA5F2D00AC600D /* regex_internal.h in Headers */ = {isa = PBXBuildFile; fileRef = B46F24F517CE55FF00E5D66E /* regex_internal.h */; };
+		B4B0451317DA5F7200AC600D /* argparse.c in Sources */ = {isa = PBXBuildFile; fileRef = B46F24D317CE55FF00E5D66E /* argparse.c */; };
+		B4B0451417DA5F7200AC600D /* assuan-buffer.c in Sources */ = {isa = PBXBuildFile; fileRef = B46F24D417CE55FF00E5D66E /* assuan-buffer.c */; };
+		B4B0451517DA5F7200AC600D /* assuan-client.c in Sources */ = {isa = PBXBuildFile; fileRef = B46F24D517CE55FF00E5D66E /* assuan-client.c */; };
+		B4B0451617DA5F7200AC600D /* assuan-connect.c in Sources */ = {isa = PBXBuildFile; fileRef = B46F24D617CE55FF00E5D66E /* assuan-connect.c */; };
+		B4B0451817DA5F7200AC600D /* assuan-errors.c in Sources */ = {isa = PBXBuildFile; fileRef = B46F24D817CE55FF00E5D66E /* assuan-errors.c */; };
+		B4B0451917DA5F7200AC600D /* assuan-logging.c in Sources */ = {isa = PBXBuildFile; fileRef = B46F24D917CE55FF00E5D66E /* assuan-logging.c */; };
+		B4B0451A17DA5F7200AC600D /* assuan-socket-connect.c in Sources */ = {isa = PBXBuildFile; fileRef = B46F24DA17CE55FF00E5D66E /* assuan-socket-connect.c */; };
+		B4B0451B17DA5F7200AC600D /* assuan-socket.c in Sources */ = {isa = PBXBuildFile; fileRef = B46F24DB17CE55FF00E5D66E /* assuan-socket.c */; };
+		B4B0451C17DA5F7200AC600D /* assuan-util.c in Sources */ = {isa = PBXBuildFile; fileRef = B46F24DC17CE55FF00E5D66E /* assuan-util.c */; };
+		B4B0451D17DA5F7200AC600D /* cert.c in Sources */ = {isa = PBXBuildFile; fileRef = B46F24DD17CE55FF00E5D66E /* cert.c */; };
+		B4B0451E17DA5F7200AC600D /* compat.c in Sources */ = {isa = PBXBuildFile; fileRef = B46F24DF17CE55FF00E5D66E /* compat.c */; };
+		B4B0451F17DA5F7200AC600D /* convert.c in Sources */ = {isa = PBXBuildFile; fileRef = B46F24E017CE55FF00E5D66E /* convert.c */; };
+		B4B0452017DA5F7200AC600D /* dotlock.c in Sources */ = {isa = PBXBuildFile; fileRef = B46F24E117CE55FF00E5D66E /* dotlock.c */; };
+		B4B0452117DA5F7200AC600D /* errors.c in Sources */ = {isa = PBXBuildFile; fileRef = B46F24E217CE55FF00E5D66E /* errors.c */; };
+		B4B0452217DA5F7200AC600D /* estream-printf.c in Sources */ = {isa = PBXBuildFile; fileRef = B46F24E317CE55FF00E5D66E /* estream-printf.c */; };
+		B4B0452317DA5F7200AC600D /* fileutil.c in Sources */ = {isa = PBXBuildFile; fileRef = B46F24E417CE55FF00E5D66E /* fileutil.c */; };
+		B4B0452417DA5F7200AC600D /* http.c in Sources */ = {isa = PBXBuildFile; fileRef = B46F24E517CE55FF00E5D66E /* http.c */; };
+		B4B0452517DA5F7200AC600D /* iobuf.c in Sources */ = {isa = PBXBuildFile; fileRef = B46F24E617CE55FF00E5D66E /* iobuf.c */; };
+		B4B0452617DA5F7200AC600D /* isascii.c in Sources */ = {isa = PBXBuildFile; fileRef = B46F24E717CE55FF00E5D66E /* isascii.c */; };
+		B4B0452717DA5F7200AC600D /* logger.c in Sources */ = {isa = PBXBuildFile; fileRef = B46F24E817CE55FF00E5D66E /* logger.c */; };
+		B4B0452817DA5F7200AC600D /* membuf.c in Sources */ = {isa = PBXBuildFile; fileRef = B46F24EC17CE55FF00E5D66E /* membuf.c */; };
+		B4B0452917DA5F7200AC600D /* memory.c in Sources */ = {isa = PBXBuildFile; fileRef = B46F24ED17CE55FF00E5D66E /* memory.c */; };
+		B4B0452A17DA5F7200AC600D /* memrchr.c in Sources */ = {isa = PBXBuildFile; fileRef = B46F24EE17CE55FF00E5D66E /* memrchr.c */; };
+		B4B0452B17DA5F7200AC600D /* miscutil.c in Sources */ = {isa = PBXBuildFile; fileRef = B46F24EF17CE55FF00E5D66E /* miscutil.c */; };
+		B4B0452C17DA5F7200AC600D /* mkdtemp.c in Sources */ = {isa = PBXBuildFile; fileRef = B46F24F017CE55FF00E5D66E /* mkdtemp.c */; };
+		B4B0452D17DA5F7200AC600D /* pka.c in Sources */ = {isa = PBXBuildFile; fileRef = B46F24F117CE55FF00E5D66E /* pka.c */; };
+		B4B0452E17DA5F7200AC600D /* regcomp.c in Sources */ = {isa = PBXBuildFile; fileRef = B46F24F217CE55FF00E5D66E /* regcomp.c */; };
+		B4B0452F17DA5F7200AC600D /* regex.c in Sources */ = {isa = PBXBuildFile; fileRef = B46F24F317CE55FF00E5D66E /* regex.c */; };
+		B4B0453017DA5F7200AC600D /* regex_internal.c in Sources */ = {isa = PBXBuildFile; fileRef = B46F24F417CE55FF00E5D66E /* regex_internal.c */; };
+		B4B0453217DA5F7200AC600D /* regexec.c in Sources */ = {isa = PBXBuildFile; fileRef = B46F24F617CE55FF00E5D66E /* regexec.c */; };
+		B4B0453317DA5F7200AC600D /* secmem.c in Sources */ = {isa = PBXBuildFile; fileRef = B46F24F717CE55FF00E5D66E /* secmem.c */; };
+		B4B0453417DA5F7200AC600D /* simple-gettext.c in Sources */ = {isa = PBXBuildFile; fileRef = B46F24F817CE55FF00E5D66E /* simple-gettext.c */; };
+		B4B0453517DA5F7200AC600D /* srv.c in Sources */ = {isa = PBXBuildFile; fileRef = B46F24F917CE55FF00E5D66E /* srv.c */; };
+		B4B0453617DA5F7200AC600D /* strgutil.c in Sources */ = {isa = PBXBuildFile; fileRef = B46F24FA17CE55FF00E5D66E /* strgutil.c */; };
+		B4B0453717DA5F7200AC600D /* strsep.c in Sources */ = {isa = PBXBuildFile; fileRef = B46F24FB17CE55FF00E5D66E /* strsep.c */; };
+		B4B0453817DA5F7200AC600D /* timegm.c in Sources */ = {isa = PBXBuildFile; fileRef = B46F24FC17CE55FF00E5D66E /* timegm.c */; };
+		B4B0453917DA5F7200AC600D /* ttyio.c in Sources */ = {isa = PBXBuildFile; fileRef = B46F24FD17CE55FF00E5D66E /* ttyio.c */; };
+		B4B0453A17DA5F7200AC600D /* w32reg.c in Sources */ = {isa = PBXBuildFile; fileRef = B46F24FE17CE55FF00E5D66E /* w32reg.c */; };
+		B4B0453F17DA605500AC600D /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B46F260C17CE94B900E5D66E /* libiconv.dylib */; };
+		B4B0454117DA60AC00AC600D /* libcipher.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B4625EDA17CB98F0001121EC /* libcipher.a */; };
+		B4B0454217DA60AC00AC600D /* libintl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B46F20D017CE41E500E5D66E /* libintl.a */; };
+		B4B0454317DA60AC00AC600D /* libmpi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B46F21E117CE520F00E5D66E /* libmpi.a */; };
+		B4B0454417DA60AC00AC600D /* libutil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B46F24A717CE55E000E5D66E /* libutil.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		B46F219A17CE462100E5D66E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B4AB1CE717CB6080001FC1A1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B46F20CF17CE41E500E5D66E;
-			remoteInfo = intl;
-		};
-		B46F25FF17CE595900E5D66E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B4AB1CE717CB6080001FC1A1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B4625ED917CB98F0001121EC;
-			remoteInfo = cipher;
-		};
-		B46F260317CE596600E5D66E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B4AB1CE717CB6080001FC1A1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B46F21E017CE520F00E5D66E;
-			remoteInfo = mpi;
-		};
-		B46F260517CE596A00E5D66E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B4AB1CE717CB6080001FC1A1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B46F24A617CE55E000E5D66E;
-			remoteInfo = util;
-		};
-		B46F261B17CE96B400E5D66E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B4AB1CE717CB6080001FC1A1 /* Project object */;
 			proxyType = 1;
@@ -342,6 +361,34 @@
 			proxyType = 1;
 			remoteGlobalIDString = B46F21E017CE520F00E5D66E;
 			remoteInfo = mpi;
+		};
+		B4B0454517DA631400AC600D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B4AB1CE717CB6080001FC1A1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B46F24A617CE55E000E5D66E;
+			remoteInfo = util;
+		};
+		B4B0454717DA631600AC600D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B4AB1CE717CB6080001FC1A1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B46F21E017CE520F00E5D66E;
+			remoteInfo = mpi;
+		};
+		B4B0454917DA631700AC600D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B4AB1CE717CB6080001FC1A1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B46F20CF17CE41E500E5D66E;
+			remoteInfo = intl;
+		};
+		B4B0454B17DA631900AC600D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B4AB1CE717CB6080001FC1A1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B4625ED917CB98F0001121EC;
+			remoteInfo = cipher;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -587,7 +634,6 @@
 		B46F24DB17CE55FF00E5D66E /* assuan-socket.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "assuan-socket.c"; sourceTree = "<group>"; };
 		B46F24DC17CE55FF00E5D66E /* assuan-util.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "assuan-util.c"; sourceTree = "<group>"; };
 		B46F24DD17CE55FF00E5D66E /* cert.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cert.c; sourceTree = "<group>"; };
-		B46F24DE17CE55FF00E5D66E /* ChangeLog-2011 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "ChangeLog-2011"; sourceTree = "<group>"; };
 		B46F24DF17CE55FF00E5D66E /* compat.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = compat.c; sourceTree = "<group>"; };
 		B46F24E017CE55FF00E5D66E /* convert.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = convert.c; sourceTree = "<group>"; };
 		B46F24E117CE55FF00E5D66E /* dotlock.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dotlock.c; sourceTree = "<group>"; };
@@ -598,9 +644,6 @@
 		B46F24E617CE55FF00E5D66E /* iobuf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = iobuf.c; sourceTree = "<group>"; };
 		B46F24E717CE55FF00E5D66E /* isascii.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = isascii.c; sourceTree = "<group>"; };
 		B46F24E817CE55FF00E5D66E /* logger.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = logger.c; sourceTree = "<group>"; };
-		B46F24E917CE55FF00E5D66E /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
-		B46F24EA17CE55FF00E5D66E /* Makefile.am */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.am; sourceTree = "<group>"; };
-		B46F24EB17CE55FF00E5D66E /* Makefile.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.in; sourceTree = "<group>"; };
 		B46F24EC17CE55FF00E5D66E /* membuf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = membuf.c; sourceTree = "<group>"; };
 		B46F24ED17CE55FF00E5D66E /* memory.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = memory.c; sourceTree = "<group>"; };
 		B46F24EE17CE55FF00E5D66E /* memrchr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = memrchr.c; sourceTree = "<group>"; };
@@ -805,11 +848,10 @@
 		B4B044B317DA561200AC600D /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		B4B044B417DA561200AC600D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		B4B044B517DA561200AC600D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		B4B044B817DA561200AC600D /* framtest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "framtest-Info.plist"; sourceTree = "<group>"; };
-		B4B044BA17DA561200AC600D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		B4B044BC17DA561200AC600D /* framtest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "framtest-Prefix.pch"; sourceTree = "<group>"; };
-		B4B044BD17DA561200AC600D /* framtest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = framtest.h; sourceTree = "<group>"; };
-		B4B044BE17DA561200AC600D /* framtest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = framtest.m; sourceTree = "<group>"; };
+		B4B0450117DA5EDD00AC600D /* GPGUtil.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GPGUtil.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4B0450517DA5EDD00AC600D /* GPGUtil-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GPGUtil-Info.plist"; sourceTree = "<group>"; };
+		B4B0450717DA5EDD00AC600D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B4B0450917DA5EDD00AC600D /* GPGUtil-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GPGUtil-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -873,6 +915,19 @@
 				B478F98817CF3B1F0052A892 /* libintl.a in Frameworks */,
 				B478F98917CF3B1F0052A892 /* libmpi.a in Frameworks */,
 				B478F98A17CF3B1F0052A892 /* libutil.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4B044FD17DA5EDD00AC600D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4B0454117DA60AC00AC600D /* libcipher.a in Frameworks */,
+				B4B0454217DA60AC00AC600D /* libintl.a in Frameworks */,
+				B4B0454317DA60AC00AC600D /* libmpi.a in Frameworks */,
+				B4B0454417DA60AC00AC600D /* libutil.a in Frameworks */,
+				B4B0450217DA5EDD00AC600D /* Cocoa.framework in Frameworks */,
+				B4B0453F17DA605500AC600D /* libiconv.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1165,7 +1220,6 @@
 				B46F24DB17CE55FF00E5D66E /* assuan-socket.c */,
 				B46F24DC17CE55FF00E5D66E /* assuan-util.c */,
 				B46F24DD17CE55FF00E5D66E /* cert.c */,
-				B46F24DE17CE55FF00E5D66E /* ChangeLog-2011 */,
 				B46F24DF17CE55FF00E5D66E /* compat.c */,
 				B46F24E017CE55FF00E5D66E /* convert.c */,
 				B46F24E117CE55FF00E5D66E /* dotlock.c */,
@@ -1176,9 +1230,6 @@
 				B46F24E617CE55FF00E5D66E /* iobuf.c */,
 				B46F24E717CE55FF00E5D66E /* isascii.c */,
 				B46F24E817CE55FF00E5D66E /* logger.c */,
-				B46F24E917CE55FF00E5D66E /* Makefile */,
-				B46F24EA17CE55FF00E5D66E /* Makefile.am */,
-				B46F24EB17CE55FF00E5D66E /* Makefile.in */,
 				B46F24EC17CE55FF00E5D66E /* membuf.c */,
 				B46F24ED17CE55FF00E5D66E /* memory.c */,
 				B46F24EE17CE55FF00E5D66E /* memrchr.c */,
@@ -1305,7 +1356,7 @@
 			children = (
 				B4AB273D17CB96EA001FC1A1 /* gnupg-1.4.14 */,
 				B478F93C17CF34970052A892 /* lib */,
-				B4B044B617DA561200AC600D /* framtest */,
+				B4B0450317DA5EDD00AC600D /* GPGUtil */,
 				B4B044AF17DA561200AC600D /* Frameworks */,
 				B4AB1CF017CB6080001FC1A1 /* Products */,
 			);
@@ -1320,6 +1371,7 @@
 				B46F24A717CE55E000E5D66E /* libutil.a */,
 				B46F252D17CE58C400E5D66E /* gpg */,
 				B478F98F17CF3B1F0052A892 /* gpgv */,
+				B4B0450117DA5EDD00AC600D /* GPGUtil.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1558,22 +1610,20 @@
 			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
-		B4B044B617DA561200AC600D /* framtest */ = {
+		B4B0450317DA5EDD00AC600D /* GPGUtil */ = {
 			isa = PBXGroup;
 			children = (
-				B4B044BD17DA561200AC600D /* framtest.h */,
-				B4B044BE17DA561200AC600D /* framtest.m */,
-				B4B044B717DA561200AC600D /* Supporting Files */,
+				B4B0450417DA5EDD00AC600D /* Supporting Files */,
 			);
-			path = framtest;
+			path = GPGUtil;
 			sourceTree = "<group>";
 		};
-		B4B044B717DA561200AC600D /* Supporting Files */ = {
+		B4B0450417DA5EDD00AC600D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				B4B044B817DA561200AC600D /* framtest-Info.plist */,
-				B4B044B917DA561200AC600D /* InfoPlist.strings */,
-				B4B044BC17DA561200AC600D /* framtest-Prefix.pch */,
+				B4B0450517DA5EDD00AC600D /* GPGUtil-Info.plist */,
+				B4B0450617DA5EDD00AC600D /* InfoPlist.strings */,
+				B4B0450917DA5EDD00AC600D /* GPGUtil-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -1643,6 +1693,16 @@
 				B46F250317CE55FF00E5D66E /* assuan-defs.h in Headers */,
 				B46F251E17CE55FF00E5D66E /* regex_internal.h in Headers */,
 				B46F252817CE574B00E5D66E /* config.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4B044FE17DA5EDD00AC600D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4B0451017DA5F1200AC600D /* config.h in Headers */,
+				B4B0451117DA5F2A00AC600D /* assuan-defs.h in Headers */,
+				B4B0451217DA5F2D00AC600D /* regex_internal.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1729,10 +1789,10 @@
 			buildRules = (
 			);
 			dependencies = (
-				B46F260017CE595900E5D66E /* PBXTargetDependency */,
-				B46F260617CE596A00E5D66E /* PBXTargetDependency */,
-				B46F261C17CE96B400E5D66E /* PBXTargetDependency */,
-				B46F260417CE596600E5D66E /* PBXTargetDependency */,
+				B4B0454617DA631400AC600D /* PBXTargetDependency */,
+				B4B0454C17DA631900AC600D /* PBXTargetDependency */,
+				B4B0454817DA631600AC600D /* PBXTargetDependency */,
+				B4B0454A17DA631700AC600D /* PBXTargetDependency */,
 			);
 			name = gpg;
 			productName = gpg;
@@ -1759,6 +1819,24 @@
 			productName = gpg;
 			productReference = B478F98F17CF3B1F0052A892 /* gpgv */;
 			productType = "com.apple.product-type.tool";
+		};
+		B4B0450017DA5EDD00AC600D /* GPGUtil */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4B0450D17DA5EDD00AC600D /* Build configuration list for PBXNativeTarget "GPGUtil" */;
+			buildPhases = (
+				B4B044FC17DA5EDD00AC600D /* Sources */,
+				B4B044FD17DA5EDD00AC600D /* Frameworks */,
+				B4B044FE17DA5EDD00AC600D /* Headers */,
+				B4B044FF17DA5EDD00AC600D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GPGUtil;
+			productName = GPGUtil;
+			productReference = B4B0450117DA5EDD00AC600D /* GPGUtil.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -1787,9 +1865,21 @@
 				B46F24A617CE55E000E5D66E /* util */,
 				B46F252C17CE58C400E5D66E /* gpg */,
 				B478F93D17CF3B1F0052A892 /* gpgv */,
+				B4B0450017DA5EDD00AC600D /* GPGUtil */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B4B044FF17DA5EDD00AC600D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4B0450817DA5EDD00AC600D /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B4625ED617CB98F0001121EC /* Sources */ = {
@@ -1928,7 +2018,6 @@
 				B46F251117CE55FF00E5D66E /* iobuf.c in Sources */,
 				B46F251217CE55FF00E5D66E /* isascii.c in Sources */,
 				B46F251317CE55FF00E5D66E /* logger.c in Sources */,
-				B46F251417CE55FF00E5D66E /* Makefile in Sources */,
 				B46F251517CE55FF00E5D66E /* membuf.c in Sources */,
 				B46F251617CE55FF00E5D66E /* memory.c in Sources */,
 				B46F251717CE55FF00E5D66E /* memrchr.c in Sources */,
@@ -2046,6 +2135,51 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B4B044FC17DA5EDD00AC600D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4B0451317DA5F7200AC600D /* argparse.c in Sources */,
+				B4B0451417DA5F7200AC600D /* assuan-buffer.c in Sources */,
+				B4B0451517DA5F7200AC600D /* assuan-client.c in Sources */,
+				B4B0451617DA5F7200AC600D /* assuan-connect.c in Sources */,
+				B4B0451817DA5F7200AC600D /* assuan-errors.c in Sources */,
+				B4B0451917DA5F7200AC600D /* assuan-logging.c in Sources */,
+				B4B0451A17DA5F7200AC600D /* assuan-socket-connect.c in Sources */,
+				B4B0451B17DA5F7200AC600D /* assuan-socket.c in Sources */,
+				B4B0451C17DA5F7200AC600D /* assuan-util.c in Sources */,
+				B4B0451D17DA5F7200AC600D /* cert.c in Sources */,
+				B4B0451E17DA5F7200AC600D /* compat.c in Sources */,
+				B4B0451F17DA5F7200AC600D /* convert.c in Sources */,
+				B4B0452017DA5F7200AC600D /* dotlock.c in Sources */,
+				B4B0452117DA5F7200AC600D /* errors.c in Sources */,
+				B4B0452217DA5F7200AC600D /* estream-printf.c in Sources */,
+				B4B0452317DA5F7200AC600D /* fileutil.c in Sources */,
+				B4B0452417DA5F7200AC600D /* http.c in Sources */,
+				B4B0452517DA5F7200AC600D /* iobuf.c in Sources */,
+				B4B0452617DA5F7200AC600D /* isascii.c in Sources */,
+				B4B0452717DA5F7200AC600D /* logger.c in Sources */,
+				B4B0452817DA5F7200AC600D /* membuf.c in Sources */,
+				B4B0452917DA5F7200AC600D /* memory.c in Sources */,
+				B4B0452A17DA5F7200AC600D /* memrchr.c in Sources */,
+				B4B0452B17DA5F7200AC600D /* miscutil.c in Sources */,
+				B4B0452C17DA5F7200AC600D /* mkdtemp.c in Sources */,
+				B4B0452D17DA5F7200AC600D /* pka.c in Sources */,
+				B4B0452E17DA5F7200AC600D /* regcomp.c in Sources */,
+				B4B0452F17DA5F7200AC600D /* regex.c in Sources */,
+				B4B0453017DA5F7200AC600D /* regex_internal.c in Sources */,
+				B4B0453217DA5F7200AC600D /* regexec.c in Sources */,
+				B4B0453317DA5F7200AC600D /* secmem.c in Sources */,
+				B4B0453417DA5F7200AC600D /* simple-gettext.c in Sources */,
+				B4B0453517DA5F7200AC600D /* srv.c in Sources */,
+				B4B0453617DA5F7200AC600D /* strgutil.c in Sources */,
+				B4B0453717DA5F7200AC600D /* strsep.c in Sources */,
+				B4B0453817DA5F7200AC600D /* timegm.c in Sources */,
+				B4B0453917DA5F7200AC600D /* ttyio.c in Sources */,
+				B4B0453A17DA5F7200AC600D /* w32reg.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -2053,26 +2187,6 @@
 			isa = PBXTargetDependency;
 			target = B46F20CF17CE41E500E5D66E /* intl */;
 			targetProxy = B46F219A17CE462100E5D66E /* PBXContainerItemProxy */;
-		};
-		B46F260017CE595900E5D66E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B4625ED917CB98F0001121EC /* cipher */;
-			targetProxy = B46F25FF17CE595900E5D66E /* PBXContainerItemProxy */;
-		};
-		B46F260417CE596600E5D66E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B46F21E017CE520F00E5D66E /* mpi */;
-			targetProxy = B46F260317CE596600E5D66E /* PBXContainerItemProxy */;
-		};
-		B46F260617CE596A00E5D66E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B46F24A617CE55E000E5D66E /* util */;
-			targetProxy = B46F260517CE596A00E5D66E /* PBXContainerItemProxy */;
-		};
-		B46F261C17CE96B400E5D66E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B46F20CF17CE41E500E5D66E /* intl */;
-			targetProxy = B46F261B17CE96B400E5D66E /* PBXContainerItemProxy */;
 		};
 		B478F93E17CF3B1F0052A892 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -2094,13 +2208,33 @@
 			target = B46F21E017CE520F00E5D66E /* mpi */;
 			targetProxy = B478F94517CF3B1F0052A892 /* PBXContainerItemProxy */;
 		};
+		B4B0454617DA631400AC600D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B46F24A617CE55E000E5D66E /* util */;
+			targetProxy = B4B0454517DA631400AC600D /* PBXContainerItemProxy */;
+		};
+		B4B0454817DA631600AC600D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B46F21E017CE520F00E5D66E /* mpi */;
+			targetProxy = B4B0454717DA631600AC600D /* PBXContainerItemProxy */;
+		};
+		B4B0454A17DA631700AC600D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B46F20CF17CE41E500E5D66E /* intl */;
+			targetProxy = B4B0454917DA631700AC600D /* PBXContainerItemProxy */;
+		};
+		B4B0454C17DA631900AC600D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B4625ED917CB98F0001121EC /* cipher */;
+			targetProxy = B4B0454B17DA631900AC600D /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B4B044B917DA561200AC600D /* InfoPlist.strings */ = {
+		B4B0450617DA5EDD00AC600D /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				B4B044BA17DA561200AC600D /* en */,
+				B4B0450717DA5EDD00AC600D /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -2113,6 +2247,7 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				EXECUTABLE_PREFIX = lib;
+				INSTALL_PATH = "@executable_path/../MacOS";
 				OTHER_CFLAGS = "-DGNUPG_LIBDIR=\"\\\"/usr/local/lib/gnupg\\\"\"";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -2123,6 +2258,7 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				EXECUTABLE_PREFIX = lib;
+				INSTALL_PATH = "@executable_path/../MacOS";
 				OTHER_CFLAGS = "-DGNUPG_LIBDIR=\"\\\"/usr/local/lib/gnupg\\\"\"";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -2134,6 +2270,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				EXECUTABLE_PREFIX = lib;
 				GCC_LINK_WITH_DYNAMIC_LIBRARIES = YES;
+				INSTALL_PATH = "@executable_path/../MacOS";
 				OTHER_CFLAGS = (
 					"-DLOCALEDIR=\\\"/usr/local/share/locale\\\"",
 					"-DLOCALE_ALIAS_PATH=\\\"/usr/local/share/locale\\\"",
@@ -2160,6 +2297,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				EXECUTABLE_PREFIX = lib;
 				GCC_LINK_WITH_DYNAMIC_LIBRARIES = YES;
+				INSTALL_PATH = "@executable_path/../MacOS";
 				OTHER_CFLAGS = (
 					"-DLOCALEDIR=\\\"/usr/local/share/locale\\\"",
 					"-DLOCALE_ALIAS_PATH=\\\"/usr/local/share/locale\\\"",
@@ -2185,6 +2323,7 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				EXECUTABLE_PREFIX = lib;
+				INSTALL_PATH = "@executable_path/../MacOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -2194,6 +2333,7 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				EXECUTABLE_PREFIX = lib;
+				INSTALL_PATH = "@executable_path/../MacOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -2203,6 +2343,7 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				EXECUTABLE_PREFIX = lib;
+				INSTALL_PATH = "@executable_path/../MacOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -2212,6 +2353,7 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				EXECUTABLE_PREFIX = lib;
+				INSTALL_PATH = "@executable_path/../MacOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -2220,6 +2362,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				HEADER_SEARCH_PATHS = ../gpg/;
+				INSTALL_PATH = "@executable_path/../MacOS";
 				OTHER_CFLAGS = (
 					"-DLOCALEDIR=\"\\\"/usr/local/share/locale\\\"\"",
 					"-DGNUPG_LIBEXECDIR=\"\\\"/usr/local/libexec/gnupg\\\"\"",
@@ -2235,6 +2378,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				HEADER_SEARCH_PATHS = ../gpg/;
+				INSTALL_PATH = "@executable_path/../MacOS";
 				OTHER_CFLAGS = (
 					"-DLOCALEDIR=\"\\\"/usr/local/share/locale\\\"\"",
 					"-DGNUPG_LIBEXECDIR=\"\\\"/usr/local/libexec/gnupg\\\"\"",
@@ -2250,6 +2394,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				HEADER_SEARCH_PATHS = ../gpg/;
+				INSTALL_PATH = "@executable_path/../MacOS";
 				OTHER_CFLAGS = (
 					"-DLOCALEDIR=\"\\\"/usr/local/share/locale\\\"\"",
 					"-DGNUPG_LIBEXECDIR=\"\\\"/usr/local/libexec/gnupg\\\"\"",
@@ -2265,6 +2410,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				HEADER_SEARCH_PATHS = ../gpg/;
+				INSTALL_PATH = "@executable_path/../MacOS";
 				OTHER_CFLAGS = (
 					"-DLOCALEDIR=\"\\\"/usr/local/share/locale\\\"\"",
 					"-DGNUPG_LIBEXECDIR=\"\\\"/usr/local/libexec/gnupg\\\"\"",
@@ -2333,6 +2479,40 @@
 			};
 			name = Release;
 		};
+		B4B0450E17DA5EDD00AC600D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GPGUtil/GPGUtil-Prefix.pch";
+				INFOPLIST_FILE = "GPGUtil/GPGUtil-Info.plist";
+				New_Setting = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		B4B0450F17DA5EDD00AC600D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GPGUtil/GPGUtil-Prefix.pch";
+				INFOPLIST_FILE = "GPGUtil/GPGUtil-Info.plist";
+				New_Setting = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -2398,6 +2578,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		B4B0450D17DA5EDD00AC600D /* Build configuration list for PBXNativeTarget "GPGUtil" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4B0450E17DA5EDD00AC600D /* Debug */,
+				B4B0450F17DA5EDD00AC600D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

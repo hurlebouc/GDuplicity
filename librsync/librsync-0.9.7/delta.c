@@ -80,7 +80,6 @@
 #include "types.h"
 #include "rollsum.h"
 
-
 /**
  * 2002-06-26: Donovan Baarda
  * 
@@ -121,23 +120,23 @@
 /* used by rdiff, but now redundant */
 int rs_roll_paranoia = 0;
 
-static rs_result rs_delta_s_scan(rs_job_t *job);
-static rs_result rs_delta_s_flush(rs_job_t *job);
-static rs_result rs_delta_s_end(rs_job_t *job);
+rs_result rs_delta_s_scan(rs_job_t *job);
+rs_result rs_delta_s_flush(rs_job_t *job);
+rs_result rs_delta_s_end(rs_job_t *job);
 void rs_getinput(rs_job_t *job);
-inline int rs_findmatch(rs_job_t *job, rs_long_t *match_pos, size_t *match_len);
-inline rs_result rs_appendmatch(rs_job_t *job, rs_long_t match_pos, size_t match_len);
-inline rs_result rs_appendmiss(rs_job_t *job, size_t miss_len);
-inline rs_result rs_appendflush(rs_job_t *job);
-inline rs_result rs_processmatch(rs_job_t *job);
-inline rs_result rs_processmiss(rs_job_t *job);
+int rs_findmatch(rs_job_t *job, rs_long_t *match_pos, size_t *match_len);
+rs_result rs_appendmatch(rs_job_t *job, rs_long_t match_pos, size_t match_len);
+rs_result rs_appendmiss(rs_job_t *job, size_t miss_len);
+rs_result rs_appendflush(rs_job_t *job);
+rs_result rs_processmatch(rs_job_t *job);
+rs_result rs_processmiss(rs_job_t *job);
 
 /**
  * \brief Get a block of data if possible, and see if it matches.
  * 
  * On each call, we try to process all of the input data available on the
  * scoop and input buffer. */
-static rs_result rs_delta_s_scan(rs_job_t *job)
+ rs_result rs_delta_s_scan(rs_job_t *job)
 {
     rs_long_t      match_pos;
     size_t         match_len;
@@ -190,7 +189,7 @@ static rs_result rs_delta_s_scan(rs_job_t *job)
 }
 
 
-static rs_result rs_delta_s_flush(rs_job_t *job)
+ rs_result rs_delta_s_flush(rs_job_t *job)
 {
     rs_long_t      match_pos;
     size_t         match_len;
@@ -227,7 +226,7 @@ static rs_result rs_delta_s_flush(rs_job_t *job)
 }
 
 
-static rs_result rs_delta_s_end(rs_job_t *job)
+ rs_result rs_delta_s_end(rs_job_t *job)
 {
     rs_emit_end_cmd(job);
     return RS_DONE;

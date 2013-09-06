@@ -801,6 +801,15 @@
 		B4AB2A0717CB96EC001FC1A1 /* zlib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zlib.h; sourceTree = "<group>"; };
 		B4AB2A0817CB96EC001FC1A1 /* zutil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zutil.c; sourceTree = "<group>"; };
 		B4AB2A0917CB96EC001FC1A1 /* zutil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zutil.h; sourceTree = "<group>"; };
+		B4B044B017DA561200AC600D /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		B4B044B317DA561200AC600D /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		B4B044B417DA561200AC600D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		B4B044B517DA561200AC600D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B4B044B817DA561200AC600D /* framtest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "framtest-Info.plist"; sourceTree = "<group>"; };
+		B4B044BA17DA561200AC600D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B4B044BC17DA561200AC600D /* framtest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "framtest-Prefix.pch"; sourceTree = "<group>"; };
+		B4B044BD17DA561200AC600D /* framtest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = framtest.h; sourceTree = "<group>"; };
+		B4B044BE17DA561200AC600D /* framtest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = framtest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1296,6 +1305,8 @@
 			children = (
 				B4AB273D17CB96EA001FC1A1 /* gnupg-1.4.14 */,
 				B478F93C17CF34970052A892 /* lib */,
+				B4B044B617DA561200AC600D /* framtest */,
+				B4B044AF17DA561200AC600D /* Frameworks */,
 				B4AB1CF017CB6080001FC1A1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -1526,6 +1537,45 @@
 				B4AB2A0917CB96EC001FC1A1 /* zutil.h */,
 			);
 			path = zlib;
+			sourceTree = "<group>";
+		};
+		B4B044AF17DA561200AC600D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B4B044B017DA561200AC600D /* Cocoa.framework */,
+				B4B044B217DA561200AC600D /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B4B044B217DA561200AC600D /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B4B044B317DA561200AC600D /* AppKit.framework */,
+				B4B044B417DA561200AC600D /* CoreData.framework */,
+				B4B044B517DA561200AC600D /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		B4B044B617DA561200AC600D /* framtest */ = {
+			isa = PBXGroup;
+			children = (
+				B4B044BD17DA561200AC600D /* framtest.h */,
+				B4B044BE17DA561200AC600D /* framtest.m */,
+				B4B044B717DA561200AC600D /* Supporting Files */,
+			);
+			path = framtest;
+			sourceTree = "<group>";
+		};
+		B4B044B717DA561200AC600D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B4B044B817DA561200AC600D /* framtest-Info.plist */,
+				B4B044B917DA561200AC600D /* InfoPlist.strings */,
+				B4B044BC17DA561200AC600D /* framtest-Prefix.pch */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -2045,6 +2095,17 @@
 			targetProxy = B478F94517CF3B1F0052A892 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B4B044B917DA561200AC600D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B4B044BA17DA561200AC600D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		B4625EDB17CB98F0001121EC /* Debug */ = {

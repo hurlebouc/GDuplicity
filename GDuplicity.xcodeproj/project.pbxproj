@@ -13,10 +13,6 @@
 		B405A37217C663A6002D516C /* NoOption.m in Sources */ = {isa = PBXBuildFile; fileRef = B405A37117C663A6002D516C /* NoOption.m */; };
 		B424DB9B17C50AC200ADBFF9 /* Option_old.m in Sources */ = {isa = PBXBuildFile; fileRef = B424DB9A17C50AC200ADBFF9 /* Option_old.m */; };
 		B473066E17C6A22500156985 /* BooleanOption.m in Sources */ = {isa = PBXBuildFile; fileRef = B473066D17C6A22500156985 /* BooleanOption.m */; };
-		B47C142D17D3B75200545C63 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4A2A29417C3C90500262BC3 /* SenTestingKit.framework */; };
-		B47C142E17D3B75200545C63 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4A2A27617C3C90400262BC3 /* Cocoa.framework */; };
-		B47C143717D3B75200545C63 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B47C143517D3B75200545C63 /* InfoPlist.strings */; };
-		B47C143A17D3B75200545C63 /* proutTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B47C143917D3B75200545C63 /* proutTests.m */; };
 		B4A2A27717C3C90400262BC3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4A2A27617C3C90400262BC3 /* Cocoa.framework */; };
 		B4A2A28317C3C90400262BC3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A2A28217C3C90400262BC3 /* main.m */; };
 		B4A2A28717C3C90400262BC3 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = B4A2A28517C3C90400262BC3 /* Credits.rtf */; };
@@ -103,13 +99,6 @@
 			remoteGlobalIDString = B4B0444E17DA49B200AC600D;
 			remoteInfo = rsync;
 		};
-		B4B0454F17DA63AF00AC600D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B4B044C617DA578C00AC600D /* gpg.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = B4B0450117DA5EDD00AC600D;
-			remoteInfo = GPGUtil;
-		};
 		B4B0455217DA641100AC600D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B4B044C617DA578C00AC600D /* gpg.xcodeproj */;
@@ -171,16 +160,6 @@
 		B424DB9A17C50AC200ADBFF9 /* Option_old.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Option_old.m; sourceTree = "<group>"; };
 		B473066C17C6A22500156985 /* BooleanOption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BooleanOption.h; sourceTree = "<group>"; };
 		B473066D17C6A22500156985 /* BooleanOption.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BooleanOption.m; sourceTree = "<group>"; };
-		B47C141F17D3B75200545C63 /* prout-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "prout-Info.plist"; sourceTree = "<group>"; };
-		B47C142117D3B75200545C63 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		B47C142317D3B75200545C63 /* prout-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "prout-Prefix.pch"; sourceTree = "<group>"; };
-		B47C142417D3B75200545C63 /* prout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = prout.h; sourceTree = "<group>"; };
-		B47C142517D3B75200545C63 /* prout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = prout.m; sourceTree = "<group>"; };
-		B47C142C17D3B75200545C63 /* proutTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = proutTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B47C143417D3B75200545C63 /* proutTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "proutTests-Info.plist"; sourceTree = "<group>"; };
-		B47C143617D3B75200545C63 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		B47C143817D3B75200545C63 /* proutTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = proutTests.h; sourceTree = "<group>"; };
-		B47C143917D3B75200545C63 /* proutTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = proutTests.m; sourceTree = "<group>"; };
 		B4A2A27317C3C90400262BC3 /* GDuplicity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GDuplicity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4A2A27617C3C90400262BC3 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		B4A2A27917C3C90400262BC3 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -220,15 +199,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		B47C142817D3B75200545C63 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B47C142D17D3B75200545C63 /* SenTestingKit.framework in Frameworks */,
-				B47C142E17D3B75200545C63 /* Cocoa.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		B4A2A27017C3C90400262BC3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -299,45 +269,6 @@
 			name = headers;
 			sourceTree = "<group>";
 		};
-		B47C141D17D3B75200545C63 /* prout */ = {
-			isa = PBXGroup;
-			children = (
-				B47C142417D3B75200545C63 /* prout.h */,
-				B47C142517D3B75200545C63 /* prout.m */,
-				B47C141E17D3B75200545C63 /* Supporting Files */,
-			);
-			path = prout;
-			sourceTree = "<group>";
-		};
-		B47C141E17D3B75200545C63 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				B47C141F17D3B75200545C63 /* prout-Info.plist */,
-				B47C142017D3B75200545C63 /* InfoPlist.strings */,
-				B47C142317D3B75200545C63 /* prout-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		B47C143217D3B75200545C63 /* proutTests */ = {
-			isa = PBXGroup;
-			children = (
-				B47C143817D3B75200545C63 /* proutTests.h */,
-				B47C143917D3B75200545C63 /* proutTests.m */,
-				B47C143317D3B75200545C63 /* Supporting Files */,
-			);
-			path = proutTests;
-			sourceTree = "<group>";
-		};
-		B47C143317D3B75200545C63 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				B47C143417D3B75200545C63 /* proutTests-Info.plist */,
-				B47C143517D3B75200545C63 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		B4A2A26A17C3C90400262BC3 = {
 			isa = PBXGroup;
 			children = (
@@ -347,8 +278,6 @@
 				8150974117C798D900313177 /* GDuplicity.iconset */,
 				B4A2A27C17C3C90400262BC3 /* GDuplicity */,
 				B4A2A29917C3C90500262BC3 /* GDuplicityTests */,
-				B47C141D17D3B75200545C63 /* prout */,
-				B47C143217D3B75200545C63 /* proutTests */,
 				B4A2A27517C3C90400262BC3 /* Frameworks */,
 				B4A2A27417C3C90400262BC3 /* Products */,
 			);
@@ -359,7 +288,6 @@
 			children = (
 				B4A2A27317C3C90400262BC3 /* GDuplicity.app */,
 				B4A2A29317C3C90500262BC3 /* GDuplicityTests.octest */,
-				B47C142C17D3B75200545C63 /* proutTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -434,7 +362,6 @@
 				B4B044D717DA578C00AC600D /* libutil.a */,
 				B4B044D917DA578C00AC600D /* gpg */,
 				B4B044DB17DA578C00AC600D /* gpgv */,
-				B4B0455017DA63AF00AC600D /* GPGUtil.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -500,24 +427,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B47C142B17D3B75200545C63 /* proutTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B47C143E17D3B75200545C63 /* Build configuration list for PBXNativeTarget "proutTests" */;
-			buildPhases = (
-				B47C142717D3B75200545C63 /* Sources */,
-				B47C142817D3B75200545C63 /* Frameworks */,
-				B47C142917D3B75200545C63 /* Resources */,
-				B47C142A17D3B75200545C63 /* ShellScript */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = proutTests;
-			productName = proutTests;
-			productReference = B47C142C17D3B75200545C63 /* proutTests.octest */;
-			productType = "com.apple.product-type.bundle";
-		};
 		B4A2A27217C3C90400262BC3 /* GDuplicity */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B4A2A2A417C3C90500262BC3 /* Build configuration list for PBXNativeTarget "GDuplicity" */;
@@ -598,7 +507,6 @@
 			targets = (
 				B4A2A27217C3C90400262BC3 /* GDuplicity */,
 				B4A2A29217C3C90500262BC3 /* GDuplicityTests */,
-				B47C142B17D3B75200545C63 /* proutTests */,
 			);
 		};
 /* End PBXProject section */
@@ -653,13 +561,6 @@
 			remoteRef = B4B044DA17DA578C00AC600D /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		B4B0455017DA63AF00AC600D /* GPGUtil.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = GPGUtil.framework;
-			remoteRef = B4B0454F17DA63AF00AC600D /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 		B4C26E9C17C7873D0028C54E /* Duplicity */ = {
 			isa = PBXReferenceProxy;
 			fileType = "compiled.mach-o.executable";
@@ -670,14 +571,6 @@
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
-		B47C142917D3B75200545C63 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B47C143717D3B75200545C63 /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		B4A2A27117C3C90400262BC3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -699,19 +592,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		B47C142A17D3B75200545C63 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
-		};
 		B4A2A29117C3C90500262BC3 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -728,14 +608,6 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		B47C142717D3B75200545C63 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B47C143A17D3B75200545C63 /* proutTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		B4A2A26F17C3C90400262BC3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -799,22 +671,6 @@
 			name = prefs.xib;
 			sourceTree = "<group>";
 		};
-		B47C142017D3B75200545C63 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B47C142117D3B75200545C63 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		B47C143517D3B75200545C63 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B47C143617D3B75200545C63 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
 		B4A2A28517C3C90400262BC3 /* Credits.rtf */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -834,32 +690,6 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		B47C143F17D3B75200545C63 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "prout/prout-Prefix.pch";
-				INFOPLIST_FILE = "proutTests/proutTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Debug;
-		};
-		B47C144017D3B75200545C63 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "prout/prout-Prefix.pch";
-				INFOPLIST_FILE = "proutTests/proutTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Release;
-		};
 		B4A2A2A217C3C90500262BC3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -994,15 +824,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B47C143E17D3B75200545C63 /* Build configuration list for PBXNativeTarget "proutTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B47C143F17D3B75200545C63 /* Debug */,
-				B47C144017D3B75200545C63 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		B4A2A26E17C3C90400262BC3 /* Build configuration list for PBXProject "GDuplicity" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -64,7 +64,7 @@
                       Option: opt
                       Path: path
                       URL: url];
-    NSString* actCLI = [@"/opt/local/bin/duplicity" stringByAppendingString:[act getCLIAction]];
+    NSString* actCLI = [@"duplicity" stringByAppendingString:[act getCLIAction]];
     actCLI = [@"ulimit -n 1024;" stringByAppendingString:actCLI];
     actCLI = [actCLI stringByAppendingString:@" 2> ~/Desktop/error.txt"];
     if ([_cryptCheck intValue]) {
@@ -120,7 +120,7 @@
                       initWithOpt:opt
                       URL:url
                       Path:path];
-    NSString* actCLI = [@"/opt/local/bin/duplicity" stringByAppendingString:[act getCLIAction]];
+    NSString* actCLI = [@"duplicity" stringByAppendingString:[act getCLIAction]];
     actCLI = [@"ulimit -n 1024;" stringByAppendingString:actCLI];
     system([actCLI UTF8String]);
     NSRunAlertPanel(@"Fin", @"Normalement y a pas eu de merde.", @"OK", @"", @"");

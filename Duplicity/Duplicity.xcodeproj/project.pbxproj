@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B4B0455817DA68CE00AC600D /* rsync.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B0455717DA68CE00AC600D /* rsync.framework */; };
 		B4C271BA17C791B60028C54E /* _librsyncmodule.c in Sources */ = {isa = PBXBuildFile; fileRef = B4C270E017C791B60028C54E /* _librsyncmodule.c */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +37,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B4B0455717DA68CE00AC600D /* rsync.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = rsync.framework; path = "../../../../Library/Developer/Xcode/DerivedData/GDuplicity-hbrxuvgxohgvchgxjnprclvfrjjq/Build/Products/Debug/rsync.framework"; sourceTree = "<group>"; };
 		B4C26E8B17C7873C0028C54E /* Duplicity */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Duplicity; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4C2709217C791B60028C54E /* .bzrignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .bzrignore; sourceTree = "<group>"; };
 		B4C270D617C791B60028C54E /* CHANGELOG */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CHANGELOG; sourceTree = "<group>"; };
@@ -193,6 +195,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4B0455817DA68CE00AC600D /* rsync.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,6 +205,7 @@
 		B4C26E8217C7873C0028C54E = {
 			isa = PBXGroup;
 			children = (
+				B4B0455717DA68CE00AC600D /* rsync.framework */,
 				B4C2709117C791B60028C54E /* duplicity-0.6.22 */,
 				B4C26E8C17C7873C0028C54E /* Products */,
 			);
@@ -722,6 +726,10 @@
 		B4C26E9517C7873C0028C54E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../../Library/Developer/Xcode/DerivedData/GDuplicity-hbrxuvgxohgvchgxjnprclvfrjjq/Build/Products/Debug\"",
+				);
 				HEADER_SEARCH_PATHS = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Python.framework/Headers;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -736,6 +744,10 @@
 		B4C26E9617C7873C0028C54E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../../Library/Developer/Xcode/DerivedData/GDuplicity-hbrxuvgxohgvchgxjnprclvfrjjq/Build/Products/Debug\"",
+				);
 				HEADER_SEARCH_PATHS = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Python.framework/Headers;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",

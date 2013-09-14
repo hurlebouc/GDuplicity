@@ -74,6 +74,8 @@
 		B4B256AF17E4D2890012200F /* Python.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4039B0017E470B0005CFB6C /* Python.framework */; };
 		B4B256B017E4D2CD0012200F /* rsync.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B0455717DA68CE00AC600D /* rsync.framework */; };
 		B4B256B217E4D5BC0012200F /* _librsync.so in CopyFiles */ = {isa = PBXBuildFile; fileRef = B4C26E8B17C7873C0028C54E /* _librsync.so */; };
+		B4B256EB17E4D8E90012200F /* gpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = B4B256E717E4D8C20012200F /* gpg */; };
+		B4B256EC17E4D8E90012200F /* gpgv in CopyFiles */ = {isa = PBXBuildFile; fileRef = B4B256E917E4D8C20012200F /* gpgv */; };
 		B4C271BA17C791B60028C54E /* _librsyncmodule.c in Sources */ = {isa = PBXBuildFile; fileRef = B4C270E017C791B60028C54E /* _librsyncmodule.c */; };
 /* End PBXBuildFile section */
 
@@ -84,6 +86,48 @@
 			proxyType = 1;
 			remoteGlobalIDString = B4B256A917E4D1B30012200F;
 			remoteInfo = librsync;
+		};
+		B4B256DE17E4D8C20012200F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B4B256D517E4D8C10012200F /* gpg.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B4625EDA17CB98F0001121EC;
+			remoteInfo = cipher;
+		};
+		B4B256E017E4D8C20012200F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B4B256D517E4D8C10012200F /* gpg.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B46F20D017CE41E500E5D66E;
+			remoteInfo = intl;
+		};
+		B4B256E217E4D8C20012200F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B4B256D517E4D8C10012200F /* gpg.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B46F21E117CE520F00E5D66E;
+			remoteInfo = mpi;
+		};
+		B4B256E417E4D8C20012200F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B4B256D517E4D8C10012200F /* gpg.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B46F24A717CE55E000E5D66E;
+			remoteInfo = util;
+		};
+		B4B256E617E4D8C20012200F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B4B256D517E4D8C10012200F /* gpg.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B46F252D17CE58C400E5D66E;
+			remoteInfo = gpg;
+		};
+		B4B256E817E4D8C20012200F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B4B256D517E4D8C10012200F /* gpg.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B478F98F17CF3B1F0052A892;
+			remoteInfo = gpgv;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -184,6 +228,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B4B256EA17E4D8D80012200F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 6;
+			files = (
+				B4B256EB17E4D8E90012200F /* gpg in CopyFiles */,
+				B4B256EC17E4D8E90012200F /* gpgv in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B4C26E8917C7873C0028C54E /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -211,6 +266,7 @@
 		B40C396617E4C30200DD2225 /* rdiffdir.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = rdiffdir.1; sourceTree = "<group>"; };
 		B4B0455717DA68CE00AC600D /* rsync.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = rsync.framework; path = "../../../../Library/Developer/Xcode/DerivedData/GDuplicity-hbrxuvgxohgvchgxjnprclvfrjjq/Build/Products/Debug/rsync.framework"; sourceTree = "<group>"; };
 		B4B256AA17E4D1B30012200F /* librsync.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = librsync.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4B256D517E4D8C10012200F /* gpg.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = gpg.xcodeproj; path = ../gpg/gpg.xcodeproj; sourceTree = "<group>"; };
 		B4C26E8B17C7873C0028C54E /* _librsync.so */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = _librsync.so; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4C270DA17C791B60028C54E /* duplicity.spec.template */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = duplicity.spec.template; sourceTree = "<group>"; };
 		B4C270DB17C791B60028C54E /* makedist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = makedist; sourceTree = "<group>"; };
@@ -437,9 +493,23 @@
 			path = bin;
 			sourceTree = "<group>";
 		};
+		B4B256D617E4D8C10012200F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B4B256DF17E4D8C20012200F /* libcipher.a */,
+				B4B256E117E4D8C20012200F /* libintl.a */,
+				B4B256E317E4D8C20012200F /* libmpi.a */,
+				B4B256E517E4D8C20012200F /* libutil.a */,
+				B4B256E717E4D8C20012200F /* gpg */,
+				B4B256E917E4D8C20012200F /* gpgv */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		B4C26E8217C7873C0028C54E = {
 			isa = PBXGroup;
 			children = (
+				B4B256D517E4D8C10012200F /* gpg.xcodeproj */,
 				B4039B0017E470B0005CFB6C /* Python.framework */,
 				B4B0455717DA68CE00AC600D /* rsync.framework */,
 				B4C2709117C791B60028C54E /* duplicity-0.6.22 */,
@@ -868,6 +938,7 @@
 				B40C396917E4C39C00DD2225 /* CopyFiles */,
 				B40C398D17E4C42400DD2225 /* CopyFiles */,
 				B4B256A417E4CBCB0012200F /* CopyFiles */,
+				B4B256EA17E4D8D80012200F /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -932,6 +1003,12 @@
 			mainGroup = B4C26E8217C7873C0028C54E;
 			productRefGroup = B4C26E8C17C7873C0028C54E /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = B4B256D617E4D8C10012200F /* Products */;
+					ProjectRef = B4B256D517E4D8C10012200F /* gpg.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				B4C26E8A17C7873C0028C54E /* _librsync.so */,
@@ -940,6 +1017,51 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		B4B256DF17E4D8C20012200F /* libcipher.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libcipher.a;
+			remoteRef = B4B256DE17E4D8C20012200F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B4B256E117E4D8C20012200F /* libintl.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libintl.a;
+			remoteRef = B4B256E017E4D8C20012200F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B4B256E317E4D8C20012200F /* libmpi.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libmpi.a;
+			remoteRef = B4B256E217E4D8C20012200F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B4B256E517E4D8C20012200F /* libutil.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libutil.a;
+			remoteRef = B4B256E417E4D8C20012200F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B4B256E717E4D8C20012200F /* gpg */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = gpg;
+			remoteRef = B4B256E617E4D8C20012200F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B4B256E917E4D8C20012200F /* gpgv */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = gpgv;
+			remoteRef = B4B256E817E4D8C20012200F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		B40C394C17E4C1D500DD2225 /* Resources */ = {
@@ -1006,7 +1128,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "duplicity/duplicity-Prefix.pch";
 				INFOPLIST_FILE = "duplicity/duplicity-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				INSTALL_PATH = "@executable_path/../PlugIns";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -1020,7 +1142,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "duplicity/duplicity-Prefix.pch";
 				INFOPLIST_FILE = "duplicity/duplicity-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				INSTALL_PATH = "@executable_path/../PlugIns";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -1040,6 +1162,7 @@
 					/System/Library/Frameworks/Python.framework/Headers,
 					"\"$(SRCROOT)/../../../../Library/Developer/Xcode/DerivedData/GDuplicity-hbrxuvgxohgvchgxjnprclvfrjjq/Build/Products/Debug/rsync.framework/Headers\"",
 				);
+				INSTALL_PATH = "@executable_path/../PlugIns/duplicity.bundle/Contents/MacOS/site-packages/duplicity";
 				LD_DYLIB_INSTALL_NAME = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -1059,6 +1182,7 @@
 					/System/Library/Frameworks/Python.framework/Headers,
 					"\"$(SRCROOT)/../../../../Library/Developer/Xcode/DerivedData/GDuplicity-hbrxuvgxohgvchgxjnprclvfrjjq/Build/Products/Debug/rsync.framework/Headers\"",
 				);
+				INSTALL_PATH = "@executable_path/../PlugIns/duplicity.bundle/Contents/MacOS/site-packages/duplicity";
 				LD_DYLIB_INSTALL_NAME = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

@@ -22,9 +22,7 @@
 		B4A2A29617C3C90500262BC3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4A2A27617C3C90400262BC3 /* Cocoa.framework */; };
 		B4A2A2A117C3C90500262BC3 /* GDuplicityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A2A2A017C3C90500262BC3 /* GDuplicityTests.m */; };
 		B4B044E217DA584F00AC600D /* rsync.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B0444717DA495D00AC600D /* rsync.framework */; };
-		B4B044F917DA5A2100AC600D /* rsync.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B4B0444717DA495D00AC600D /* rsync.framework */; };
-		B4B0455117DA63B700AC600D /* gpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = B4B044D917DA578C00AC600D /* gpg */; };
-		B4B0455617DA642400AC600D /* gpgv in CopyFiles */ = {isa = PBXBuildFile; fileRef = B4B044DB17DA578C00AC600D /* gpgv */; };
+		B4B256EE17E4DACD0012200F /* duplicity.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = B4B256CF17E4D89B0012200F /* duplicity.bundle */; };
 		B4B8441417C6AE9B008F27B6 /* IntegerOption.m in Sources */ = {isa = PBXBuildFile; fileRef = B4B8441317C6AE9B008F27B6 /* IntegerOption.m */; };
 		B4B8441717C6AEAB008F27B6 /* StringOption.m in Sources */ = {isa = PBXBuildFile; fileRef = B4B8441617C6AEAB008F27B6 /* StringOption.m */; };
 		B4D0A64A17C9E38C00F843DF /* Path.m in Sources */ = {isa = PBXBuildFile; fileRef = B4D0A64917C9E38C00F843DF /* Path.m */; };
@@ -50,48 +48,6 @@
 			remoteGlobalIDString = B4B043D717DA477500AC600D;
 			remoteInfo = rsync;
 		};
-		B4B044D017DA578C00AC600D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B4B044C617DA578C00AC600D /* gpg.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = B4625EDA17CB98F0001121EC;
-			remoteInfo = cipher;
-		};
-		B4B044D217DA578C00AC600D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B4B044C617DA578C00AC600D /* gpg.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = B46F20D017CE41E500E5D66E;
-			remoteInfo = intl;
-		};
-		B4B044D417DA578C00AC600D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B4B044C617DA578C00AC600D /* gpg.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = B46F21E117CE520F00E5D66E;
-			remoteInfo = mpi;
-		};
-		B4B044D617DA578C00AC600D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B4B044C617DA578C00AC600D /* gpg.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = B46F24A717CE55E000E5D66E;
-			remoteInfo = util;
-		};
-		B4B044D817DA578C00AC600D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B4B044C617DA578C00AC600D /* gpg.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = B46F252D17CE58C400E5D66E;
-			remoteInfo = gpg;
-		};
-		B4B044DA17DA578C00AC600D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B4B044C617DA578C00AC600D /* gpg.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = B478F98F17CF3B1F0052A892;
-			remoteInfo = gpgv;
-		};
 		B4B044EA17DA585800AC600D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B4C26EAD17C78B1D0028C54E /* librsync.xcodeproj */;
@@ -99,19 +55,26 @@
 			remoteGlobalIDString = B4B0444E17DA49B200AC600D;
 			remoteInfo = rsync;
 		};
-		B4B0455217DA641100AC600D /* PBXContainerItemProxy */ = {
+		B4B256CE17E4D89B0012200F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = B4B044C617DA578C00AC600D /* gpg.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = B46F252C17CE58C400E5D66E;
-			remoteInfo = gpg;
+			containerPortal = B4C26E9717C7873C0028C54E /* Duplicity.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B40C394E17E4C1D500DD2225;
+			remoteInfo = duplicity;
 		};
-		B4B0455417DA641600AC600D /* PBXContainerItemProxy */ = {
+		B4B256D017E4D89B0012200F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = B4B044C617DA578C00AC600D /* gpg.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = B478F93D17CF3B1F0052A892;
-			remoteInfo = gpgv;
+			containerPortal = B4C26E9717C7873C0028C54E /* Duplicity.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B4B256AA17E4D1B30012200F;
+			remoteInfo = librsync;
+		};
+		B4B256D317E4D89B0012200F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B4C26EAD17C78B1D0028C54E /* librsync.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B4039AF517E46F2F005CFB6C;
+			remoteInfo = rdiff;
 		};
 		B4C26E9B17C7873D0028C54E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -123,24 +86,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		B4B044F817DA5A1500AC600D /* CopyFiles */ = {
+		B4B256ED17E4DAC30012200F /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
-			dstSubfolderSpec = 10;
+			dstSubfolderSpec = 13;
 			files = (
-				B4B044F917DA5A2100AC600D /* rsync.framework in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B4B0454D17DA63AF00AC600D /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 6;
-			files = (
-				B4B0455617DA642400AC600D /* gpgv in CopyFiles */,
-				B4B0455117DA63B700AC600D /* gpg in CopyFiles */,
+				B4B256EE17E4DACD0012200F /* duplicity.bundle in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,7 +127,6 @@
 		B4A2A29B17C3C90500262BC3 /* GDuplicityTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GDuplicityTests-Info.plist"; sourceTree = "<group>"; };
 		B4A2A29F17C3C90500262BC3 /* GDuplicityTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GDuplicityTests.h; sourceTree = "<group>"; };
 		B4A2A2A017C3C90500262BC3 /* GDuplicityTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GDuplicityTests.m; sourceTree = "<group>"; };
-		B4B044C617DA578C00AC600D /* gpg.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = gpg.xcodeproj; path = gpg/gpg.xcodeproj; sourceTree = "<group>"; };
 		B4B8441217C6AE9B008F27B6 /* IntegerOption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntegerOption.h; sourceTree = "<group>"; };
 		B4B8441317C6AE9B008F27B6 /* IntegerOption.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntegerOption.m; sourceTree = "<group>"; };
 		B4B8441517C6AEAB008F27B6 /* StringOption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringOption.h; sourceTree = "<group>"; };
@@ -272,7 +223,6 @@
 		B4A2A26A17C3C90400262BC3 = {
 			isa = PBXGroup;
 			children = (
-				B4B044C617DA578C00AC600D /* gpg.xcodeproj */,
 				B4C26EAD17C78B1D0028C54E /* librsync.xcodeproj */,
 				B4C26E9717C7873C0028C54E /* Duplicity.xcodeproj */,
 				8150974117C798D900313177 /* GDuplicity.iconset */,
@@ -353,19 +303,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		B4B044C717DA578C00AC600D /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				B4B044D117DA578C00AC600D /* libcipher.a */,
-				B4B044D317DA578C00AC600D /* libintl.a */,
-				B4B044D517DA578C00AC600D /* libmpi.a */,
-				B4B044D717DA578C00AC600D /* libutil.a */,
-				B4B044D917DA578C00AC600D /* gpg */,
-				B4B044DB17DA578C00AC600D /* gpgv */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		B4C26E7F17C76D660028C54E /* Actions */ = {
 			isa = PBXGroup;
 			children = (
@@ -390,7 +327,9 @@
 		B4C26E9817C7873C0028C54E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B4C26E9C17C7873D0028C54E /* Duplicity */,
+				B4C26E9C17C7873D0028C54E /* _librsync.so */,
+				B4B256CF17E4D89B0012200F /* duplicity.bundle */,
+				B4B256D117E4D89B0012200F /* librsync.dylib */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -399,6 +338,7 @@
 			isa = PBXGroup;
 			children = (
 				B4B0444717DA495D00AC600D /* rsync.framework */,
+				B4B256D417E4D89B0012200F /* rdiff */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -434,14 +374,11 @@
 				B4A2A26F17C3C90400262BC3 /* Sources */,
 				B4A2A27017C3C90400262BC3 /* Frameworks */,
 				B4A2A27117C3C90400262BC3 /* Resources */,
-				B4B044F817DA5A1500AC600D /* CopyFiles */,
-				B4B0454D17DA63AF00AC600D /* CopyFiles */,
+				B4B256ED17E4DAC30012200F /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				B4B0455517DA641600AC600D /* PBXTargetDependency */,
-				B4B0455317DA641100AC600D /* PBXTargetDependency */,
 				B4B044EB17DA585800AC600D /* PBXTargetDependency */,
 			);
 			name = GDuplicity;
@@ -495,10 +432,6 @@
 					ProjectRef = B4C26E9717C7873C0028C54E /* Duplicity.xcodeproj */;
 				},
 				{
-					ProductGroup = B4B044C717DA578C00AC600D /* Products */;
-					ProjectRef = B4B044C617DA578C00AC600D /* gpg.xcodeproj */;
-				},
-				{
 					ProductGroup = B4C26EAE17C78B1D0028C54E /* Products */;
 					ProjectRef = B4C26EAD17C78B1D0028C54E /* librsync.xcodeproj */;
 				},
@@ -519,52 +452,31 @@
 			remoteRef = B4B0444617DA495D00AC600D /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		B4B044D117DA578C00AC600D /* libcipher.a */ = {
+		B4B256CF17E4D89B0012200F /* duplicity.bundle */ = {
 			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libcipher.a;
-			remoteRef = B4B044D017DA578C00AC600D /* PBXContainerItemProxy */;
+			fileType = wrapper.cfbundle;
+			path = duplicity.bundle;
+			remoteRef = B4B256CE17E4D89B0012200F /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		B4B044D317DA578C00AC600D /* libintl.a */ = {
+		B4B256D117E4D89B0012200F /* librsync.dylib */ = {
 			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libintl.a;
-			remoteRef = B4B044D217DA578C00AC600D /* PBXContainerItemProxy */;
+			fileType = "compiled.mach-o.dylib";
+			path = librsync.dylib;
+			remoteRef = B4B256D017E4D89B0012200F /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		B4B044D517DA578C00AC600D /* libmpi.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libmpi.a;
-			remoteRef = B4B044D417DA578C00AC600D /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		B4B044D717DA578C00AC600D /* libutil.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libutil.a;
-			remoteRef = B4B044D617DA578C00AC600D /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		B4B044D917DA578C00AC600D /* gpg */ = {
+		B4B256D417E4D89B0012200F /* rdiff */ = {
 			isa = PBXReferenceProxy;
 			fileType = "compiled.mach-o.executable";
-			path = gpg;
-			remoteRef = B4B044D817DA578C00AC600D /* PBXContainerItemProxy */;
+			path = rdiff;
+			remoteRef = B4B256D317E4D89B0012200F /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		B4B044DB17DA578C00AC600D /* gpgv */ = {
+		B4C26E9C17C7873D0028C54E /* _librsync.so */ = {
 			isa = PBXReferenceProxy;
 			fileType = "compiled.mach-o.executable";
-			path = gpgv;
-			remoteRef = B4B044DA17DA578C00AC600D /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		B4C26E9C17C7873D0028C54E /* Duplicity */ = {
-			isa = PBXReferenceProxy;
-			fileType = "compiled.mach-o.executable";
-			path = Duplicity;
+			path = _librsync.so;
 			remoteRef = B4C26E9B17C7873D0028C54E /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
@@ -649,16 +561,6 @@
 			isa = PBXTargetDependency;
 			name = rsync;
 			targetProxy = B4B044EA17DA585800AC600D /* PBXContainerItemProxy */;
-		};
-		B4B0455317DA641100AC600D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = gpg;
-			targetProxy = B4B0455217DA641100AC600D /* PBXContainerItemProxy */;
-		};
-		B4B0455517DA641600AC600D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = gpgv;
-			targetProxy = B4B0455417DA641600AC600D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

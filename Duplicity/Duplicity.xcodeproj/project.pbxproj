@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		B40C394917E4BEA300DD2225 /* Python.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4039B0017E470B0005CFB6C /* Python.framework */; };
+		B40C395117E4C1D500DD2225 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B40C395017E4C1D500DD2225 /* Cocoa.framework */; };
+		B40C395B17E4C1D500DD2225 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B40C395917E4C1D500DD2225 /* InfoPlist.strings */; };
 		B4B0455817DA68CE00AC600D /* rsync.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B0455717DA68CE00AC600D /* rsync.framework */; };
 		B4C271BA17C791B60028C54E /* _librsyncmodule.c in Sources */ = {isa = PBXBuildFile; fileRef = B4C270E017C791B60028C54E /* _librsyncmodule.c */; };
 /* End PBXBuildFile section */
@@ -40,6 +42,14 @@
 /* Begin PBXFileReference section */
 		B4039B0017E470B0005CFB6C /* Python.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Python.framework; path = System/Library/Frameworks/Python.framework; sourceTree = SDKROOT; };
 		B4039B0317E47233005CFB6C /* _librsync.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; name = _librsync.so; path = "../../../../Library/Developer/Xcode/DerivedData/GDuplicity-hbrxuvgxohgvchgxjnprclvfrjjq/Build/Products/Debug/_librsync.so"; sourceTree = "<group>"; };
+		B40C394E17E4C1D500DD2225 /* duplicity.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = duplicity.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		B40C395017E4C1D500DD2225 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		B40C395317E4C1D500DD2225 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		B40C395417E4C1D500DD2225 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		B40C395517E4C1D500DD2225 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B40C395817E4C1D500DD2225 /* duplicity-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "duplicity-Info.plist"; sourceTree = "<group>"; };
+		B40C395A17E4C1D500DD2225 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B40C395C17E4C1D500DD2225 /* duplicity-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "duplicity-Prefix.pch"; sourceTree = "<group>"; };
 		B4B0455717DA68CE00AC600D /* rsync.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = rsync.framework; path = "../../../../Library/Developer/Xcode/DerivedData/GDuplicity-hbrxuvgxohgvchgxjnprclvfrjjq/Build/Products/Debug/rsync.framework"; sourceTree = "<group>"; };
 		B4C26E8B17C7873C0028C54E /* _librsync.so */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = _librsync.so; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4C270DA17C791B60028C54E /* duplicity.spec.template */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = duplicity.spec.template; sourceTree = "<group>"; };
@@ -190,6 +200,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		B40C394B17E4C1D500DD2225 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B40C395117E4C1D500DD2225 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B4C26E8817C7873C0028C54E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -202,12 +220,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B40C394F17E4C1D500DD2225 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B40C395017E4C1D500DD2225 /* Cocoa.framework */,
+				B40C395217E4C1D500DD2225 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B40C395217E4C1D500DD2225 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B40C395317E4C1D500DD2225 /* AppKit.framework */,
+				B40C395417E4C1D500DD2225 /* CoreData.framework */,
+				B40C395517E4C1D500DD2225 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		B40C395617E4C1D500DD2225 /* duplicity */ = {
+			isa = PBXGroup;
+			children = (
+				B40C395717E4C1D500DD2225 /* Supporting Files */,
+			);
+			path = duplicity;
+			sourceTree = "<group>";
+		};
+		B40C395717E4C1D500DD2225 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B40C395817E4C1D500DD2225 /* duplicity-Info.plist */,
+				B40C395917E4C1D500DD2225 /* InfoPlist.strings */,
+				B40C395C17E4C1D500DD2225 /* duplicity-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		B4C26E8217C7873C0028C54E = {
 			isa = PBXGroup;
 			children = (
 				B4039B0017E470B0005CFB6C /* Python.framework */,
 				B4B0455717DA68CE00AC600D /* rsync.framework */,
 				B4C2709117C791B60028C54E /* duplicity-0.6.22 */,
+				B40C395617E4C1D500DD2225 /* duplicity */,
+				B40C394F17E4C1D500DD2225 /* Frameworks */,
 				B4C26E8C17C7873C0028C54E /* Products */,
 				B4039B0317E47233005CFB6C /* _librsync.so */,
 			);
@@ -217,6 +274,7 @@
 			isa = PBXGroup;
 			children = (
 				B4C26E8B17C7873C0028C54E /* _librsync.so */,
+				B40C394E17E4C1D500DD2225 /* duplicity.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -608,6 +666,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		B40C394D17E4C1D500DD2225 /* duplicity */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B40C395D17E4C1D500DD2225 /* Build configuration list for PBXNativeTarget "duplicity" */;
+			buildPhases = (
+				B40C394A17E4C1D500DD2225 /* Sources */,
+				B40C394B17E4C1D500DD2225 /* Frameworks */,
+				B40C394C17E4C1D500DD2225 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = duplicity;
+			productName = duplicity;
+			productReference = B40C394E17E4C1D500DD2225 /* duplicity.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
 		B4C26E8A17C7873C0028C54E /* _librsync.so */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B4C26E9417C7873C0028C54E /* Build configuration list for PBXNativeTarget "_librsync.so" */;
@@ -648,11 +723,30 @@
 			projectRoot = "";
 			targets = (
 				B4C26E8A17C7873C0028C54E /* _librsync.so */,
+				B40C394D17E4C1D500DD2225 /* duplicity */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		B40C394C17E4C1D500DD2225 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B40C395B17E4C1D500DD2225 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		B40C394A17E4C1D500DD2225 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B4C26E8717C7873C0028C54E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -663,7 +757,46 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		B40C395917E4C1D500DD2225 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B40C395A17E4C1D500DD2225 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		B40C395E17E4C1D500DD2225 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "duplicity/duplicity-Prefix.pch";
+				INFOPLIST_FILE = "duplicity/duplicity-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		B40C395F17E4C1D500DD2225 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "duplicity/duplicity-Prefix.pch";
+				INFOPLIST_FILE = "duplicity/duplicity-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 		B4C26E9217C7873C0028C54E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -750,6 +883,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		B40C395D17E4C1D500DD2225 /* Build configuration list for PBXNativeTarget "duplicity" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B40C395E17E4C1D500DD2225 /* Debug */,
+				B40C395F17E4C1D500DD2225 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		B4C26E8617C7873C0028C54E /* Build configuration list for PBXProject "Duplicity" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'duplicity' target in the 'duplicity' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B4039AFE17E46F4E005CFB6C /* rdiff.c in Sources */ = {isa = PBXBuildFile; fileRef = B4C2700317C78F750028C54E /* rdiff.c */; };
+		B4039AFF17E46FDE005CFB6C /* rsync.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B0444F17DA49B200AC600D /* rsync.framework */; };
 		B4B0445017DA49B200AC600D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B043D917DA477500AC600D /* Cocoa.framework */; };
 		B4B0445E17DA4A9300AC600D /* base64.c in Sources */ = {isa = PBXBuildFile; fileRef = B4C26FAA17C78F750028C54E /* base64.c */; };
 		B4B0445F17DA4A9300AC600D /* buf.c in Sources */ = {isa = PBXBuildFile; fileRef = B4C26FAB17C78F750028C54E /* buf.c */; };
@@ -28,7 +30,6 @@
 		B4B0446F17DA4A9300AC600D /* popthelp.c in Sources */ = {isa = PBXBuildFile; fileRef = B4C26FFB17C78F750028C54E /* popthelp.c */; };
 		B4B0447017DA4A9300AC600D /* poptparse.c in Sources */ = {isa = PBXBuildFile; fileRef = B4C26FFD17C78F750028C54E /* poptparse.c */; };
 		B4B0447117DA4A9300AC600D /* prototab.c in Sources */ = {isa = PBXBuildFile; fileRef = B4C2700117C78F750028C54E /* prototab.c */; };
-		B4B0447217DA4A9300AC600D /* rdiff.c in Sources */ = {isa = PBXBuildFile; fileRef = B4C2700317C78F750028C54E /* rdiff.c */; };
 		B4B0447317DA4A9300AC600D /* readsums.c in Sources */ = {isa = PBXBuildFile; fileRef = B4C2700817C78F750028C54E /* readsums.c */; };
 		B4B0447417DA4A9300AC600D /* rollsum.c in Sources */ = {isa = PBXBuildFile; fileRef = B4C2700917C78F750028C54E /* rollsum.c */; };
 		B4B0447517DA4A9300AC600D /* scoop.c in Sources */ = {isa = PBXBuildFile; fileRef = B4C2700B17C78F750028C54E /* scoop.c */; };
@@ -51,11 +52,11 @@
 		B4B0448617DA4ABC00AC600D /* isprefix.h in Headers */ = {isa = PBXBuildFile; fileRef = B4C26FCD17C78F750028C54E /* isprefix.h */; };
 		B4B0448717DA4ABC00AC600D /* job.h in Headers */ = {isa = PBXBuildFile; fileRef = B4C26FCF17C78F750028C54E /* job.h */; };
 		B4B0448817DA4ABC00AC600D /* librsync-config.h in Headers */ = {isa = PBXBuildFile; fileRef = B4C26FD017C78F750028C54E /* librsync-config.h */; };
-		B4B0448917DA4ABD00AC600D /* librsync.h in Headers */ = {isa = PBXBuildFile; fileRef = B4C26FD217C78F750028C54E /* librsync.h */; };
+		B4B0448917DA4ABD00AC600D /* librsync.h in Headers */ = {isa = PBXBuildFile; fileRef = B4C26FD217C78F750028C54E /* librsync.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B4B0448A17DA4ABD00AC600D /* mdfour.h in Headers */ = {isa = PBXBuildFile; fileRef = B4C26FDB17C78F750028C54E /* mdfour.h */; };
 		B4B0448B17DA4ABD00AC600D /* netint.h in Headers */ = {isa = PBXBuildFile; fileRef = B4C26FE217C78F750028C54E /* netint.h */; };
 		B4B0448C17DA4ABD00AC600D /* findme.h in Headers */ = {isa = PBXBuildFile; fileRef = B4C26FF417C78F750028C54E /* findme.h */; };
-		B4B0448D17DA4ABD00AC600D /* popt.h in Headers */ = {isa = PBXBuildFile; fileRef = B4C26FF917C78F750028C54E /* popt.h */; };
+		B4B0448D17DA4ABD00AC600D /* popt.h in Headers */ = {isa = PBXBuildFile; fileRef = B4C26FF917C78F750028C54E /* popt.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B4B0448E17DA4ABD00AC600D /* poptint.h in Headers */ = {isa = PBXBuildFile; fileRef = B4C26FFC17C78F750028C54E /* poptint.h */; };
 		B4B0448F17DA4ABD00AC600D /* system.h in Headers */ = {isa = PBXBuildFile; fileRef = B4C26FFF17C78F750028C54E /* system.h */; };
 		B4B0449017DA4ABD00AC600D /* protocol.h in Headers */ = {isa = PBXBuildFile; fileRef = B4C2700017C78F750028C54E /* protocol.h */; };
@@ -75,7 +76,20 @@
 		B4B044A317DA4F4A00AC600D /* popt.c in Sources */ = {isa = PBXBuildFile; fileRef = B4C26FF817C78F750028C54E /* popt.c */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		B4039AF317E46F2F005CFB6C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		B4039AF517E46F2F005CFB6C /* rdiff */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = rdiff; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4B043D917DA477500AC600D /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		B4B043DC17DA477500AC600D /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		B4B043DD17DA477500AC600D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -158,6 +172,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		B4039AF217E46F2F005CFB6C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4039AFF17E46FDE005CFB6C /* rsync.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B4B0444B17DA49B200AC600D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -220,6 +242,7 @@
 			isa = PBXGroup;
 			children = (
 				B4B0444F17DA49B200AC600D /* rsync.framework */,
+				B4039AF517E46F2F005CFB6C /* rdiff */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -333,6 +356,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4B0448D17DA4ABD00AC600D /* popt.h in Headers */,
+				B4B0448917DA4ABD00AC600D /* librsync.h in Headers */,
 				B4B0448017DA4ABC00AC600D /* buf.h in Headers */,
 				B4B0448117DA4ABC00AC600D /* checksum.h in Headers */,
 				B4B0448217DA4ABC00AC600D /* command.h in Headers */,
@@ -344,11 +369,9 @@
 				B4B0448617DA4ABC00AC600D /* isprefix.h in Headers */,
 				B4B0448717DA4ABC00AC600D /* job.h in Headers */,
 				B4B0448817DA4ABC00AC600D /* librsync-config.h in Headers */,
-				B4B0448917DA4ABD00AC600D /* librsync.h in Headers */,
 				B4B0448A17DA4ABD00AC600D /* mdfour.h in Headers */,
 				B4B0448B17DA4ABD00AC600D /* netint.h in Headers */,
 				B4B0448C17DA4ABD00AC600D /* findme.h in Headers */,
-				B4B0448D17DA4ABD00AC600D /* popt.h in Headers */,
 				B4B0448E17DA4ABD00AC600D /* poptint.h in Headers */,
 				B4B0448F17DA4ABD00AC600D /* system.h in Headers */,
 				B4B0449017DA4ABD00AC600D /* protocol.h in Headers */,
@@ -368,6 +391,23 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		B4039AF417E46F2F005CFB6C /* rdiff */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4039AFB17E46F2F005CFB6C /* Build configuration list for PBXNativeTarget "rdiff" */;
+			buildPhases = (
+				B4039AF117E46F2F005CFB6C /* Sources */,
+				B4039AF217E46F2F005CFB6C /* Frameworks */,
+				B4039AF317E46F2F005CFB6C /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = rdiff;
+			productName = rdiff;
+			productReference = B4039AF517E46F2F005CFB6C /* rdiff */;
+			productType = "com.apple.product-type.tool";
+		};
 		B4B0444E17DA49B200AC600D /* rsync */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B4B0445B17DA49B200AC600D /* Build configuration list for PBXNativeTarget "rsync" */;
@@ -408,6 +448,7 @@
 			projectRoot = "";
 			targets = (
 				B4B0444E17DA49B200AC600D /* rsync */,
+				B4039AF417E46F2F005CFB6C /* rdiff */,
 			);
 		};
 /* End PBXProject section */
@@ -424,6 +465,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		B4039AF117E46F2F005CFB6C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4039AFE17E46F4E005CFB6C /* rdiff.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B4B0444A17DA49B200AC600D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -449,7 +498,6 @@
 				B4B0447017DA4A9300AC600D /* poptparse.c in Sources */,
 				B4B044A317DA4F4A00AC600D /* popt.c in Sources */,
 				B4B0447117DA4A9300AC600D /* prototab.c in Sources */,
-				B4B0447217DA4A9300AC600D /* rdiff.c in Sources */,
 				B4B0447317DA4A9300AC600D /* readsums.c in Sources */,
 				B4B0447417DA4A9300AC600D /* rollsum.c in Sources */,
 				B4B0447517DA4A9300AC600D /* scoop.c in Sources */,
@@ -469,6 +517,30 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		B4039AFC17E46F2F005CFB6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/librsync-0.9.7",
+					"$(SRCROOT)/librsync-0.9.7/popt",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B4039AFD17E46F2F005CFB6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/librsync-0.9.7",
+					"$(SRCROOT)/librsync-0.9.7/popt",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		B4B0445C17DA49B200AC600D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -563,6 +635,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		B4039AFB17E46F2F005CFB6C /* Build configuration list for PBXNativeTarget "rdiff" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4039AFC17E46F2F005CFB6C /* Debug */,
+				B4039AFD17E46F2F005CFB6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		B4B0445B17DA49B200AC600D /* Build configuration list for PBXNativeTarget "rsync" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -570,6 +650,7 @@
 				B4B0445D17DA49B200AC600D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B4C26EA117C78B1D0028C54E /* Build configuration list for PBXProject "librsync" */ = {
 			isa = XCConfigurationList;

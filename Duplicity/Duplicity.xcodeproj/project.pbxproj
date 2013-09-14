@@ -724,7 +724,7 @@
 		B4C26E9517C7873C0028C54E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				HEADER_SEARCH_PATHS = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Python.framework/Headers;
+				HEADER_SEARCH_PATHS = /System/Library/Frameworks/Python.framework/Headers;
 				MACH_O_TYPE = mh_bundle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/../librsync/librsync-0.9.7/";
@@ -734,7 +734,7 @@
 		B4C26E9617C7873C0028C54E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				HEADER_SEARCH_PATHS = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Python.framework/Headers;
+				HEADER_SEARCH_PATHS = /System/Library/Frameworks/Python.framework/Headers;
 				MACH_O_TYPE = mh_bundle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/../librsync/librsync-0.9.7/";

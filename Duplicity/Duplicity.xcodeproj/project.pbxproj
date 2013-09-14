@@ -725,6 +725,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				HEADER_SEARCH_PATHS = /System/Library/Frameworks/Python.framework/Headers;
+				INSTALL_PATH = "@executable_path/lib/python2.7/site-packages/duplicity";
 				MACH_O_TYPE = mh_bundle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/../librsync/librsync-0.9.7/";
@@ -735,6 +736,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				HEADER_SEARCH_PATHS = /System/Library/Frameworks/Python.framework/Headers;
+				INSTALL_PATH = "@executable_path/lib/python2.7/site-packages/duplicity";
 				MACH_O_TYPE = mh_bundle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/../librsync/librsync-0.9.7/";

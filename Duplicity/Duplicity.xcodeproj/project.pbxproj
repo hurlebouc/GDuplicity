@@ -1052,6 +1052,7 @@
 				B40C395F17E4C1D500DD2225 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B4C26E8617C7873C0028C54E /* Build configuration list for PBXProject "Duplicity" */ = {
 			isa = XCConfigurationList;

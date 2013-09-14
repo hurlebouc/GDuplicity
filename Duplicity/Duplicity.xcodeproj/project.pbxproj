@@ -41,11 +41,7 @@
 		B4039B0017E470B0005CFB6C /* Python.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Python.framework; path = System/Library/Frameworks/Python.framework; sourceTree = SDKROOT; };
 		B4039B0317E47233005CFB6C /* _librsync.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; name = _librsync.so; path = "../../../../Library/Developer/Xcode/DerivedData/GDuplicity-hbrxuvgxohgvchgxjnprclvfrjjq/Build/Products/Debug/_librsync.so"; sourceTree = "<group>"; };
 		B4B0455717DA68CE00AC600D /* rsync.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = rsync.framework; path = "../../../../Library/Developer/Xcode/DerivedData/GDuplicity-hbrxuvgxohgvchgxjnprclvfrjjq/Build/Products/Debug/rsync.framework"; sourceTree = "<group>"; };
-		B4C26E8B17C7873C0028C54E /* Duplicity */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Duplicity; sourceTree = BUILT_PRODUCTS_DIR; };
-		B4C2709217C791B60028C54E /* .bzrignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .bzrignore; sourceTree = "<group>"; };
-		B4C270D617C791B60028C54E /* CHANGELOG */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CHANGELOG; sourceTree = "<group>"; };
-		B4C270D717C791B60028C54E /* Changelog.GNU */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Changelog.GNU; sourceTree = "<group>"; };
-		B4C270D817C791B60028C54E /* COPYING */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = COPYING; sourceTree = "<group>"; };
+		B4C26E8B17C7873C0028C54E /* Duplicity */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = Duplicity; path = _librsync.so; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4C270DA17C791B60028C54E /* duplicity.spec.template */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = duplicity.spec.template; sourceTree = "<group>"; };
 		B4C270DB17C791B60028C54E /* makedist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = makedist; sourceTree = "<group>"; };
 		B4C270DC17C791B60028C54E /* makerpm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = makerpm; sourceTree = "<group>"; };
@@ -228,10 +224,6 @@
 		B4C2709117C791B60028C54E /* duplicity-0.6.22 */ = {
 			isa = PBXGroup;
 			children = (
-				B4C2709217C791B60028C54E /* .bzrignore */,
-				B4C270D617C791B60028C54E /* CHANGELOG */,
-				B4C270D717C791B60028C54E /* Changelog.GNU */,
-				B4C270D817C791B60028C54E /* COPYING */,
 				B4C270D917C791B60028C54E /* dist */,
 				B4C270DE17C791B60028C54E /* duplicity */,
 				B4C2711917C791B60028C54E /* po */,

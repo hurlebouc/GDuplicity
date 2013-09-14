@@ -37,7 +37,7 @@ if os.path.exists(os.path.join(pwd, "../duplicity")):
     sys.path.insert(0, os.path.abspath(os.path.join(pwd, "../.")))
 
 import site
-site.addsitedir(pwd + "lib/python2.7/site-packages")
+site.addsitedir(pwd + "/site-packages")
 
 import gettext
 gettext.install('duplicity', codeset='utf8')

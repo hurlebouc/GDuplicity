@@ -41,7 +41,7 @@
 		B4039B0017E470B0005CFB6C /* Python.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Python.framework; path = System/Library/Frameworks/Python.framework; sourceTree = SDKROOT; };
 		B4039B0317E47233005CFB6C /* _librsync.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; name = _librsync.so; path = "../../../../Library/Developer/Xcode/DerivedData/GDuplicity-hbrxuvgxohgvchgxjnprclvfrjjq/Build/Products/Debug/_librsync.so"; sourceTree = "<group>"; };
 		B4B0455717DA68CE00AC600D /* rsync.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = rsync.framework; path = "../../../../Library/Developer/Xcode/DerivedData/GDuplicity-hbrxuvgxohgvchgxjnprclvfrjjq/Build/Products/Debug/rsync.framework"; sourceTree = "<group>"; };
-		B4C26E8B17C7873C0028C54E /* Duplicity */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = Duplicity; path = _librsync.so; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4C26E8B17C7873C0028C54E /* _librsync.so */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = _librsync.so; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4C270DA17C791B60028C54E /* duplicity.spec.template */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = duplicity.spec.template; sourceTree = "<group>"; };
 		B4C270DB17C791B60028C54E /* makedist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = makedist; sourceTree = "<group>"; };
 		B4C270DC17C791B60028C54E /* makerpm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = makerpm; sourceTree = "<group>"; };
@@ -216,7 +216,7 @@
 		B4C26E8C17C7873C0028C54E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B4C26E8B17C7873C0028C54E /* Duplicity */,
+				B4C26E8B17C7873C0028C54E /* _librsync.so */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -623,7 +623,7 @@
 			);
 			name = _librsync.so;
 			productName = Duplicity;
-			productReference = B4C26E8B17C7873C0028C54E /* Duplicity */;
+			productReference = B4C26E8B17C7873C0028C54E /* _librsync.so */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -724,15 +724,7 @@
 		B4C26E9517C7873C0028C54E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/../../../../Library/Developer/Xcode/DerivedData/GDuplicity-hbrxuvgxohgvchgxjnprclvfrjjq/Build/Products/Debug\"",
-				);
 				HEADER_SEARCH_PATHS = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Python.framework/Headers;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/../../../../Library/Developer/Xcode/DerivedData/GDuplicity-hbrxuvgxohgvchgxjnprclvfrjjq/Build/Products/Debug\"",
-				);
 				MACH_O_TYPE = mh_bundle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/../librsync/librsync-0.9.7/";
@@ -742,15 +734,7 @@
 		B4C26E9617C7873C0028C54E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/../../../../Library/Developer/Xcode/DerivedData/GDuplicity-hbrxuvgxohgvchgxjnprclvfrjjq/Build/Products/Debug\"",
-				);
 				HEADER_SEARCH_PATHS = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Python.framework/Headers;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/../../../../Library/Developer/Xcode/DerivedData/GDuplicity-hbrxuvgxohgvchgxjnprclvfrjjq/Build/Products/Debug\"",
-				);
 				MACH_O_TYPE = mh_bundle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/../librsync/librsync-0.9.7/";

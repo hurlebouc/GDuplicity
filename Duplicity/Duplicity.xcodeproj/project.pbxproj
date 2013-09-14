@@ -70,21 +70,9 @@
 		B40C39A217E4C44C00DD2225 /* u1backend.py in CopyFiles */ = {isa = PBXBuildFile; fileRef = B4C270F817C791B60028C54E /* u1backend.py */; };
 		B40C39A317E4C44C00DD2225 /* webdavbackend.py in CopyFiles */ = {isa = PBXBuildFile; fileRef = B4C270F917C791B60028C54E /* webdavbackend.py */; };
 		B4B0455817DA68CE00AC600D /* rsync.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B0455717DA68CE00AC600D /* rsync.framework */; };
+		B4B256A517E4CBEC0012200F /* rsync.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B4B0455717DA68CE00AC600D /* rsync.framework */; };
 		B4C271BA17C791B60028C54E /* _librsyncmodule.c in Sources */ = {isa = PBXBuildFile; fileRef = B4C270E017C791B60028C54E /* _librsyncmodule.c */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXBuildRule section */
-		B4DD4C1817C79D65007E7922 /* PBXBuildRule */ = {
-			isa = PBXBuildRule;
-			compilerSpec = com.apple.compilers.proxy.script;
-			filePatterns = caca;
-			fileType = pattern.proxy;
-			isEditable = 1;
-			outputFiles = (
-			);
-			script = "python /Users/hubert/Dropbox/projects/GDuplicity/Duplicity/duplicity-0.6.22/setup.py build";
-		};
-/* End PBXBuildRule section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		B40C396117E4C2E800DD2225 /* CopyFiles */ = {
@@ -173,6 +161,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B4B256A417E4CBCB0012200F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B4B256A517E4CBEC0012200F /* rsync.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B4C26E8917C7873C0028C54E /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -199,6 +197,7 @@
 		B40C396517E4C30200DD2225 /* rdiffdir */ = {isa = PBXFileReference; lastKnownFileType = text; path = rdiffdir; sourceTree = "<group>"; };
 		B40C396617E4C30200DD2225 /* rdiffdir.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = rdiffdir.1; sourceTree = "<group>"; };
 		B4B0455717DA68CE00AC600D /* rsync.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = rsync.framework; path = "../../../../Library/Developer/Xcode/DerivedData/GDuplicity-hbrxuvgxohgvchgxjnprclvfrjjq/Build/Products/Debug/rsync.framework"; sourceTree = "<group>"; };
+		B4B256AA17E4D1B30012200F /* liblibrsync.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = liblibrsync.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4C26E8B17C7873C0028C54E /* _librsync.so */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = _librsync.so; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4C270DA17C791B60028C54E /* duplicity.spec.template */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = duplicity.spec.template; sourceTree = "<group>"; };
 		B4C270DB17C791B60028C54E /* makedist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = makedist; sourceTree = "<group>"; };
@@ -356,6 +355,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B4B256A717E4D1B30012200F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B4C26E8817C7873C0028C54E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -433,6 +439,7 @@
 			children = (
 				B4C26E8B17C7873C0028C54E /* _librsync.so */,
 				B40C394E17E4C1D500DD2225 /* duplicity.bundle */,
+				B4B256AA17E4D1B30012200F /* liblibrsync.dylib */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -824,6 +831,16 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		B4B256A817E4D1B30012200F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		B40C394D17E4C1D500DD2225 /* duplicity */ = {
 			isa = PBXNativeTarget;
@@ -835,6 +852,7 @@
 				B40C396117E4C2E800DD2225 /* CopyFiles */,
 				B40C396917E4C39C00DD2225 /* CopyFiles */,
 				B40C398D17E4C42400DD2225 /* CopyFiles */,
+				B4B256A417E4CBCB0012200F /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -845,6 +863,23 @@
 			productReference = B40C394E17E4C1D500DD2225 /* duplicity.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
+		B4B256A917E4D1B30012200F /* librsync */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4B256AB17E4D1B30012200F /* Build configuration list for PBXNativeTarget "librsync" */;
+			buildPhases = (
+				B4B256A617E4D1B30012200F /* Sources */,
+				B4B256A717E4D1B30012200F /* Frameworks */,
+				B4B256A817E4D1B30012200F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = librsync;
+			productName = librsync;
+			productReference = B4B256AA17E4D1B30012200F /* liblibrsync.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
 		B4C26E8A17C7873C0028C54E /* _librsync.so */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B4C26E9417C7873C0028C54E /* Build configuration list for PBXNativeTarget "_librsync.so" */;
@@ -854,7 +889,6 @@
 				B4C26E8917C7873C0028C54E /* CopyFiles */,
 			);
 			buildRules = (
-				B4DD4C1817C79D65007E7922 /* PBXBuildRule */,
 			);
 			dependencies = (
 			);
@@ -886,6 +920,7 @@
 			targets = (
 				B4C26E8A17C7873C0028C54E /* _librsync.so */,
 				B40C394D17E4C1D500DD2225 /* duplicity */,
+				B4B256A917E4D1B30012200F /* librsync */,
 			);
 		};
 /* End PBXProject section */
@@ -903,6 +938,13 @@
 
 /* Begin PBXSourcesBuildPhase section */
 		B40C394A17E4C1D500DD2225 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4B256A617E4D1B30012200F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -956,6 +998,24 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		B4B256AC17E4D1B30012200F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B4B256AD17E4D1B30012200F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -1023,7 +1083,7 @@
 					/System/Library/Frameworks/Python.framework/Headers,
 					"\"$(SRCROOT)/../../../../Library/Developer/Xcode/DerivedData/GDuplicity-hbrxuvgxohgvchgxjnprclvfrjjq/Build/Products/Debug/rsync.framework/Headers\"",
 				);
-				INSTALL_PATH = "@executable_path/lib/python2.7/site-packages/duplicity";
+				INSTALL_PATH = "@executable_path/site-packages/duplicity";
 				MACH_O_TYPE = mh_bundle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -1036,7 +1096,7 @@
 					/System/Library/Frameworks/Python.framework/Headers,
 					"\"$(SRCROOT)/../../../../Library/Developer/Xcode/DerivedData/GDuplicity-hbrxuvgxohgvchgxjnprclvfrjjq/Build/Products/Debug/rsync.framework/Headers\"",
 				);
-				INSTALL_PATH = "@executable_path/lib/python2.7/site-packages/duplicity";
+				INSTALL_PATH = "@executable_path/site-packages/duplicity";
 				MACH_O_TYPE = mh_bundle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -1053,6 +1113,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		B4B256AB17E4D1B30012200F /* Build configuration list for PBXNativeTarget "librsync" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4B256AC17E4D1B30012200F /* Debug */,
+				B4B256AD17E4D1B30012200F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		B4C26E8617C7873C0028C54E /* Build configuration list for PBXProject "Duplicity" */ = {
 			isa = XCConfigurationList;

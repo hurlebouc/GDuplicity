@@ -281,7 +281,7 @@ class GnuPG:
     """
 
     def __init__(self):
-        self.call = 'gpg'
+        self.call = './gpg'
         self.passphrase = None
         self.options = Options()
 

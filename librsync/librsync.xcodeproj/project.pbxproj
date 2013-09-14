@@ -71,7 +71,7 @@
 		B4B0449917DA4ABD00AC600D /* util.h in Headers */ = {isa = PBXBuildFile; fileRef = B4C2704817C78F750028C54E /* util.h */; };
 		B4B0449A17DA4ABD00AC600D /* whole.h in Headers */ = {isa = PBXBuildFile; fileRef = B4C2704B17C78F750028C54E /* whole.h */; };
 		B4B0449B17DA4B6600AC600D /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = B4C26FE617C78F750028C54E /* config.h */; };
-		B4B0449C17DA4B6600AC600D /* librsync-config.h in Headers */ = {isa = PBXBuildFile; fileRef = B4C26FE717C78F750028C54E /* librsync-config.h */; };
+		B4B0449C17DA4B6600AC600D /* librsync-config.h in Headers */ = {isa = PBXBuildFile; fileRef = B4C26FE717C78F750028C54E /* librsync-config.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B4B044A017DA4C6600AC600D /* rsync-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B4B0449D17DA4C6600AC600D /* rsync-Info.plist */; };
 		B4B044A317DA4F4A00AC600D /* popt.c in Sources */ = {isa = PBXBuildFile; fileRef = B4C26FF817C78F750028C54E /* popt.c */; };
 /* End PBXBuildFile section */
@@ -358,6 +358,7 @@
 			files = (
 				B4B0448D17DA4ABD00AC600D /* popt.h in Headers */,
 				B4B0448917DA4ABD00AC600D /* librsync.h in Headers */,
+				B4B0449C17DA4B6600AC600D /* librsync-config.h in Headers */,
 				B4B0448017DA4ABC00AC600D /* buf.h in Headers */,
 				B4B0448117DA4ABC00AC600D /* checksum.h in Headers */,
 				B4B0448217DA4ABC00AC600D /* command.h in Headers */,
@@ -365,7 +366,6 @@
 				B4B0448417DA4ABC00AC600D /* emit.h in Headers */,
 				B4B0448517DA4ABC00AC600D /* fileutil.h in Headers */,
 				B4B0449B17DA4B6600AC600D /* config.h in Headers */,
-				B4B0449C17DA4B6600AC600D /* librsync-config.h in Headers */,
 				B4B0448617DA4ABC00AC600D /* isprefix.h in Headers */,
 				B4B0448717DA4ABC00AC600D /* job.h in Headers */,
 				B4B0448817DA4ABC00AC600D /* librsync-config.h in Headers */,
@@ -642,6 +642,7 @@
 				B4039AFD17E46F2F005CFB6C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B4B0445B17DA49B200AC600D /* Build configuration list for PBXNativeTarget "rsync" */ = {
 			isa = XCConfigurationList;

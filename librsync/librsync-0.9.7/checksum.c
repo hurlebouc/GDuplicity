@@ -28,7 +28,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-#include "librsync.h"
+#include <librsync.h>
 #include "checksum.h"
 
 

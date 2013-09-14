@@ -47,7 +47,7 @@
 #include <string.h>
 #include <stdio.h>
 
-#include "librsync.h"
+#include <librsync.h>
 #include "trace.h"
 #include "types.h"
 #include "mdfour.h"

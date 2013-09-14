@@ -27,7 +27,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-#include "librsync.h"
+#include <librsync.h>
 
 /*
  * Decode a base64 string in-place - simple and slow algorithm

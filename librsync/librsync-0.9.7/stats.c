@@ -33,7 +33,7 @@
 #endif
 #include <string.h>
 
-#include "librsync.h"
+#include <librsync.h>
 #include "trace.h"
 #include "snprintf.h"
 

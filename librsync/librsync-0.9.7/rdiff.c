@@ -61,7 +61,7 @@
 #include <bzlib.h>
 #endif
 
-#include "librsync.h"
+#include <librsync.h>
 #include "fileutil.h"
 #include "util.h"
 #include "trace.h"

@@ -41,7 +41,7 @@
 #include <string.h>
 #include <errno.h>
 
-#include "librsync.h"
+#include <librsync.h>
 
 #include "trace.h"
 #include "fileutil.h"

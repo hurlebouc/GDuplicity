@@ -64,7 +64,7 @@
 #include <string.h>
 #include <stdio.h>
 
-#include "librsync.h"
+#include <librsync.h>
 #include "trace.h"
 #include "util.h"
 #include "job.h"

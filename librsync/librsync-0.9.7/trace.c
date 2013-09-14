@@ -50,7 +50,7 @@
 #include <assert.h>
 #include <stdarg.h>
 
-#include "librsync.h"
+#include <librsync.h>
 #include "util.h"
 #include "trace.h"
 #include "snprintf.h"

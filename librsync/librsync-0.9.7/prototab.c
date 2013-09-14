@@ -5,7 +5,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-#include "librsync.h"
+#include <librsync.h>
 #include <protocol.h>
 #include <command.h>
 #include <prototab.h>

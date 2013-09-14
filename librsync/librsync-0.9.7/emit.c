@@ -37,7 +37,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-#include "librsync.h"
+#include <librsync.h>
 #include "command.h"
 #include "protocol.h"
 #include "trace.h"

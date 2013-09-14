@@ -23,7 +23,7 @@
  * ----------------------------------------------------------------------- */
 
 #include <Python.h>
-#include "librsync.h"
+#include <librsync.h>
 #define RS_JOB_BLOCKSIZE 65536
 
 /* Support Python 2.4 and 2.5 */

@@ -33,7 +33,7 @@
 #include <stdio.h>
 
 #include "util.h"
-#include "librsync.h"
+#include <librsync.h>
 #include "trace.h"
 
 void

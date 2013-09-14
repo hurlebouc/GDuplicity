@@ -10,6 +10,65 @@
 		B40C394917E4BEA300DD2225 /* Python.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4039B0017E470B0005CFB6C /* Python.framework */; };
 		B40C395117E4C1D500DD2225 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B40C395017E4C1D500DD2225 /* Cocoa.framework */; };
 		B40C395B17E4C1D500DD2225 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B40C395917E4C1D500DD2225 /* InfoPlist.strings */; };
+		B40C396717E4C30B00DD2225 /* duplicity in CopyFiles */ = {isa = PBXBuildFile; fileRef = B40C396317E4C30200DD2225 /* duplicity */; };
+		B40C396817E4C30D00DD2225 /* rdiffdir in CopyFiles */ = {isa = PBXBuildFile; fileRef = B40C396517E4C30200DD2225 /* rdiffdir */; };
+		B40C396A17E4C3DF00DD2225 /* __init__.py in CopyFiles */ = {isa = PBXBuildFile; fileRef = B4C270DF17C791B60028C54E /* __init__.py */; };
+		B40C396B17E4C3DF00DD2225 /* asyncscheduler.py in CopyFiles */ = {isa = PBXBuildFile; fileRef = B4C270E117C791B60028C54E /* asyncscheduler.py */; };
+		B40C396C17E4C3DF00DD2225 /* backend.py in CopyFiles */ = {isa = PBXBuildFile; fileRef = B4C270E217C791B60028C54E /* backend.py */; };
+		B40C396D17E4C3DF00DD2225 /* cached_ops.py in CopyFiles */ = {isa = PBXBuildFile; fileRef = B4C270FA17C791B60028C54E /* cached_ops.py */; };
+		B40C396E17E4C3DF00DD2225 /* collections.py in CopyFiles */ = {isa = PBXBuildFile; fileRef = B4C270FB17C791B60028C54E /* collections.py */; };
+		B40C396F17E4C3DF00DD2225 /* commandline.py in CopyFiles */ = {isa = PBXBuildFile; fileRef = B4C270FC17C791B60028C54E /* commandline.py */; };
+		B40C397017E4C3DF00DD2225 /* compilec.py in CopyFiles */ = {isa = PBXBuildFile; fileRef = B4C270FD17C791B60028C54E /* compilec.py */; };
+		B40C397117E4C3DF00DD2225 /* diffdir.py in CopyFiles */ = {isa = PBXBuildFile; fileRef = B4C270FE17C791B60028C54E /* diffdir.py */; };
+		B40C397217E4C3DF00DD2225 /* dup_temp.py in CopyFiles */ = {isa = PBXBuildFile; fileRef = B4C270FF17C791B60028C54E /* dup_temp.py */; };
+		B40C397317E4C3DF00DD2225 /* dup_threading.py in CopyFiles */ = {isa = PBXBuildFile; fileRef = B4C2710017C791B60028C54E /* dup_threading.py */; };
+		B40C397417E4C3DF00DD2225 /* dup_time.py in CopyFiles */ = {isa = PBXBuildFile; fileRef = B4C2710117C791B60028C54E /* dup_time.py */; };
+		B40C397517E4C3DF00DD2225 /* errors.py in CopyFiles */ = {isa = PBXBuildFile; fileRef = B4C2710217C791B60028C54E /* errors.py */; };
+		B40C397617E4C3DF00DD2225 /* file_naming.py in CopyFiles */ = {isa = PBXBuildFile; fileRef = B4C2710317C791B60028C54E /* file_naming.py */; };
+		B40C397717E4C3DF00DD2225 /* filechunkio.py in CopyFiles */ = {isa = PBXBuildFile; fileRef = B4C2710417C791B60028C54E /* filechunkio.py */; };
+		B40C397817E4C3DF00DD2225 /* globals.py in CopyFiles */ = {isa = PBXBuildFile; fileRef = B4C2710517C791B60028C54E /* globals.py */; };
+		B40C397917E4C3DF00DD2225 /* gpg.py in CopyFiles */ = {isa = PBXBuildFile; fileRef = B4C2710617C791B60028C54E /* gpg.py */; };
+		B40C397A17E4C3DF00DD2225 /* gpginterface.py in CopyFiles */ = {isa = PBXBuildFile; fileRef = B4C2710717C791B60028C54E /* gpginterface.py */; };
+		B40C397B17E4C3DF00DD2225 /* lazy.py in CopyFiles */ = {isa = PBXBuildFile; fileRef = B4C2710817C791B60028C54E /* lazy.py */; };
+		B40C397C17E4C3DF00DD2225 /* librsync.py in CopyFiles */ = {isa = PBXBuildFile; fileRef = B4C2710917C791B60028C54E /* librsync.py */; };
+		B40C397D17E4C3DF00DD2225 /* log.py in CopyFiles */ = {isa = PBXBuildFile; fileRef = B4C2710A17C791B60028C54E /* log.py */; };
+		B40C397E17E4C3DF00DD2225 /* manifest.py in CopyFiles */ = {isa = PBXBuildFile; fileRef = B4C2710B17C791B60028C54E /* manifest.py */; };
+		B40C397F17E4C3DF00DD2225 /* misc.py in CopyFiles */ = {isa = PBXBuildFile; fileRef = B4C2710C17C791B60028C54E /* misc.py */; };
+		B40C398017E4C3DF00DD2225 /* patchdir.py in CopyFiles */ = {isa = PBXBuildFile; fileRef = B4C2710D17C791B60028C54E /* patchdir.py */; };
+		B40C398117E4C3DF00DD2225 /* path.py in CopyFiles */ = {isa = PBXBuildFile; fileRef = B4C2710E17C791B60028C54E /* path.py */; };
+		B40C398217E4C3DF00DD2225 /* pexpect.py in CopyFiles */ = {isa = PBXBuildFile; fileRef = B4C2710F17C791B60028C54E /* pexpect.py */; };
+		B40C398317E4C3DF00DD2225 /* progress.py in CopyFiles */ = {isa = PBXBuildFile; fileRef = B4C2711017C791B60028C54E /* progress.py */; };
+		B40C398417E4C3DF00DD2225 /* robust.py in CopyFiles */ = {isa = PBXBuildFile; fileRef = B4C2711117C791B60028C54E /* robust.py */; };
+		B40C398517E4C3DF00DD2225 /* selection.py in CopyFiles */ = {isa = PBXBuildFile; fileRef = B4C2711217C791B60028C54E /* selection.py */; };
+		B40C398617E4C3DF00DD2225 /* static.py in CopyFiles */ = {isa = PBXBuildFile; fileRef = B4C2711317C791B60028C54E /* static.py */; };
+		B40C398717E4C3DF00DD2225 /* statistics.py in CopyFiles */ = {isa = PBXBuildFile; fileRef = B4C2711417C791B60028C54E /* statistics.py */; };
+		B40C398817E4C3DF00DD2225 /* tarfile.py in CopyFiles */ = {isa = PBXBuildFile; fileRef = B4C2711517C791B60028C54E /* tarfile.py */; };
+		B40C398917E4C3DF00DD2225 /* tempdir.py in CopyFiles */ = {isa = PBXBuildFile; fileRef = B4C2711617C791B60028C54E /* tempdir.py */; };
+		B40C398A17E4C3DF00DD2225 /* urlparse_2_5.py in CopyFiles */ = {isa = PBXBuildFile; fileRef = B4C2711717C791B60028C54E /* urlparse_2_5.py */; };
+		B40C398B17E4C3DF00DD2225 /* util.py in CopyFiles */ = {isa = PBXBuildFile; fileRef = B4C2711817C791B60028C54E /* util.py */; };
+		B40C398C17E4C40600DD2225 /* _librsync.so in CopyFiles */ = {isa = PBXBuildFile; fileRef = B4C26E8B17C7873C0028C54E /* _librsync.so */; };
+		B40C398E17E4C44C00DD2225 /* __init__.py in CopyFiles */ = {isa = PBXBuildFile; fileRef = B4C270E417C791B60028C54E /* __init__.py */; };
+		B40C398F17E4C44C00DD2225 /* _boto_multi.py in CopyFiles */ = {isa = PBXBuildFile; fileRef = B4C270E517C791B60028C54E /* _boto_multi.py */; };
+		B40C399017E4C44C00DD2225 /* _boto_single.py in CopyFiles */ = {isa = PBXBuildFile; fileRef = B4C270E617C791B60028C54E /* _boto_single.py */; };
+		B40C399117E4C44C00DD2225 /* _ssh_paramiko.py in CopyFiles */ = {isa = PBXBuildFile; fileRef = B4C270E717C791B60028C54E /* _ssh_paramiko.py */; };
+		B40C399217E4C44C00DD2225 /* _ssh_pexpect.py in CopyFiles */ = {isa = PBXBuildFile; fileRef = B4C270E817C791B60028C54E /* _ssh_pexpect.py */; };
+		B40C399317E4C44C00DD2225 /* botobackend.py in CopyFiles */ = {isa = PBXBuildFile; fileRef = B4C270E917C791B60028C54E /* botobackend.py */; };
+		B40C399417E4C44C00DD2225 /* cloudfilesbackend.py in CopyFiles */ = {isa = PBXBuildFile; fileRef = B4C270EA17C791B60028C54E /* cloudfilesbackend.py */; };
+		B40C399517E4C44C00DD2225 /* dpbxbackend.py in CopyFiles */ = {isa = PBXBuildFile; fileRef = B4C270EB17C791B60028C54E /* dpbxbackend.py */; };
+		B40C399617E4C44C00DD2225 /* ftpbackend.py in CopyFiles */ = {isa = PBXBuildFile; fileRef = B4C270EC17C791B60028C54E /* ftpbackend.py */; };
+		B40C399717E4C44C00DD2225 /* ftpsbackend.py in CopyFiles */ = {isa = PBXBuildFile; fileRef = B4C270ED17C791B60028C54E /* ftpsbackend.py */; };
+		B40C399817E4C44C00DD2225 /* gdocsbackend.py in CopyFiles */ = {isa = PBXBuildFile; fileRef = B4C270EE17C791B60028C54E /* gdocsbackend.py */; };
+		B40C399917E4C44C00DD2225 /* giobackend.py in CopyFiles */ = {isa = PBXBuildFile; fileRef = B4C270EF17C791B60028C54E /* giobackend.py */; };
+		B40C399A17E4C44C00DD2225 /* hsibackend.py in CopyFiles */ = {isa = PBXBuildFile; fileRef = B4C270F017C791B60028C54E /* hsibackend.py */; };
+		B40C399B17E4C44C00DD2225 /* imapbackend.py in CopyFiles */ = {isa = PBXBuildFile; fileRef = B4C270F117C791B60028C54E /* imapbackend.py */; };
+		B40C399C17E4C44C00DD2225 /* localbackend.py in CopyFiles */ = {isa = PBXBuildFile; fileRef = B4C270F217C791B60028C54E /* localbackend.py */; };
+		B40C399D17E4C44C00DD2225 /* megabackend.py in CopyFiles */ = {isa = PBXBuildFile; fileRef = B4C270F317C791B60028C54E /* megabackend.py */; };
+		B40C399E17E4C44C00DD2225 /* rsyncbackend.py in CopyFiles */ = {isa = PBXBuildFile; fileRef = B4C270F417C791B60028C54E /* rsyncbackend.py */; };
+		B40C399F17E4C44C00DD2225 /* sshbackend.py in CopyFiles */ = {isa = PBXBuildFile; fileRef = B4C270F517C791B60028C54E /* sshbackend.py */; };
+		B40C39A017E4C44C00DD2225 /* swiftbackend.py in CopyFiles */ = {isa = PBXBuildFile; fileRef = B4C270F617C791B60028C54E /* swiftbackend.py */; };
+		B40C39A117E4C44C00DD2225 /* tahoebackend.py in CopyFiles */ = {isa = PBXBuildFile; fileRef = B4C270F717C791B60028C54E /* tahoebackend.py */; };
+		B40C39A217E4C44C00DD2225 /* u1backend.py in CopyFiles */ = {isa = PBXBuildFile; fileRef = B4C270F817C791B60028C54E /* u1backend.py */; };
+		B40C39A317E4C44C00DD2225 /* webdavbackend.py in CopyFiles */ = {isa = PBXBuildFile; fileRef = B4C270F917C791B60028C54E /* webdavbackend.py */; };
 		B4B0455817DA68CE00AC600D /* rsync.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B0455717DA68CE00AC600D /* rsync.framework */; };
 		B4C271BA17C791B60028C54E /* _librsyncmodule.c in Sources */ = {isa = PBXBuildFile; fileRef = B4C270E017C791B60028C54E /* _librsyncmodule.c */; };
 /* End PBXBuildFile section */
@@ -28,6 +87,92 @@
 /* End PBXBuildRule section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		B40C396117E4C2E800DD2225 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 6;
+			files = (
+				B40C396717E4C30B00DD2225 /* duplicity in CopyFiles */,
+				B40C396817E4C30D00DD2225 /* rdiffdir in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B40C396917E4C39C00DD2225 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "site-packages/duplicity";
+			dstSubfolderSpec = 6;
+			files = (
+				B40C396A17E4C3DF00DD2225 /* __init__.py in CopyFiles */,
+				B40C396B17E4C3DF00DD2225 /* asyncscheduler.py in CopyFiles */,
+				B40C396C17E4C3DF00DD2225 /* backend.py in CopyFiles */,
+				B40C396D17E4C3DF00DD2225 /* cached_ops.py in CopyFiles */,
+				B40C396E17E4C3DF00DD2225 /* collections.py in CopyFiles */,
+				B40C396F17E4C3DF00DD2225 /* commandline.py in CopyFiles */,
+				B40C397017E4C3DF00DD2225 /* compilec.py in CopyFiles */,
+				B40C397117E4C3DF00DD2225 /* diffdir.py in CopyFiles */,
+				B40C397217E4C3DF00DD2225 /* dup_temp.py in CopyFiles */,
+				B40C397317E4C3DF00DD2225 /* dup_threading.py in CopyFiles */,
+				B40C397417E4C3DF00DD2225 /* dup_time.py in CopyFiles */,
+				B40C397517E4C3DF00DD2225 /* errors.py in CopyFiles */,
+				B40C397617E4C3DF00DD2225 /* file_naming.py in CopyFiles */,
+				B40C397717E4C3DF00DD2225 /* filechunkio.py in CopyFiles */,
+				B40C397817E4C3DF00DD2225 /* globals.py in CopyFiles */,
+				B40C397917E4C3DF00DD2225 /* gpg.py in CopyFiles */,
+				B40C397A17E4C3DF00DD2225 /* gpginterface.py in CopyFiles */,
+				B40C397B17E4C3DF00DD2225 /* lazy.py in CopyFiles */,
+				B40C397C17E4C3DF00DD2225 /* librsync.py in CopyFiles */,
+				B40C397D17E4C3DF00DD2225 /* log.py in CopyFiles */,
+				B40C397E17E4C3DF00DD2225 /* manifest.py in CopyFiles */,
+				B40C397F17E4C3DF00DD2225 /* misc.py in CopyFiles */,
+				B40C398017E4C3DF00DD2225 /* patchdir.py in CopyFiles */,
+				B40C398117E4C3DF00DD2225 /* path.py in CopyFiles */,
+				B40C398217E4C3DF00DD2225 /* pexpect.py in CopyFiles */,
+				B40C398C17E4C40600DD2225 /* _librsync.so in CopyFiles */,
+				B40C398317E4C3DF00DD2225 /* progress.py in CopyFiles */,
+				B40C398417E4C3DF00DD2225 /* robust.py in CopyFiles */,
+				B40C398517E4C3DF00DD2225 /* selection.py in CopyFiles */,
+				B40C398617E4C3DF00DD2225 /* static.py in CopyFiles */,
+				B40C398717E4C3DF00DD2225 /* statistics.py in CopyFiles */,
+				B40C398817E4C3DF00DD2225 /* tarfile.py in CopyFiles */,
+				B40C398917E4C3DF00DD2225 /* tempdir.py in CopyFiles */,
+				B40C398A17E4C3DF00DD2225 /* urlparse_2_5.py in CopyFiles */,
+				B40C398B17E4C3DF00DD2225 /* util.py in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B40C398D17E4C42400DD2225 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "site-packages/duplicity/backends";
+			dstSubfolderSpec = 6;
+			files = (
+				B40C398E17E4C44C00DD2225 /* __init__.py in CopyFiles */,
+				B40C398F17E4C44C00DD2225 /* _boto_multi.py in CopyFiles */,
+				B40C399017E4C44C00DD2225 /* _boto_single.py in CopyFiles */,
+				B40C399117E4C44C00DD2225 /* _ssh_paramiko.py in CopyFiles */,
+				B40C399217E4C44C00DD2225 /* _ssh_pexpect.py in CopyFiles */,
+				B40C399317E4C44C00DD2225 /* botobackend.py in CopyFiles */,
+				B40C399417E4C44C00DD2225 /* cloudfilesbackend.py in CopyFiles */,
+				B40C399517E4C44C00DD2225 /* dpbxbackend.py in CopyFiles */,
+				B40C399617E4C44C00DD2225 /* ftpbackend.py in CopyFiles */,
+				B40C399717E4C44C00DD2225 /* ftpsbackend.py in CopyFiles */,
+				B40C399817E4C44C00DD2225 /* gdocsbackend.py in CopyFiles */,
+				B40C399917E4C44C00DD2225 /* giobackend.py in CopyFiles */,
+				B40C399A17E4C44C00DD2225 /* hsibackend.py in CopyFiles */,
+				B40C399B17E4C44C00DD2225 /* imapbackend.py in CopyFiles */,
+				B40C399C17E4C44C00DD2225 /* localbackend.py in CopyFiles */,
+				B40C399D17E4C44C00DD2225 /* megabackend.py in CopyFiles */,
+				B40C399E17E4C44C00DD2225 /* rsyncbackend.py in CopyFiles */,
+				B40C399F17E4C44C00DD2225 /* sshbackend.py in CopyFiles */,
+				B40C39A017E4C44C00DD2225 /* swiftbackend.py in CopyFiles */,
+				B40C39A117E4C44C00DD2225 /* tahoebackend.py in CopyFiles */,
+				B40C39A217E4C44C00DD2225 /* u1backend.py in CopyFiles */,
+				B40C39A317E4C44C00DD2225 /* webdavbackend.py in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B4C26E8917C7873C0028C54E /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -41,7 +186,6 @@
 
 /* Begin PBXFileReference section */
 		B4039B0017E470B0005CFB6C /* Python.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Python.framework; path = System/Library/Frameworks/Python.framework; sourceTree = SDKROOT; };
-		B4039B0317E47233005CFB6C /* _librsync.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; name = _librsync.so; path = "../../../../Library/Developer/Xcode/DerivedData/GDuplicity-hbrxuvgxohgvchgxjnprclvfrjjq/Build/Products/Debug/_librsync.so"; sourceTree = "<group>"; };
 		B40C394E17E4C1D500DD2225 /* duplicity.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = duplicity.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		B40C395017E4C1D500DD2225 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		B40C395317E4C1D500DD2225 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -50,6 +194,10 @@
 		B40C395817E4C1D500DD2225 /* duplicity-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "duplicity-Info.plist"; sourceTree = "<group>"; };
 		B40C395A17E4C1D500DD2225 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B40C395C17E4C1D500DD2225 /* duplicity-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "duplicity-Prefix.pch"; sourceTree = "<group>"; };
+		B40C396317E4C30200DD2225 /* duplicity */ = {isa = PBXFileReference; lastKnownFileType = text; path = duplicity; sourceTree = "<group>"; };
+		B40C396417E4C30200DD2225 /* duplicity.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = duplicity.1; sourceTree = "<group>"; };
+		B40C396517E4C30200DD2225 /* rdiffdir */ = {isa = PBXFileReference; lastKnownFileType = text; path = rdiffdir; sourceTree = "<group>"; };
+		B40C396617E4C30200DD2225 /* rdiffdir.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = rdiffdir.1; sourceTree = "<group>"; };
 		B4B0455717DA68CE00AC600D /* rsync.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = rsync.framework; path = "../../../../Library/Developer/Xcode/DerivedData/GDuplicity-hbrxuvgxohgvchgxjnprclvfrjjq/Build/Products/Debug/rsync.framework"; sourceTree = "<group>"; };
 		B4C26E8B17C7873C0028C54E /* _librsync.so */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = _librsync.so; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4C270DA17C791B60028C54E /* duplicity.spec.template */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = duplicity.spec.template; sourceTree = "<group>"; };
@@ -257,6 +405,17 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		B40C396217E4C30200DD2225 /* bin */ = {
+			isa = PBXGroup;
+			children = (
+				B40C396317E4C30200DD2225 /* duplicity */,
+				B40C396417E4C30200DD2225 /* duplicity.1 */,
+				B40C396517E4C30200DD2225 /* rdiffdir */,
+				B40C396617E4C30200DD2225 /* rdiffdir.1 */,
+			);
+			path = bin;
+			sourceTree = "<group>";
+		};
 		B4C26E8217C7873C0028C54E = {
 			isa = PBXGroup;
 			children = (
@@ -266,7 +425,6 @@
 				B40C395617E4C1D500DD2225 /* duplicity */,
 				B40C394F17E4C1D500DD2225 /* Frameworks */,
 				B4C26E8C17C7873C0028C54E /* Products */,
-				B4039B0317E47233005CFB6C /* _librsync.so */,
 			);
 			sourceTree = "<group>";
 		};
@@ -282,6 +440,7 @@
 		B4C2709117C791B60028C54E /* duplicity-0.6.22 */ = {
 			isa = PBXGroup;
 			children = (
+				B40C396217E4C30200DD2225 /* bin */,
 				B4C270D917C791B60028C54E /* dist */,
 				B4C270DE17C791B60028C54E /* duplicity */,
 				B4C2711917C791B60028C54E /* po */,
@@ -673,6 +832,9 @@
 				B40C394A17E4C1D500DD2225 /* Sources */,
 				B40C394B17E4C1D500DD2225 /* Frameworks */,
 				B40C394C17E4C1D500DD2225 /* Resources */,
+				B40C396117E4C2E800DD2225 /* CopyFiles */,
+				B40C396917E4C39C00DD2225 /* CopyFiles */,
+				B40C398D17E4C42400DD2225 /* CopyFiles */,
 			);
 			buildRules = (
 			);

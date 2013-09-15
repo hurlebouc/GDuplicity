@@ -6,6 +6,8 @@
 //  Copyright (c) 2013 Hubert. All rights reserved.
 //
 
+#include <stdlib.h>
+
 #import "AppDelegate.h"
 #import "NoOption.h"
 #import "BooleanOption.h"
@@ -20,7 +22,15 @@
 @implementation AppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
+//    int temp_id = mkstemp("bbb");
+//    char nom[MAXPATHLEN];
+//    fcntl(temp_id, F_GETPATH, nom);
+//    NSLog(@"%s", nom);
+//    NSFileHandle* temp = [[NSFileHandle alloc] initWithFileDescriptor:temp_id];
+//    [temp closeFile];
+    
     // Insert code here to initialize your application
+    
     NSBundle* mainBundle;
     mainBundle = [NSBundle mainBundle];
     NSString* plugpath = [[mainBundle builtInPlugInsPath] stringByAppendingString:@"/duplicity.bundle"];
@@ -29,7 +39,7 @@
         NSLog(@"ERREUR : le chargement de duplicity a échoué");
     } else {
         _duplicityPath = [plugins executablePath];
-        NSLog(@"%@", _duplicityPath);
+        //NSLog(@"%@", _duplicityPath);
     }
 }
 
@@ -79,16 +89,16 @@
     NSString* actCLI = [@"./duplicity" stringByAppendingString:[act getCLIAction]];
     actCLI = [@"ulimit -n 1024;" stringByAppendingString:actCLI];
     actCLI = [changeDir stringByAppendingString:actCLI];
-    actCLI = [actCLI stringByAppendingString:@" 2> ~/Desktop/error.txt"];
+//    actCLI = [actCLI stringByAppendingString:@" 2> ~/Desktop/error.txt"];
     if ([_cryptCheck intValue]) {
         NSString* pwd = [_pwdField stringValue];
         NSString* export = [NSString stringWithFormat:@"export PASSPHRASE=%@;", pwd];
         actCLI = [export stringByAppendingString:actCLI];
     }
-    system("echo $PATH > ~/Desktop/path.txt");
-    system("pwd > ~/Desktop/pwd.txt");
+//    system("echo $PATH > ~/Desktop/path.txt");
+//    system("pwd > ~/Desktop/pwd.txt");
     int n = system([actCLI UTF8String]);
-    NSLog(@"%@\ncaca : %d", actCLI, n);
+//    NSLog(@"%@\ncaca : %d", actCLI, n);
     NSString* message = [@"retour : " stringByAppendingString:[NSString stringWithFormat:@"%d", n]];
     NSRunAlertPanel(@"Fin", message, @"bachi", @"", @"");
 }
@@ -124,6 +134,12 @@
 // Restore
 
 - (IBAction)launchRestore:(id)sender {
+    
+    char* tempath = tmpnam(NULL);
+    if (tempath == NULL) {
+        exit(EXIT_FAILURE);
+    }
+    
     id<Option> opt = [self getGeneralOptionsFrom:[[NoOption alloc] init]];
     opt = [self getRestoreOptionsFrom:opt];
     NSString* src = [@" " stringByAppendingString:[_restoreSourceField stringValue]];
@@ -139,7 +155,27 @@
     NSString* actCLI = [@"./duplicity" stringByAppendingString:[act getCLIAction]];
     actCLI = [@"ulimit -n 1024;" stringByAppendingString:actCLI];
     actCLI = [changeDir stringByAppendingString:actCLI];
-    system([actCLI UTF8String]);
+    NSString* actCLIVerif = [NSString stringWithFormat:@"%@ 2> %s", actCLI, tempath];
+    
+    system([actCLIVerif UTF8String]);
+    
+    NSData* data = [NSData dataWithContentsOfFile:[NSString stringWithFormat:@"%s", tempath]];
+    char buffer[8];
+    [data getBytes:buffer length:8];
+    if (strncmp(buffer, "GPGError", 8) == 0) {
+        
+        /* ------------------------------------------- *
+         * Il faut ici trouver un moyen de lancer une
+         * nouvelle fenêtre demandant à l'utilisateur
+         * de rentrer un mot de passe
+         * ------------------------------------------- */
+        
+        NSString* pwd /* = le résultat de la demande */;
+        NSString* export = [NSString stringWithFormat:@"export PASSPHRASE=%@;", pwd];
+        actCLI = [export stringByAppendingString:actCLI];
+        system([actCLI UTF8String]);
+    }
+    
     NSRunAlertPanel(@"Fin", @"Normalement y a pas eu de merde.", @"OK", @"", @"");
 }
 

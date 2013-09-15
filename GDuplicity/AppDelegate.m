@@ -21,6 +21,21 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     // Insert code here to initialize your application
+    NSBundle* mainBundle;
+    mainBundle = [NSBundle mainBundle];
+    NSLog(@"%@", [mainBundle builtInPlugInsPath]);
+    NSArray* bndltab = [NSBundle allFrameworks];
+    NSLog(@"%ld", (unsigned long)[bndltab count]);
+//    for (int i=0; i<[bndltab count]; i++) {
+//        NSLog(@"%@", [[bndltab objectAtIndex:i] bundlePath]);
+//    }
+    NSString* plugpath = [[mainBundle builtInPlugInsPath] stringByAppendingString:@"/duplicity.bundle"];
+    NSBundle* plugins = [NSBundle bundleWithPath:plugpath];
+    if (plugins == nil) {
+        NSLog(@"erreur de chargement des plugins");
+    } else {
+        NSLog(@"%@", [plugins executablePath]);
+    }
 }
 
 - (id<Option>) getGeneralOptionsFrom: (id<Option>) opt{

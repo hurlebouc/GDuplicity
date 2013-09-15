@@ -12,6 +12,8 @@
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
+@property NSString* duplicityPath;
+
 @property (assign) IBOutlet NSWindow *window;
 
 // Backup

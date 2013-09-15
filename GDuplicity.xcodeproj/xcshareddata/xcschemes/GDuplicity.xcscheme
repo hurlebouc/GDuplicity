@@ -71,7 +71,7 @@
          <EnvironmentVariable
             key = "PATH"
             value = "/opt/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
-            isEnabled = "YES">
+            isEnabled = "NO">
          </EnvironmentVariable>
       </EnvironmentVariables>
       <AdditionalOptions>

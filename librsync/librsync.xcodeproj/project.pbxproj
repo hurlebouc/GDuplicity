@@ -433,7 +433,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0460;
-				ORGANIZATIONNAME = Hubert;
+				ORGANIZATIONNAME = Codein;
 			};
 			buildConfigurationList = B4C26EA117C78B1D0028C54E /* Build configuration list for PBXProject "librsync" */;
 			compatibilityVersion = "Xcode 3.2";

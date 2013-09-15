@@ -284,7 +284,7 @@
 		B40C396417E4C30200DD2225 /* duplicity.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = duplicity.1; sourceTree = "<group>"; };
 		B40C396517E4C30200DD2225 /* rdiffdir */ = {isa = PBXFileReference; lastKnownFileType = text; path = rdiffdir; sourceTree = "<group>"; };
 		B40C396617E4C30200DD2225 /* rdiffdir.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = rdiffdir.1; sourceTree = "<group>"; };
-		B4B256AA17E4D1B30012200F /* librsync.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = librsync.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4B256AA17E4D1B30012200F /* librsync.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; name = librsync.dylib; path = _librsync.so; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4B256D517E4D8C10012200F /* gpg.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = gpg.xcodeproj; path = ../gpg/gpg.xcodeproj; sourceTree = "<group>"; };
 		B4B256EF17E4FBB10012200F /* librsync.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = librsync.xcodeproj; path = ../librsync/librsync.xcodeproj; sourceTree = "<group>"; };
 		B4C26E8B17C7873C0028C54E /* _librsync.so */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = _librsync.so; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1020,7 +1020,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0460;
-				ORGANIZATIONNAME = Hubert;
+				ORGANIZATIONNAME = Codein;
 			};
 			buildConfigurationList = B4C26E8617C7873C0028C54E /* Build configuration list for PBXProject "Duplicity" */;
 			compatibilityVersion = "Xcode 3.2";

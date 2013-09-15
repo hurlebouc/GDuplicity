@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B4B256A917E4D1B30012200F"
-               BuildableName = "liblibrsync.dylib"
+               BuildableName = "_librsync.so"
                BlueprintName = "librsync"
                ReferencedContainer = "container:Duplicity.xcodeproj">
             </BuildableReference>

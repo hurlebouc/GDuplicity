@@ -67,13 +67,6 @@
             ReferencedContainer = "container:GDuplicity.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
-      <EnvironmentVariables>
-         <EnvironmentVariable
-            key = "PATH"
-            value = "/opt/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
-            isEnabled = "NO">
-         </EnvironmentVariable>
-      </EnvironmentVariables>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>

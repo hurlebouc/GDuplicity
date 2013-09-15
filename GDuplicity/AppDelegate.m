@@ -23,12 +23,6 @@
     // Insert code here to initialize your application
     NSBundle* mainBundle;
     mainBundle = [NSBundle mainBundle];
-//    NSLog(@"%@", [mainBundle builtInPlugInsPath]);
-//    NSArray* bndltab = [NSBundle allFrameworks];
-//    NSLog(@"%ld", (unsigned long)[bndltab count]);
-//    for (int i=0; i<[bndltab count]; i++) {
-//        NSLog(@"%@", [[bndltab objectAtIndex:i] bundlePath]);
-//    }
     NSString* plugpath = [[mainBundle builtInPlugInsPath] stringByAppendingString:@"/duplicity.bundle"];
     NSBundle* plugins = [NSBundle bundleWithPath:plugpath];
     if (plugins == nil) {
@@ -80,8 +74,11 @@
                       Option: opt
                       Path: path
                       URL: url];
-    NSString* actCLI = [_duplicityPath stringByAppendingString:[act getCLIAction]];
+    NSString* directory = [_duplicityPath stringByDeletingLastPathComponent];
+    NSString* changeDir = [NSString stringWithFormat:@"cd %@;", directory];
+    NSString* actCLI = [@"./duplicity" stringByAppendingString:[act getCLIAction]];
     actCLI = [@"ulimit -n 1024;" stringByAppendingString:actCLI];
+    actCLI = [changeDir stringByAppendingString:actCLI];
     actCLI = [actCLI stringByAppendingString:@" 2> ~/Desktop/error.txt"];
     if ([_cryptCheck intValue]) {
         NSString* pwd = [_pwdField stringValue];
@@ -89,6 +86,7 @@
         actCLI = [export stringByAppendingString:actCLI];
     }
     system("echo $PATH > ~/Desktop/path.txt");
+    system("pwd > ~/Desktop/pwd.txt");
     int n = system([actCLI UTF8String]);
     NSLog(@"%@\ncaca : %d", actCLI, n);
     NSString* message = [@"retour : " stringByAppendingString:[NSString stringWithFormat:@"%d", n]];
@@ -136,8 +134,11 @@
                       initWithOpt:opt
                       URL:url
                       Path:path];
-    NSString* actCLI = [_duplicityPath stringByAppendingString:[act getCLIAction]];
+    NSString* directory = [_duplicityPath stringByDeletingLastPathComponent];
+    NSString* changeDir = [NSString stringWithFormat:@"cd %@;", directory];
+    NSString* actCLI = [@"./duplicity" stringByAppendingString:[act getCLIAction]];
     actCLI = [@"ulimit -n 1024;" stringByAppendingString:actCLI];
+    actCLI = [changeDir stringByAppendingString:actCLI];
     system([actCLI UTF8String]);
     NSRunAlertPanel(@"Fin", @"Normalement y a pas eu de merde.", @"OK", @"", @"");
 }
@@ -166,7 +167,7 @@
     if ( [openDlg runModal] == NSOKButton ) {
         NSArray* files = [openDlg URLs];
         NSURL* fileName = [files objectAtIndex:0];
-        [_backupTargetField setStringValue:[fileName relativePath]];
+        [_restoreTargetField setStringValue:[fileName relativePath]];
     }
 }
 
